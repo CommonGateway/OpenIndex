@@ -16,6 +16,7 @@ jobs:
       - name: Deploy Product Github Page
         uses: OpenCatalogi/productpage-action@latest
         with:
+          github_repository_name_as_prefix: false
           github_repository_url: https://github.com/CommonGateway/OpenRegisters
           github_api_base_url: https://api.github.com/repos/CommonGateway/OpenRegisters/contents
           navbar_content: 'https://raw.githubusercontent.com/CommonGateway/OpenRegisters/master/docs/NavbarContent.json'
