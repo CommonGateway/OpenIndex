@@ -38,7 +38,7 @@ Bijdragen aan OpenIndex? Graag! Of het nu gaat om het rapporteren van een bug, h
 
 ## Licentie
 
-Open Index is uitgegeven onder een EUPL 1.2 licentie. Zie het [LICENSE.md](LICENSE.md) bestand in onze GitHub repository voor meer details.
+OpenIndex is uitgegeven onder een EUPL 1.2 licentie. Zie het [LICENSE.md](LICENSE.md) bestand in onze GitHub repository voor meer details.
 
 ## Contact
 
