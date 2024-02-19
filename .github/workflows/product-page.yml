@@ -17,12 +17,12 @@ jobs:
         uses: OpenCatalogi/productpage-action@latest
         with:
           github_repository_name_as_prefix: false
-          github_repository_url: https://github.com/CommonGateway/OpenRegisters
-          github_api_base_url: https://api.github.com/repos/CommonGateway/OpenRegisters/contents
-          navbar_content: 'https://raw.githubusercontent.com/CommonGateway/OpenRegisters/master/docs/NavbarContent.json'
+          github_repository_url: https://github.com/CommonGateway/OpenIndex
+          github_api_base_url: https://api.github.com/repos/CommonGateway/OpenIndex/contents
+          navbar_content: 'https://raw.githubusercontent.com/CommonGateway/OpenIndex/master/docs/NavbarContent.json'
           footer_show_logo: true
           footer_logo_href: "https://conduction.nl/"
-          footer_content: 'https://raw.githubusercontent.com/CommonGateway/OpenRegisters/master/docs/FooterContent.json'
+          footer_content: 'https://raw.githubusercontent.com/CommonGateway/OpenIndex/master/docs/FooterContent.json'
           jumbotron_title: "Open Index"
           jumbotron_subtitle: "Platform onafhankenlijk zoeken"
           jumbotron_description: "OpenIndex revolutioneert de toegang tot en het beheer van overheidsdata door diverse dataopslagplaatsen zoals Elasticsearch en MongoDB naadloos te integreren. Dit platform biedt een ongeëvenaarde zoekindex voor openbare gegevens, versnelt geïnformeerde besluitvorming, en ondersteunt transparantie tussen overheidsinstanties. Perfect voor elke instantie die streeft naar betere data-toegankelijkheid en interoperabiliteit, maakt OpenIndex de weg vrij voor een slimmere, meer verbonden overheid."

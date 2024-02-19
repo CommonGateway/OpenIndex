@@ -11,30 +11,38 @@
     }
   },
   {
-    "label": "Bijdragen",
+    "label": "Indexen",
     "type": "internalMarkdown",
     "current": {
-      "pathname": "/Docs/CONTRIBUTING"
+      "pathname": "/indexes"
     },
-    "handleClick": {
-      "internalMarkdown": {
-        "directoryName": "Docs",
-        "fileName": "CONTRIBUTING"
-      }
-    }
-  },
-  {
-    "label": "Organisatie",
-    "type": "internalMarkdown",
-    "current": {
-      "pathname": "/Docs/GOVERNANCE"
-    },
-    "handleClick": {
-      "internalMarkdown": {
-        "directoryName": "Docs",
-        "fileName": "GOVERNANCE"
-      }
-    }
+    "subItems": [
+      {
+        "label": "Open Catalogi",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/indexes/open-catalogi"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Installatie"
+          }
+        }
+      },
+      {
+        "label": "OpenWoo.app",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/indexes/open-woo-app"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Architectuur"
+          }
+        }
+      },
   },
   {
     "label": "Handleidingen",
