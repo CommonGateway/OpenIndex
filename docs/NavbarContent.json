@@ -18,7 +18,7 @@
     },
     "subItems": [
       {
-        "label": "Open Catalogi",
+        "label": "OpenCatalogi",
         "type": "internalMarkdown",
         "current": {
           "pathname": "/indexes/open-catalogi"

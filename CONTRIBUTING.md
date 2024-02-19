@@ -1,10 +1,10 @@
-# Bijdragen aan OpenServices
+# Bijdragen aan OpenIndex
 
-Wij waarderen uw interesse om bij te dragen aan OpenServices! OpenServices is een gemeenschapsgericht project dat streeft naar verbetering en uitbreiding met de hulp van ontwikkelaars, gebruikers en enthousiastelingen in de overheidstechnologie. Hier vindt u richtlijnen over hoe u kunt bijdragen.
+Wij waarderen uw interesse om bij te dragen aan OpenIndex! OpenIndex is een gemeenschapsgericht project dat streeft naar verbetering en uitbreiding met de hulp van ontwikkelaars, gebruikers en enthousiastelingen in de overheidstechnologie. Hier vindt u richtlijnen over hoe u kunt bijdragen.
 
 ## Hoe kan ik bijdragen?
 
-Er zijn verschillende manieren waarop u kunt bijdragen aan OpenServices, waaronder:
+Er zijn verschillende manieren waarop u kunt bijdragen aan OpenIndex, waaronder:
 
 - **Bug rapporten:** Als u een bug vindt, kunt u deze melden via onze GitHub issues pagina.
 - **Feature verzoeken:** Heeft u ideeën voor nieuwe functies of verbeteringen? Voel u vrij om ze te delen als een issue.
@@ -19,7 +19,7 @@ Dit project en iedereen die bijdraagt, is gebonden aan onze Gedragscode. Door de
 
 Een bug wordt gedefinieerd als een *objectieve, verifieerbare fout*. Voordat u een bug rapport indient, zorg ervoor dat u de volgende stappen hebt gevolgd:
 
-1. Update naar de meest recente versie van OpenServices om te zien of het probleem nog steeds bestaat.
+1. Update naar de meest recente versie van OpenIndex om te zien of het probleem nog steeds bestaat.
 2. Zoek in de issue tracker om te zien of de bug al is gerapporteerd. Als dit het geval is, voeg dan eventuele extra opmerkingen toe aan de bestaande rapportage.
 
 In uw rapport, geef alstublieft een duidelijke beschrijving van het probleem, inclusief stappen om het te reproduceren, en, indien mogelijk, een korte demonstratie van het probleem.
@@ -36,14 +36,14 @@ Voor het indienen van uw werk, volg deze stappen:
 
 ## Licentie
 
-Door bij te dragen aan OpenServices, gaat u ermee akkoord dat uw bijdragen worden gelicentieerd onder dezelfde MIT Licentie als het project.
+Door bij te dragen aan OpenIndex, gaat u ermee akkoord dat uw bijdragen worden gelicentieerd onder dezelfde MIT Licentie als het project.
 
 ## Vragen?
 
-Heeft u vragen of feedback, neem dan contact op via info@conduction.nl.
+Heeft u vragen of feedback, neem dan contact op via [info@conduction.nl](mailto:info@conduction.nl).
 
-Bedankt voor uw interesse in het verbeteren van OpenServices!
+Bedankt voor uw interesse in het verbeteren van OpenIndex!
 
 ---
 
-Dit `CONTRIBUTING.md` bestand biedt een basis voor hoe externe bijdragers kunnen deelnemen aan het project. Afhankelijk van de specifieke behoeften en beleid van OpenServices, kunnen aanvullende secties worden toegevoegd, zoals specifieke coding conventies, testrichtlijnen, en meer gedetailleerde instructies voor het indienen van pull requests.
+Dit `CONTRIBUTING.md` bestand biedt een basis voor hoe externe bijdragers kunnen deelnemen aan het project. Afhankelijk van de specifieke behoeften en beleid van OpenIndex, kunnen aanvullende secties worden toegevoegd, zoals specifieke coding conventies, testrichtlijnen, en meer gedetailleerde instructies voor het indienen van pull requests.
