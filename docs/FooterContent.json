@@ -11,7 +11,7 @@
       {
         "value": "Github",
         "ariaLabel": "Github",
-        "link": "https://github.com/OpenCatalogi",
+        "link": "https://github.com/CommonGateway/OpenIndex",
         "icon": { "prefix": "fab", "icon": "github", "placement": "left" }
       }
     ]
@@ -52,24 +52,6 @@
         "internalMarkdown": {
           "directoryName": "Handleidingen",
           "fileName": "Frontend"
-        },
-        "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
-      },
-      {
-        "value": "Publiccode",
-        "ariaLabel": "Publiccode",
-        "internalMarkdown": {
-          "directoryName": "Handleidingen",
-          "fileName": "Publiccode"
-        },
-        "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
-      },
-      {
-        "value": "Publicorganisation",
-        "ariaLabel": "Publicorganisation",
-        "internalMarkdown": {
-          "directoryName": "Handleidingen",
-          "fileName": "Publicorganisation"
         },
         "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
       },

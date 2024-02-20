@@ -1,9 +1,9 @@
-# Over Open Index
+# Over OpenIndex
 
-
-Open Index is een innovatiefe Zoekindex gebaseerd op [Open Registers](https://openregisters.app/), ontworpen om aan de hand van een gefederaliseerde datastructuur openbaare data snel en gemakkenlijk doorzoekbaar te maken. Het vormd daarme de kern van de commonground oplossingen [Open Catalogi](https://opencatalogi.nl/) en [OpenWoo.app](https://openwoo.app/). 
+OpenIndex is een innovatieve Zoekindex gebaseerd op [OpenRegisters](https://openregisters.app/), ontworpen om aan de hand van een gefederaliseerde datastructuur openbare data snel en gemakkelijk doorzoekbaar te maken. Het vormt daarmee de kern van de Common Ground oplossingen [Open Catalogi](https://opencatalogi.nl/) en [OpenWoo.app](https://openwoo.app/).
 
 ## Kernvoordelen
+
 - **Gefedereerde Datastructuur**: Integreert naadloos diverse dataopslagplaatsen in een uniform kader, wat efficiënt datamanagement en toegang mogelijk maakt.
 - **Geavanceerde Zoekmogelijkheden**: Biedt uitgebreide zoekfunctionaliteiten over gefedereerde databronnen, wat zorgt voor snelle en nauwkeurige gegevensopvraging.
 - **Flexibiliteit van Open Source**: Gebaseerd op open-source principes, bevordert OpenIndex transparantie, samenwerking en continue verbetering.
@@ -16,10 +16,11 @@ Open Index is een innovatiefe Zoekindex gebaseerd op [Open Registers](https://op
 
 ## Installatie
 
-### Locale Installatie
+### Lokale Installatie
+
 #### Vereisten
 
-- Een werkende installatie van [Open Registers](https://openregisters.app/).
+- Een werkende installatie van [OpenRegisters](https://openregisters.app/).
 
 #### Stap-voor-stap Installatie
 
@@ -27,18 +28,17 @@ Open Index is een innovatiefe Zoekindex gebaseerd op [Open Registers](https://op
 2. Installeer Open Index: `composer require commongateway/openindex`
 3. Configureer Open Index voor verder gebruik
 
-
 ## Gebruik
 
 Na installatie en configuratie kunt u beginnen met het definiëren van uw registers binnen Open Index. Dit houdt in dat u de structuur van uw data en de API-endpoints specificeert, waarna Open Index de rest afhandelt.
 
 ## Bijdragen
 
-Bijdragen aan Open Index zij welkom! Of het nu gaat om het rapporteren van een bug, het voorstellen van een nieuwe feature, of het indienen van code wijzigingen, bekijk onze [CONTRIBUTING.md](CONTRIBUTING.md)  voor meer informatie over hoe u kunt bijdragen.
+Bijdragen aan OpenIndex? Graag! Of het nu gaat om het rapporteren van een bug, het voorstellen van een nieuwe feature, of het indienen van code wijzigingen, bekijk onze [CONTRIBUTING.md](CONTRIBUTING.md)  voor meer informatie over hoe u kunt bijdragen.
 
 ## Licentie
 
-Open Index is uitgegeven onder een EUPL 1.2 licentie. Zie het [LICENSE.md](LICENSE.md) bestand in onze GitHub repository voor meer details.
+OpenIndex is uitgegeven onder een EUPL 1.2 licentie. Zie het [LICENSE.md](LICENSE.md) bestand in onze GitHub repository voor meer details.
 
 ## Contact
 

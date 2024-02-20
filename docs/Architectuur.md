@@ -1,6 +1,6 @@
-## Architectuur
+# Architectuur
 
-Open index is gebaseerd op het Open Registers framework
+OpenIndex is gebaseerd op het OpenRegisters framework
 
 - **Gefedereerde Datastructuur**: Integreert naadloos verschillende dataopslagplaatsen zoals Elasticsearch en MongoDB in een uniform kader, waardoor efficiënt datamanagement en toegang mogelijk zijn.
 - **Geavanceerde Zoekmogelijkheden**: Biedt uitgebreide zoekfunctionaliteiten over gefedereerde databronnen heen, wat zorgt voor snelle en accurate data-opvragingen.
