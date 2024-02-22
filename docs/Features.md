@@ -1,3 +1,3 @@
 ## Functies
 
-Open Index is een innovatiefe Zoekindex gebaseerd op [Open Registers](https://openregisters.app/) en 
+OpenIndex is een innovatieve Zoekindex gebaseerd op [OpenRegisters](https://openregisters.app/)
