@@ -16,6 +16,9 @@ jobs:
       - name: Deploy Product Github Page
         uses: OpenCatalogi/productpage-action@latest
         with:
+          # Links
+          SLACK_URL: "https://samenorganiseren.slack.com/archives/C03JLP1EUH4"
+          READ_THE_DOCS_URL: "false"
           github_repository_name_as_prefix: false
           github_repository_url: https://github.com/CommonGateway/OpenIndex
           github_api_base_url: https://api.github.com/repos/CommonGateway/OpenIndex/contents
