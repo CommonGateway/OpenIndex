@@ -2,7 +2,7 @@
 
 ## 1 Wat is de naam van het initiatief dat je wilt aanmelden?
 
-OpenIndex
+Open Index
 
 ## 2 Wat voor type product is het initiatief?
 
@@ -29,32 +29,53 @@ Overkoepelend/ randvoorwaardelijk voor CG
 ## 7 Welk type organisaties zijn betrokken?
 
 * Gemeenten
-
 * Leveranciers
-
 * VNG
-
 * Ketenpartners
 
 ## 8 Welke gemeenten zijn aangesloten bij de realisatie van dit initiatief?
 
-N.V.T 
+Rotterdam
+Gouda
+Noordwijk
+Tubbergen
+Epe
+Dinkelland
+Leiden
+Roermond
+Assen
+Hilversum
+Haarlemermeer
+Enschede
+Eindhoven
+Hardewijk
 
 ## 9 Welke gemeenten maken gebruik van dit initiatief?
 
-N.V.T 
+Rotterdam
+Buren
+Epe
+Roozendaal
+Gouda
+Noordwijk
+Zutphen
 
 ## 10 Welke leveranciers zijn betrokken?
 
 Conduction B.V 
+Yard
+Acato
+Sim Groep
+Xxllnc
 
 ## 11 Wat is de startdatum van het initiatief
 
-Geef de datum op (dd-MM-yyyy)
+01-06-2023
 
 ## 12 Wanneer wordt verwacht dat het initiatief ready for use  is? Of sinds wanneer is het initiatief ready for use? (Let er op dat dit na de startdatum is)
 
-Geef de datum op (dd-MM-yyyy)
+01-11-2023
+
 
 ## 13 Welke organisatie wordt aangehouden als contact organisatie?
 
@@ -119,15 +140,7 @@ Op te vragen bij elverancier
 
 ## 27 In welke fase bevindt het initiatief zich?
 
-* Idee (nog geen concrete opbrengsten)
-
-* Initiatie (al een snelle POC)
-
-* Realisatie (gaat binnenkort draaien bij eerste gemeenten)
-
 * Opschaling (draait bij enkele gemeenten, nu op zoek naar verbreding)
-
-* Doorontwikkeling en beheer (stabiel, onderdeel gevestigde orde)
 
 ## 28 Waar zijn jullie tegenaan gelopen? In zowel ontwikkeling en waar van toepassing bij de implementatie Noem de een tot drie grootste punten
 
