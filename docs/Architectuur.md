@@ -2,7 +2,7 @@
 
 ## Inleiding
 
-Open Index, gebaseerd op [Open Registers](https://openregisters.app/), is een innovatieve zoekindex ontworpen om openbare data snel en gemakkelijk doorzoekbaar te maken aan de hand van een gefederaliseerde datastructuur. Dit maakt Open Index tot de kern van de Common Ground oplossingen zoals [OpenCatalogi](https://opencatalogi.nl/) en [OpenWoo.app](https://openwoo.app/).
+Open Index is een innovatieve zoekindex ontworpen om openbare data snel en gemakkelijk doorzoekbaar te maken aan de hand van een gefederaliseerde datastructuur. Dit maakt Open Index tot de kern van de Common Ground oplossingen zoals [OpenCatalogi](https://opencatalogi.nl/) en [OpenWoo.app](https://openwoo.app/).
 
 ## Wat voor type product is het initiatief?
 
