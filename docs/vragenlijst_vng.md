@@ -95,7 +95,7 @@ Ruben van der Linde
 
 ## 17 Wat is een korte omschrijving van het product?
 
-Integraal zoeken in een gefedereerde zoekindex van overheidsdata
+Bron oversteigend en integraal zoeken voor overheids, en federaal zoeken in meerdere organisaties tegelijkertijd.
 
 ## 18 Hoeverre draagt het initiatief volgens jou bij aan de wendbaarheid van gemeenten?
 
@@ -123,7 +123,7 @@ Hoewel Open Index zich primair richt op het verbeteren van de toegankelijkheid v
 
 ## 24 Waar staat informatie over de planning? Voeg indien mogelijk de link toe
 
-Op te vragen bij leverancier
+Deze informatie wordt bijgehouden op de website van het product: [openindex.online](https://openindex.online)
 
 ## 25 Op welke laag of op welke lagen bevindt dit initiatief zich
 
