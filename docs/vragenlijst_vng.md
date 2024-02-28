@@ -6,16 +6,11 @@ Open Index
 
 ## 2 Wat voor type product is het initiatief?
 
-- Toepassing (bruikbare oplossing)
+- Component 
 
 ## 3 Indien een toepassing, welke componenten zijn hierin opgenomen?
 
-- FSC/NLX
-
-- Objectstore(MonggoDB)
-- Symfony
-- API Platform
-- Database(MySQL/PostgrSQL/MsSQL)
+- Open Registers
 
 ## 4 Indien het initiatief software betreft, is het parallel te gebruiken naast de bestaande software die het moet vervangen?
 
@@ -105,7 +100,7 @@ Ruben van der Linde
 
 ## 17 Wat is een korte omschrijving van het product?
 
-Bron oversteigend en integraal zoeken voor overheids, en federaal zoeken in meerdere organisaties tegelijkertijd.
+Bron oversteigend en integraal zoeken voor overheidsorganisaties, en federaal zoeken in meerdere organisaties tegelijkertijd.
 
 ## 18 Hoeverre draagt het initiatief volgens jou bij aan de wendbaarheid van gemeenten?
 
@@ -133,7 +128,7 @@ Hoewel Open Index zich primair richt op het verbeteren van de toegankelijkheid v
 
 ## 24 Waar staat informatie over de planning? Voeg indien mogelijk de link toe
 
-Deze informatie wordt bijgehouden op de website van het product: [openindex.online](https://openindex.online)
+Deze informatie wordt bijgehouden op de website van het product: [https://index.openregisters.app/](https://index.openregisters.app/)
 
 ## 25 Op welke laag of op welke lagen bevindt dit initiatief zich
 
@@ -153,7 +148,9 @@ NL-GOV profiel voor cloud events
 
 ## 28 Waar zijn jullie tegenaan gelopen? In zowel ontwikkeling en waar van toepassing bij de implementatie Noem de een tot drie grootste punten
 
-(Voer uw antwoord in)
+- Sterke afhankenlijkheid van overheden op commerciele partijen voer zoek oplossingen
+- Heeeeeeeeeeel veel lagacy applicaties en bronnen die onderling sterk verschillen
+- PKI ahankenlijkheid van FSC terwijl PKI geen geldig internationaal certificaat is
 
 ## 29 Zijn er nog vragen naar aanleiding van dit intakeformulier?
 
