@@ -38,12 +38,20 @@ Voor het indienen van uw werk, volg deze stappen:
 
 Door bij te dragen aan OpenIndex, gaat u ermee akkoord dat uw bijdragen worden gelicentieerd onder dezelfde MIT Licentie als het project.
 
+## Leveranciers
+
+Wij waarderen de bijdragen van onze leveranciers aan de doorontwikkeling en support van onze projecten. Voor bijdragen, neem contact op via <samenwerken@conduction.nl> of de vermelde contactgegevens. Samenwerking versterkt onze diensten en innoveert.
+
+| Leverancier | Diensten | Contactgegevens |
+|-------------|---------------------|---------|
+|    Conduction         |       Doorontwikkeling, Support     |     <samenwerken@conduction.nl>    |
+|      Yard     |         Doorontwikkeling            |         |
+|       Acato      |     Doorontwikkeling                |         |
+|      SIMgroep       |      Doorontwikkeling               |         |
+|      xxllnc       |        Doorontwikkeling             |         |
+
 ## Vragen?
 
 Heeft u vragen of feedback, neem dan contact op via [info@conduction.nl](mailto:info@conduction.nl).
 
 Bedankt voor uw interesse in het verbeteren van OpenIndex!
-
----
-
-Dit `CONTRIBUTING.md` bestand biedt een basis voor hoe externe bijdragers kunnen deelnemen aan het project. Afhankelijk van de specifieke behoeften en beleid van OpenIndex, kunnen aanvullende secties worden toegevoegd, zoals specifieke coding conventies, testrichtlijnen, en meer gedetailleerde instructies voor het indienen van pull requests.
