@@ -15,6 +15,7 @@ OpenIndex is een innovatieve Zoekindex gebaseerd op [OpenRegisters](https://open
 - **Community-Gedreven Innovatie**: Maakt gebruik van de collectieve expertise en bijdragen van de open-sourcegemeenschap voor voortdurende ontwikkeling en verbeteringen.
 
 ## Installatie
+
 Open Index is gebouwd om gemakkenlijk locaal te kunnen worden geinstalleerd voor development doeleinden of online op een server of kubernetes/haven platform. Leest meer onder [INSTALLATION.md](INSTALLATION.md).
 
 ## Bijdragen

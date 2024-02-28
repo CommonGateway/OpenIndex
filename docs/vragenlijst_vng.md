@@ -10,7 +10,12 @@ Open Index
 
 ## 3 Indien een toepassing, welke componenten zijn hierin opgenomen?
 
-Open Index integreert diverse dataopslagplaatsen zoals Elasticsearch en MongoDB, en biedt een zoekindex voor openbare gegevens, wat ondersteuning biedt voor transparantie tussen overheidsinstanties.
+- FSC/NLX
+
+- Objectstore(MonggoDB)
+- Symfony
+- API Platform
+- Database(MySQL/PostgrSQL/MsSQL)
 
 ## 4 Indien het initiatief software betreft, is het parallel te gebruiken naast de bestaande software die het moet vervangen?
 
@@ -18,7 +23,7 @@ Ja, Open Index is ontworpen om naast bestaande systemen te functioneren, waardoo
 
 ## 5 Indien een toepassing, pitch je product Waarom zouden anderen moeten mee doen met de ontwikkeling of waarom zouden andere gemeenten jouw product moeten implementeren
 
-"Open Index revolutioneert de toegang tot en het beheer van overheidsdata door diverse dataopslagplaatsen zoals Elasticsearch en MongoDB naadloos te integreren. Dit platform biedt een ongeëvenaarde zoekindex voor openbare gegevens, versnelt geïnformeerde besluitvorming, en ondersteunt transparantie tussen overheidsinstanties. Perfect voor elke instantie die streeft naar betere data-toegankelijkheid en interoperabiliteit, maakt Open Index de weg vrij voor een slimmere, meer verbonden overheid."
+Open Index revolutioneert de toegang tot en het beheer van overheidsdata door diverse dataopslagplaatsen zoals Elasticsearch en MongoDB naadloos te integreren. Dit platform biedt een ongeëvenaarde zoekindex voor openbare gegevens, versnelt geïnformeerde besluitvorming, en ondersteunt transparantie tussen overheidsinstanties. Perfect voor elke instantie die streeft naar betere data-toegankelijkheid en interoperabiliteit, maakt Open Index de weg vrij voor een slimmere, meer verbonden overheid.
 
 ## 6 In welk domein past het initiatief?
 
@@ -26,48 +31,53 @@ Overkoepelend/ randvoorwaardelijk voor CG
 
 ## 7 Welk type organisaties zijn betrokken?
 
-- Gemeenten
-- Leveranciers
-- VNG
-- Ketenpartners
+Conduction B.V (Via OpenWoo.app en  OpenCatalogi)
+Yard (Via OpenWoo.app)
+Acato (Via OpenWoo.app)
+Sim Groep (Via OpenWoo.app en  OpenCatalogi)
+Xxllnc (Via OpenWoo.app en Open Registers | Klanten)
 
 ## 8 Welke gemeenten zijn aangesloten bij de realisatie van dit initiatief?
 
-Rotterdam
-Gouda
-Noordwijk
-Tubbergen
-Epe
-Dinkelland
-Leiden
-Roermond
-Assen
-Hilversum
-Haarlemermeer
-Enschede
-Eindhoven
-Harderwijk
+Rotterdam (Via OpenCatalogi)
+Gouda (Via OpenCatalogi)
+Noordwijk (Via OpenWoo.app)
+Tubbergen (Via OpenWoo.app)
+Epe (Via OpenWoo.app)
+Dinkelland (Via OpenWoo.app)
+Leiden (Via OpenCatalogi)
+Roermond (Via OpenWoo.app)
+Assen (Via OpenWoo.app)
+Hilversum (Via OpenWoo.app)
+Haarlemermeer (Via OpenWoo.app)
+Enschede (Via OpenWoo.app)
+Eindhoven (Via OpenWoo.app)
+Hardewijk (Via OpenWoo.app)
 
 ## 9 Welke gemeenten maken gebruik van dit initiatief?
 
-Noordwijk
-Tubbergen
-Epe
-Rotterdam
-Gouda
-Zutphen
-Roosendaal
-Alkmaar
-Barendrecht
-Albrandswaard
-Ridderkerk
-Hoeksche Waard
-Sud-West Fryslan
-Fryske Marren
+Noordwijk (Via OpenWoo.app)
+Tubbergen (Via OpenWoo.app)
+Epe(Via OpenWoo.app)
+Rotterdam (Via OpenCatalogi)
+Gouda (Via OpenWoo.app)
+Zutphen (Via OpenWoo.app)
+Roosendaal (Via OpenWoo.app)
+Alkmaar (Via OpenCatalogi)
+Barendrecht (Via Open Registers | Klanten)
+Albrandswaard (Via Open Registers | Klanten)
+Ridderkerk (Via Open Registers | Klanten)
+Hoeksche Waard (Via Open Registers | Klanten)
+Sud-West Fryslan (Via Open Registers | Klanten)
+Fryske Marren (Via Open Registers | Klanten)
 
 ## 10 Welke leveranciers zijn betrokken?
 
-Conduction B.V, Yard, Acato, Sim Groep, Xxllnc
+Conduction B.V (Via OpenWoo.app en  OpenCatalogi)
+Yard (Via OpenWoo.app)
+Acato (Via OpenWoo.app)
+Sim Groep (Via OpenWoo.app en  OpenCatalogi)
+Xxllnc (Via OpenWoo.app en Open Registers | Klanten)
 
 ## 11 Wat is de startdatum van het initiatief
 
@@ -127,11 +137,15 @@ Deze informatie wordt bijgehouden op de website van het product: [openindex.onli
 
 ## 25 Op welke laag of op welke lagen bevindt dit initiatief zich
 
-- laag 2: toegang tot data/ API's
+laag 1: opslag en archivering
+laag 2: toegang tot data/ API's
 
 ## 26 Welke API-standaarden zijn toegepast?
 
-(Voer uw antwoord in)
+Haal Centraal
+API-standaarden voor ZGW-werken
+NL-API strategie
+NL-GOV profiel voor cloud events
 
 ## 27 In welke fase bevindt het initiatief zich?
 
@@ -142,3 +156,5 @@ Deze informatie wordt bijgehouden op de website van het product: [openindex.onli
 (Voer uw antwoord in)
 
 ## 29 Zijn er nog vragen naar aanleiding van dit intakeformulier?
+
+Nee
