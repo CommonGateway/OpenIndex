@@ -14,24 +14,15 @@ Het belangrijkste probleem dat federalisatie oplost is het bevragen van meerdere
 ## Configuratie per vraag (Request)
 Bij iedere vraag kan de vragende partij (requester) beinvloeden hoe hij wil dat het verzoek word afgehandeld. Hierbij ligt de focus met name op wanneer een federatieve bevraging word beschouwd als afgerond en welke bronnen worden uitgesloten.
 
-**_federalization_ use_sources**
-default *
-Bij * worden ALLE voor het federalisatie enpoint beschikbare bronnen gebruikt
-Als 1 of meer bronnen worden opgegeven (a.h.v uuid worden alleen deze gebruikt). E.g. _federalization_ use_sources[]=e60a4d0f-be8e-4f87-bd0d-d9e560cbd2fc&_federalization_ use_sources[]=b0d25db6-bef4-4158-a93c-99f5a5819f03
+| Parameter                           | Standaardwaarde | Beschrijving                                                                                                                                                                                                                                        |
+|-------------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **_federalization_use_sources**     | *               | Bij standaard (*) worden ALLE voor het federalisatie endpoint beschikbare bronnen gebruikt. Als één of meer bronnen worden opgegeven (a.h.v uuid), worden alleen deze gebruikt. Voorbeeld: gebruik van specifieke UUIDs voor geselecteerde bronnen. |
+| **_federalization_exclude_sources** | null            | Bronnen kunnen worden uitgesloten. Als dit wordt gebruikt, worden de opgegeven bronnen uitgesloten van de zoekopdracht. Voorbeeld: uitsluiten van specifieke UUIDs.                                                                                 |
+| **_federalization_timeout**         | 3000            | De maximale tijd (in milliseconden) die wordt gewacht op antwoorden van onderliggende bronnen voordat deze als timeout worden beschouwd (status 504).                                                                                               |
+| **_federalization_ignore_error**    | false           | Bepaalt of de zoekopdracht wordt afgebroken bij de eerste foutmelding van een bron (status code anders dan 2**). Als dit op true staat, wordt de zoekopdracht afgebroken bij de eerste foutmelding.                                                 |
+| **_federalization_relay_rating**    | true            | Gebruik de rating van de onderlingende bron ipv zelf een rating fast te stellen                                                                                                                                                                     |
 
-**_federalization_ exclude_sources**
-Default null
-Omgekeerd kunnen ook bronnen worden uitgesloten r e.g. _federalization_ exclude _sources[]=e60a4d0f-be8e-4f87-bd0d-d9e560cbd2fc&_federalization_ exclude _sources[]=b0d25db6-bef4-4158-a93c-99f5a5819f03
->*note*
->_federalization_ use_sources en _federalization_ exclude_sources kunnen niet gelijkeidig worden gebruikt. Als bijde query parameters worden meegegeven volgt er een foutmelding
-
-**_federalization_ timeout INT**
-default 3000
-De vragende partij kan aangeven hoe lang er geacht moet worden op onderliggende sources, als een source te lang duurt over antwoorden word deze op status 504 timeout gezet. Op deze manier wordt voorkomen dat één of meerdere langsame bronnen er voor zorgen dat de totale doorlooptijd van de zoekvraag uit de klauwen loopt
-
-**_federalization_ignore_error BOOl**
-default false
-Bepaald of de totale zoekvraag moet worden afgebroken op het moment dat er tijdens de zoekopdracht een bron een foutmelding geeft (status code anders dan 2**). Als deze op true staat word de zoekopdracht afgebroken bij de éérste foutmelding. Er wordt geen zoek resultaat terug gegeven maar een overzicht van de foutmelding binnen de bron die een foutstatus terug geeft.
+>*Opmerking:* `_federalization_use_sources` en `_federalization_exclude_sources` kunnen niet gelijktijdig worden gebruikt. Als beide query parameters worden meegegeven, volgt er een foutmelding.
 
 ## Vaste Configuratie
 Als configuratie per vraag kan op endpoint niveau worden overschreven door vaste query parameters op te geven.
@@ -103,7 +94,7 @@ Vervolgens word de result array geordend op `_rating`, pagination toegepast en e
 ``` 
 
 ## Simpel voorbeeld
-
+Laten we eens uitgaan van een federatief endpoint dat 5 indexen doorleverd. Al 5 de indexen beschicken over 5 objecten dus er zijn in totaal 25 objecten.
 
 
 
