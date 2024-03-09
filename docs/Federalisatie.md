@@ -89,12 +89,62 @@ Vervolgens word de result array geordend op `_rating`, pagination toegepast en e
       "_source": "123e4567-e89b-12d3-a456-426614174000",
       "name":""
     }
+    // Meer resultaten...
   ]
 }
 ``` 
 
 ## Simpel voorbeeld
-Laten we eens uitgaan van een federatief endpoint dat 5 indexen doorleverd. Al 5 de indexen beschicken over 5 objecten dus er zijn in totaal 25 objecten.
+Laten we eens uitgaan van een federatief endpoint dat 5 indexen doorleverd. Al 5 de indexen beschicken over 5 objecten dus er zijn in totaal 25 objecten. We gaan er even vanuit dat er een rating heeft plaatsgevonden
+
+| Bron 1            | Bron 2            | Bron 3            | Bron 4            | Bron 5            |
+|-------------------|-------------------|-------------------|-------------------|-------------------|
+| Minoes (90)       | Snorhaar (85)     | Whiskers (80)     | Luna (75)         | Tijger (70)       |
+| Bliksem (65)      | Poes (60)         | Simba (55)        | Nala (50)         | Bella (45)        |
+| Karel (40)        | Max (35)          | Garfield (30)     | Felix (25)        | Sylvester (20)    |
+| Oliver (15)       | Tommie (10)       | Socks (5)         | Snowball (95)     | Ginger (100)      |
+| Fluffy (88)       | Bandit (83)       | Misty (78)        | Shadow (73)       | Patches (68)      |
+
+Het totaal source bericht zou dan zijn (zonder rating en pagination)
+
+```json
+{
+  "_sources": [
+    {"id": "uuid-bron-1", "name": "Bron 1"},
+    {"id": "uuid-bron-2", "name": "Bron 2"},
+    {"id": "uuid-bron-3", "name": "Bron 3"},
+    {"id": "uuid-bron-4", "name": "Bron 4"},
+    {"id": "uuid-bron-5", "name": "Bron 5"}
+  ],
+  "results": [
+    {"name": "Muis", "_rating": 95, "_source": "uuid-bron-4"},
+    {"name": "Minoes", "_rating": 90, "_source": "uuid-bron-1"},
+    {"name": "Felix", "_rating": 88, "_source": "uuid-bron-5"},
+    {"name": "Snorretje", "_rating": 85, "_source": "uuid-bron-2"},
+    {"name": "Socks", "_rating": 83, "_source": "uuid-bron-1"},
+    {"name": "Whiskers", "_rating": 80, "_source": "uuid-bron-3"},
+    {"name": "Sylvester", "_rating": 77, "_source": "uuid-bron-2"},
+    {"name": "Luna", "_rating": 75, "_source": "uuid-bron-4"},
+    {"name": "Morris", "_rating": 72, "_source": "uuid-bron-3"},
+    {"name": "Tijger", "_rating": 70, "_source": "uuid-bron-5"},
+    {"name": "Oliver", "_rating": 67, "_source": "uuid-bron-4"},
+    {"name": "Pluisje", "_rating": 65, "_source": "uuid-bron-1"},
+    {"name": "Gizmo", "_rating": 62, "_source": "uuid-bron-5"},
+    {"name": "Binky", "_rating": 60, "_source": "uuid-bron-2"},
+    {"name": "Bella", "_rating": 55, "_source": "uuid-bron-3"},
+    {"name": "Max", "_rating": 50, "_source": "uuid-bron-4"},
+    {"name": "Simba", "_rating": 45, "_source": "uuid-bron-5"},
+    {"name": "Tommie", "_rating": 40, "_source": "uuid-bron-1"},
+    {"name": "Garfield", "_rating": 35, "_source": "uuid-bron-2"},
+    {"name": "Misty", "_rating": 30, "_source": "uuid-bron-3"},
+    {"name": "Sammy", "_rating": 25, "_source": "uuid-bron-4"},
+    {"name": "Nala", "_rating": 20, "_source": "uuid-bron-5"},
+    {"name": "Dikkie", "_rating": 15, "_source": "uuid-bron-1"},
+    {"name": "Poes", "_rating": 10, "_source": "uuid-bron-2"},
+    {"name": "Karel", "_rating": 5, "_source": "uuid-bron-3"}
+  ]
+}
+```
 
 
 
