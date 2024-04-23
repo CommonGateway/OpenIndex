@@ -11,41 +11,6 @@
     }
   },
   {
-    "label": "Indexen",
-    "type": "internalMarkdown",
-    "current": {
-      "pathname": "/indexes"
-    },
-    "subItems": [
-      {
-        "label": "OpenCatalogi",
-        "type": "internalMarkdown",
-        "current": {
-          "pathname": "/indexes/open-catalogi"
-        },
-        "handleClick": {
-          "internalMarkdown": {
-            "directoryName": "Handleidingen",
-            "fileName": "Installatie"
-          }
-        }
-      },
-      {
-        "label": "OpenWoo.app",
-        "type": "internalMarkdown",
-        "current": {
-          "pathname": "/indexes/open-woo-app"
-        },
-        "handleClick": {
-          "internalMarkdown": {
-            "directoryName": "Handleidingen",
-            "fileName": "Architectuur"
-          }
-        }
-      }
-    ]
-  },
-  {
     "label": "Objecten",
     "current": {
       "pathname": "/Objecten"
