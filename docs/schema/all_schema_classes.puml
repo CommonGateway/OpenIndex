@@ -1,0 +1,36 @@
+@startuml
+title: All schemas
+footer: Common Gateway Plugin | Commongateway | Openindex 
+header: Schema
+class Publicatie {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + afbeelding: string
+  + categorie: string
+  + portalUrl: string
+  + publicatiedatum: string
+  + organisatie: object
+  + bijlagen: array
+  + metadata: object
+  + onderwerp: object
+  + data: object
+}
+class MetadataWooVerzoek {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + afbeelding: string
+  + publicaties: integer
+}
+class Onderwerp {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + afbeelding: string
+  + publicaties: integer
+}
+@enduml
