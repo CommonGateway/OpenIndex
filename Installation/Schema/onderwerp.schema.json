@@ -45,7 +45,8 @@
         }
     },
     "required": [
-        "categorie",
-        "publicatiedatum"
+        "titel",
+        "samenvatting",
+        "beschrijving"
     ]
 }

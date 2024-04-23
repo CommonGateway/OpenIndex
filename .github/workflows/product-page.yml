@@ -22,6 +22,7 @@ jobs:
           github_repository_name_as_prefix: false
           github_repository_url: https://github.com/CommonGateway/OpenIndex
           github_api_base_url: https://api.github.com/repos/CommonGateway/OpenIndex/contents
+          github_docs_directory_paths: '[{"name": "Objecten","location": "/docs/schema"}]'
           navbar_content: 'https://raw.githubusercontent.com/CommonGateway/OpenIndex/master/docs/NavbarContent.json'
           footer_show_logo: true
           footer_logo_href: "https://conduction.nl/"

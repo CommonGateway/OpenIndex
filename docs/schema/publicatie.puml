@@ -1,0 +1,21 @@
+@startuml
+title: Publicatie
+footer: Common Gateway Plugin | Commongateway | Openindex 
+header: Schema
+
+class Publicatie {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + afbeelding: string
+  + categorie: string
+  + portalUrl: string
+  + publicatiedatum: string
+  + organisatie: object
+  + bijlagen: array
+  + metadata: object
+  + onderwerp: object
+  + data: object
+}
+@enduml
