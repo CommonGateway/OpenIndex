@@ -43,5 +43,39 @@
         }
       }
     ]
+  },
+  {
+    "label": "Documentatie",
+    "current": {
+      "pathname": "/Documentatie"
+    },
+    "subItems": [
+      {
+        "label": "Federalisatie",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Federalisatie"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "Federalisatie"
+          }
+        }
+      },
+      {
+        "label": "Architectuur",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Architectuur"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "Architectuur"
+          }
+        }
+      }
+    ]
   }
 ]
