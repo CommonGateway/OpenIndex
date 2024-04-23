@@ -1,0 +1,8 @@
+<?php
+return (object)[
+    'rootNamespace' => 'CommonGateway\OpenIndex',
+    'destDirectory' => 'docs/classes',
+    'format' => 'github',
+    'classes' => [
+    ],
+];
