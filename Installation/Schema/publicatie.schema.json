@@ -24,14 +24,14 @@
             "format": "text",
             "description":"Een korte samenvatting van de publicatie voor op de overzichts pagina",
             "minLength": 50,
-            "maxLength": 2500,
+            "maxLength": 255,
             "required": true
         },
         "beschrijving": {
             "type": "string",
             "format": "text",
             "description":"Een uitgebreide beschrijving van de publicatie voor weergave op de publicatie pagina",
-            "maxLength": 25000,
+            "maxLength": 2555,
             "required": true
         },
         "afbeelding": {
