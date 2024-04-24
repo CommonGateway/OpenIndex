@@ -54,7 +54,13 @@
         "publicatiedatum": {
             "description": "Datum vanaf wanneer deze publicatie vindbaar moet zijn, dit mag een datum in de toekomst of verleden zijn. Publicaties waarbij deze datum in de toekomst ligt of leeg is worden NIET weergegeven",
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "default": "now"
+        },
+        "featured": {
+            "description": "Datum vanaf wanneer deze publicatie vindbaar moet zijn, dit mag een datum in de toekomst of verleden zijn. Publicaties waarbij deze datum in de toekomst ligt of leeg is worden NIET weergegeven",
+            "type": "boolean",
+            "default": false
         },
         "organisatie": {
             "type": "object",
