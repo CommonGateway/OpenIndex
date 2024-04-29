@@ -1,6 +1,6 @@
 # Metadata TOOI Woo-verzoeken en -besluiten
 
-Inhoud van schriftelijke Woo-verzoeken en besluiten daarop, inclusief verstrekte informatie.     
+Inhoud van schriftelijke Woo-verzoeken en besluiten daarop, inclusief verstrekte informatie.
 
 ![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/metadata.tooi_verzoeken_en_besluiten.svg)
 
