@@ -1,0 +1,55 @@
+{
+    "title": "Metadata TOOI bereikbaarheidsgegevens",
+    "$id": "https://openwoo.app/schemas/metadata.tooi_bereikbaarheidsgegevens.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.0.1",
+    "type": "object",
+    "description": "Bereikbaarheidsinformatie van bestuursorganen en hun organisatieonderdelen.",
+    "properties": {
+        "tooiCategorieNaam": {
+            "type": "string",
+            "const":"bereikbaarheidsgegevens",
+            "description":"De naam van de TOOI categorie conform [diwoo metadata lijsten](https://standaarden.overheid.nl/diwoo/metadata/doc/0.9.1/diwoo-metadata-lijsten_xsd_Simple_Type_diwoo_scw_woo_informatiecategorieen)"
+        },
+        "tooiCategorieId": {
+            "type": "string",
+            "const":"c_89ee6784",
+            "description":"De tooiCategorieId van de TOOI categorie conform [diwoo metadata lijsten](https://standaarden.overheid.nl/diwoo/metadata/doc/0.9.1/diwoo-metadata-lijsten_xsd_Simple_Type_diwoo_scw_woo_informatiecategorieen)"
+        },
+        "tooiCategorieUri": {
+            "type": "string",
+            "const":"https://identifier.overheid.nl/tooi/def/thes/kern/c_89ee6784v",
+            "description":"De id van de categorie voorafgegaan door `https://identifier.overheid.nl/tooi/def/thes/kern/[tooiCategorieId]`"
+        },
+        "tooiThemaNaam": {
+            "type": "string",
+            "description":"De naam van de TOOI categorie conform [diwoo metadata lijsten](https://standaarden.overheid.nl/diwoo/metadata/doc/0.9.1/diwoo-metadata-lijsten_xsd_Simple_Type_diwoo_scw_woo_informatiecategorieen)"
+        },
+        "tooiThemaId": {
+            "type": "string",
+            "description":"De id van de TOOI categorie conform [diwoo metadata lijsten](https://standaarden.overheid.nl/diwoo/metadata/doc/0.9.1/diwoo-metadata-lijsten_xsd_Simple_Type_diwoo_scw_woo_informatiecategorieen)"
+        },
+        "tooiThemaUri": {
+            "type": "string",
+            "description":"De tooiThemaId van het thema voorafgegaan door `https://identifier.overheid.nl/tooi/def/thes/kern/[tooiThemaId]`"
+        },
+        "values": {
+            "type": "array",
+            "description":"Binnen KOOP Woo Index kunnen waardes niet uitlijnen op TOOI wel worden meegegeven in key value pair's. Deze zijn vervolgens wel doorzoekbaar maar geen onderdeel van de open.overheid.nl user interface",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "required": ["key", "value"]
+            }
+        }
+    },
+    "required": [
+    ]
+}

@@ -1,15 +1,14 @@
 # Federalisatie
 
-In de kern is federalisatie een relatief simpel proces, een binnen komende vraag word asynchroon doorgezet naar verschillende bronnen. Vervolgens worden de resultaten van deze bronnen ge-aggregeert tot een resultaat en terug gegeven aan de bevragen.
+In de kern is federalisatie een relatief simpel proces, een binnen komende vraag word asynchroon doorgezet naar verschillende bronnen. Vervolgens worden de resultaten van deze bronnen ge-aggregeert tot een resultaat en terug gegeven aan de vrager.
 
-Op deze manier ontstaat een federatief stelsel, ofwel een virtueel registers dat onder water bestaat uit meerdere registers. Dit vormt de kern onder de oplossingen OpenWoo.app en Open Catalogi. Maar is ook bijzonder bruikbaar voor berichten, zaken en andere registers.
+Op deze manier ontstaat een federatief stelsel, ofwel een virtueele index die onder water bestaat uit meerdere indexen. Dit vormt de kern onder de oplossingen [OpenCatalogi](https://opencatalogi.nl/) en [OpenWoo.app](https://openwoo.app/). Maar is ook bijzonder bruikbaar voor berichten, zaken en andere registers.
 
 Het belangrijkste probleem dat federalisatie oplost is het bevragen van meerdere bronnen zonder dat er een datalake hoeft te worden opgebowud.
 
 ## Flow
 
-
-
+![Federatieve bevragings flow](https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/docs/Federalisatie.svg)
 
 ## Configuratie per vraag (Request)
 Bij iedere vraag kan de vragende partij (requester) beinvloeden hoe hij wil dat het verzoek word afgehandeld. Hierbij ligt de focus met name op wanneer een federatieve bevraging word beschouwd als afgerond en welke bronnen worden uitgesloten.
@@ -38,7 +37,7 @@ De zoek service gaat er vanuit dat ieder aangeroepen bron een resultaat terug le
 
 ```json
 {
-     ”results”:[]
+  "results":[]
 }
 ``` 
 
@@ -146,6 +145,34 @@ Het totaal source bericht zou dan zijn (zonder rating en pagination)
 }
 ```
 
+## Discovery & Advertising
+Iedere instantie van Open Index houd naast de eigen index ook een lijst bij van andere Indexen. Deze lijst wordt gebruikt voor het asynchoon stellen van zoekvragen (zie ook federalisatie). Vanuit princiepe is deze lijst altijd openbaar. Op het moment dat een installaite van Open Index online komt moet deze ten minimale één andere Open Index installaite weten om gemeenschappenlijk ene federatief netwerk te vormen en zochzelf verer uit te breiden. Hierbij zijn de stappen als volgt
+
+1. Open Index Installatie komt online
+2. Er wordt minimaal één index toegevoegd aan de dicectory
+3. Installatie bevraagd iedere index uit haar eigen directory
+4. Installatie neemt directory van externe index over naar haar eigen directory (Discovery)
+5. Installatie meld zichzelf aan bij andere index (Advertising)
+6. Herhaal stap 3
+
+Op deze manier word er (relatief snel) per installatie een totaal directory opgebouwd van andere installaties.
 
 
+![Discovery flow](https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/docs/Discovery.svg)
+
+## Healthy en unhealthy indexen
+Het kan in de praktijk voorkomen dat een externe index verdwijnt (Bijvoorbeeld omdat deze word verwijderd door de beheerder) of kapot is. In dat geval wil je voorkomen dat er steeds asynchrone bevragingen op worden uitgevoerd.
+
+
+## Federatief zoeken buiten Open Index
+Federatief zoeken is een patroon dat door Open Index wordt gefaciltieerd boven op bestaande zoek oplossingen zo als elastic search en MongoDB. Doordat de resultaten van deze oplossingen worden gemapped naar het patroon federatief zoeken kunnen de onderliggende indexen worden gegregeerd. Het is echter ook mogenlijk om het patroon rechtstreek uit te leveren vanuit de registers zeld (het [framework Open Registers](https://openregisters.app/) ondersteund dit ook) dit heeft zowel voordelen als nadelen
+
+**Voordelen**
+- Er is geen (of een kleinere) organisatie brede index nodig
+- Het lijnt beter uit bij het architectuur princiepe data bij de bron
+
+**Nadelen**
+- Een register is geoptimaliseerd voor data betrouwbaarheid boven snelheid, en zal doorgaans iets langsamer zijn dan een gepsecialiseerde zoekoplossing
+- Er zullen veel bevragingen (en daarmee belasting) neerkomen bij de bron
+- Het aantal asynchrone bevragingen vanuit de federatieve zoekopdracht neemt toe, die wordt daardoor langsamer en zwaarder om uit te voeren. 
 

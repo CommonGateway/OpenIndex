@@ -4,7 +4,7 @@
     "$schema": "https://docs.openwoo.app/schemas/publicatie.schema.json",
     "version": "0.0.1",
     "type": "object",
-    "description": "Het publicatie object vormt de kern van Open Index, het fungeert als een metadata wrapper voor objecten en vormt daarmee het gemeen schappenlijk verband tussen de verschillende publcaties uit bijvoorbeeld de WOO en OC",
+    "description": "Het publicatie object vormt de kern van Open Index, het fungeert als een metadata wrapper voor objecten en vormt daarmee het gemeen schappenlijk verband tussen de verschillende publcaties uit bijvoorbeeld de WOO en OC.",
     "properties": {
         "id": {
             "type": "string",
@@ -24,14 +24,14 @@
             "format": "text",
             "description":"Een korte samenvatting van de publicatie voor op de overzichts pagina",
             "minLength": 50,
-            "maxLength": 2500,
+            "maxLength": 255,
             "required": true
         },
         "beschrijving": {
             "type": "string",
             "format": "text",
             "description":"Een uitgebreide beschrijving van de publicatie voor weergave op de publicatie pagina",
-            "maxLength": 25000,
+            "maxLength": 2555,
             "required": true
         },
         "afbeelding": {
@@ -41,12 +41,12 @@
         },
         "categorie": {
             "type": "string",
-            "description":"De categorie waarbinnen de publicatie valt, dit kunnen zelf gedefineerde categorien zijn of vooraf gedefineerd categorien (zo als woo_klacht of oc_publiccode)",
+            "description":"De categorie waarbinnen de publicatie valt, dit kunnen zelf gedefineerde categorien zijn of vooraf gedefineerd categorien",
             "minLength": 25,
             "maxLength": 255,
             "required": true
         },
-        "portalUrl": {
+        "portal": {
             "type": "string",
             "format": "url",
             "description":"Een optionele verwijzing naar een afwijkende publicatie pagina, bijvoorbeeld in het RIS"
@@ -67,16 +67,17 @@
             "$ref": "https://commongateway.nl/woo.organisatie.schema.json",
             "format": "json"
         },
+        "schema": {
+            "type": "string",
+            "format": "url",
+            "description":"Een publiek toegankenlijke verwijzing naar het object type (in schema.json) van de gepubliceerde data. Deze word zowel gebruikt om de aangeleverde data te valideren als eventueele afnemers te voorzien van context over de gevonden data",
+            "required": true
+        },
         "bijlagen": {
             "type": "array",
             "items": {
                 "$ref": "https://commongateway.nl/woo.bijlage.schema.json"
             },
-            "format": "json"
-        },
-        "metadata": {
-            "type": "object",
-            "$ref": "https://commongateway.nl/woo.metadata.schema.json",
             "format": "json"
         },
         "onderwerp": {
@@ -94,6 +95,7 @@
         "titel",
         "samenvatting",
         "beschrijving",
-        "categorie"
+        "categorie",
+        "metadata"
     ]
 }

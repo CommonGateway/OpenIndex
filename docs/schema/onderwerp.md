@@ -2,7 +2,7 @@
 
 Het onderwerp object is bedoeld om publicaties te clusteren in logisch samenhangende eenheden. Dit is vergelijkbaar met bijvoorbeeld themas
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/onderwerp.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/onderwerp.svg)
 
 ## Properties
 
