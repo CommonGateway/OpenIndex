@@ -1,13 +1,17 @@
 # Wet Open Overheid
 Open Index wordt binnen OpenWoo.app ingezet om een federatieve zoek index te faciliteren voor de wet open overheid
 
-
 ## Publicatie object
+De kern van de WOO oplossing vormt het oublicatie object van [Open Index](https://index.openregisters.app/), hier bovenop zijn er een aantal WOO specifieke metadatasets gedefineerd. Deze metadatasets lijnen uit met de TOOI categorien zo als die geerft zijn vanuit PLOOI en momenteel worden toegepast in de Woo Index van KOOP. Bij het synchronyseren van data uit de onderlinggende bronnen maakt de WOO service gebruik van mappings om de bronnen om te slaan naar publicatie objecten op Open Index
+
+## Wanneer welke cateogrie?
+De WOO service bepaald aan de hand van het label Woo_categorie (in het geval van sherpoint) of de woo_categorie eigenschap (in het geval van een zaaksysteem) naar welke metadata set een bron object word gemmapped
 
 ## TOOI specifieke waarden
 Open Index staat het toe dat organisaties zelf invulling geven aan bepaalde properties (zo als categorien en thema's) door middel van strings (zie ook het publicaite object) bij het omzetten naar TOOI kunnen echter alleen waarden uit de TOOI selectie lijsten worden toegepast. Vanuit TOOI zijn alle specifieke waarden toegeveogd aan [https://identifier.overheid.nl](https://standaarden.overheid.nl/tooi/waardelijsten/) dat betekend dat alle hieronder opgenomen TOOI id's ook kunnen worden gelezen als UIT onder base-uri: https://identifier.overheid.nl/tooi/def/thes/kern/[id].
 
 ### Categorien & Metadata
+
 
 De volledige lijst is (in lijn met [diwoo metadata lijsten](https://standaarden.overheid.nl/diwoo/metadata/doc/0.9.1/diwoo-metadata-lijsten_xsd_Simple_Type_diwoo_scw_woo_informatiecategorieen)).
 

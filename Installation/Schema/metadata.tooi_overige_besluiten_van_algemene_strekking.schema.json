@@ -1,7 +1,7 @@
 {
     "title": "Metadata TOOI overige besluiten van algemene strekking",
     "$id": "https://openwoo.app/schemas/metadata.tooi_overige_besluiten_van_algemene_strekking.schema.json",
-    "$schema": "https://docs.openwoo.app/schemas/metadata.tooi_overige_besluiten_van_algemene_strekking.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
     "description": "Overige besluiten van algemene strekking. ",

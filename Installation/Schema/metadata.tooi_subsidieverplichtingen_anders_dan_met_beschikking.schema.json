@@ -1,7 +1,7 @@
 {
     "title": "Metadata TOOI subsidieverplichtingen anders dan met beschikking",
     "$id": "https://openwoo.app/schemas/metadata.tooi_subsidieverplichtingen_anders_dan_met_beschikking.schema.json",
-    "$schema": "https://docs.openwoo.app/schemas/metadata.tooi_subsidieverplichtingen_anders_dan_met_beschikking.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
     "description": "Subsidieverplichtingen die niet via een beschikking lopen, specifiek bij Ministerie van Binnenlandse Zaken. ",

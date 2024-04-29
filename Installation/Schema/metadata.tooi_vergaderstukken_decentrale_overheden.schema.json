@@ -1,7 +1,7 @@
 {
     "title": "Metadata TOOI  vergaderstukken decentrale overheden  ",
     "$id": "https://openwoo.app/schemas/metadata.tooi_vergaderstukken_decentrale_overheden.schema.json",
-    "$schema": "https://docs.openwoo.app/schemas/metadata.tooi_vergaderstukken_decentrale_overheden.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
     "description": "Vergaderstukken en verslagen van diverse decentrale overheden en hun commissies.",

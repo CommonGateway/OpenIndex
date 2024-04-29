@@ -1,7 +1,7 @@
 {
     "title": "Metadata TOOI bereikbaarheidsgegevens",
-    "$id": "https://openwoo.app/schemas/metadata.tooi_bereikbaarheidsgegevens.schema",
-    "$schema": "https://docs.openwoo.app/schemas/metadata.tooi_bereikbaarheidsgegevens.schema",
+    "$id": "https://openwoo.app/schemas/metadata.tooi_bereikbaarheidsgegevens.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
     "description": "Bereikbaarheidsinformatie van bestuursorganen en hun organisatieonderdelen.",

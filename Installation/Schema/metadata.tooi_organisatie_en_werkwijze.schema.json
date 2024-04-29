@@ -1,7 +1,7 @@
 {
     "title": "Metadata TOOI organisatie en werkwijze",
     "$id": "https://openwoo.app/schemas/metadata.tooi_organisatie_en_werkwijze.schema.json",
-    "$schema": "https://docs.openwoo.app/schemas/metadata.tooi_organisatie_en_werkwijze.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
     "description": "Informatie over de organisatie en werkwijze van bestuursorganen.",

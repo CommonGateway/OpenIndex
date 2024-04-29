@@ -1,7 +1,7 @@
 {
     "title": "Metadata TOOI ontwerpen van wet- en regelgeving met adviesaanvraag",
-    "$id": "https://openwoo.app/schemas/metadata.tooi_ontwerpen_van_wet_en_regelgeving_met_adviesaanvraag.schema",
-    "$schema": "https://docs.openwoo.app/schemas/metadata.tooi_ontwerpen_van_wet_en_regelgeving_met_adviesaanvraag.schema",
+    "$id": "https://openwoo.app/schemas/metadata.tooi_ontwerpen_van_wet_en_regelgeving_met_adviesaanvraag.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
     "description": "Ontwerpen van wetgeving waarover extern advies is gevraagd, inclusief de adviesaanvraag.",

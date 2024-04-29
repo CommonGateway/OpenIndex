@@ -1,7 +1,7 @@
 {
     "title": "Metadata TOOI agenda’s en besluitenlijsten bestuurscolleges",
-    "$id": "https://openwoo.app/schemas/metadata.tooi_agendas_en_besluitenlijsten_bestuurscolleges.schema",
-    "$schema": "https://docs.openwoo.app/schemas/metadata.tooi_agendas_en_besluitenlijsten_bestuurscolleges.schema",
+    "$id": "https://openwoo.app/schemas/metadata.tooi_agendas_en_besluitenlijsten_bestuurscolleges.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
     "description": "Agenda’s en besluitenlijsten van vergaderingen van diverse bestuurlijke organen.  ",

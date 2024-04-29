@@ -1,7 +1,7 @@
 {
     "title": "Metadata TOOI wetten en algemeen verbindende voorschriften",
-    "$id": "https://openwoo.app/schemas/metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.schema",
-    "$schema": "https://docs.openwoo.app/schemas/metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.schema",
+    "$id": "https://openwoo.app/schemas/metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
     "description": "Wetten en andere algemeen verbindende voorschriften. ",

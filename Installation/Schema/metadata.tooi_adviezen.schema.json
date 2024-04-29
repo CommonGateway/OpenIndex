@@ -1,7 +1,7 @@
 {
     "title": "Metadata TOOI adviezen",
-    "$id": "https://openwoo.app/schemas/metadata.tooi_adviezen.schema",
-    "$schema": "https://docs.openwoo.app/schemas/metadata.tooi_adviezen.schema",
+    "$id": "https://openwoo.app/schemas/metadata.tooi_adviezen.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
     "description": "Adviezen over ontwerpen en andere onderwerpen van adviescolleges of -commissies, exclusief adviezen die betrekking hebben op individuele gevallen.",

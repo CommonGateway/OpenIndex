@@ -1,10 +1,10 @@
 {
     "title": "Metadata TOOI Woo-verzoeken en -besluiten",
-    "$id": "https://openwoo.app/schemas/metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.schema",
-    "$schema": "https://docs.openwoo.app/schemas/metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.schema",
+    "$id": "https://openwoo.app/schemas/metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
-    "description": "Inhoud van schriftelijke Woo-verzoeken en besluiten daarop, inclusief verstrekte informatie.     ",
+    "description": "Inhoud van schriftelijke Woo-verzoeken en besluiten daarop, inclusief verstrekte informatie.",
     "properties": {
         "tooiCategorieNaam": {
             "type": "string",

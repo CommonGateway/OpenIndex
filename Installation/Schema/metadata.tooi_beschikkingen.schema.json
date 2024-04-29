@@ -1,7 +1,7 @@
 {
     "title": "Metadata TOOI beschikkingen",
-    "$id": "https://openwoo.app/schemas/metadata.tooi_beschikkingen.schema",
-    "$schema": "https://docs.openwoo.app/schemas/metadata.tooi_beschikkingen.schema",
+    "$id": "https://openwoo.app/schemas/metadata.tooi_beschikkingen.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
     "description": "Beschikkingen, uitgezonderd specifieke categorieën.",
