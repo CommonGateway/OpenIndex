@@ -64,6 +64,19 @@
         }
       },
       {
+        "label": "Zoeken",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Zoeken"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "Zoeken"
+          }
+        }
+      },
+      {
         "label": "Architectuur",
         "type": "internalMarkdown",
         "current": {
@@ -73,6 +86,45 @@
           "internalMarkdown": {
             "directoryName": "Documentatie",
             "fileName": "Architectuur"
+          }
+        }
+      },
+      {
+        "label": "Installatie",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Installatie"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "INSTALLATION"
+          }
+        }
+      },
+      {
+        "label": "Bijdragen",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Bijdragen"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "CONTRIBUTING"
+          }
+        }
+      },
+      {
+        "label": "Organisatie",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Organisatie"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "GOVERNANCE"
           }
         }
       }

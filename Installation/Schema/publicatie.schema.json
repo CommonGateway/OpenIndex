@@ -46,7 +46,7 @@
             "maxLength": 255,
             "required": true
         },
-        "portalUrl": {
+        "portal": {
             "type": "string",
             "format": "url",
             "description":"Een optionele verwijzing naar een afwijkende publicatie pagina, bijvoorbeeld in het RIS"
@@ -67,16 +67,17 @@
             "$ref": "https://commongateway.nl/woo.organisatie.schema.json",
             "format": "json"
         },
+        "metadata": {
+            "type": "string",
+            "format": "url",
+            "description":"Een publiek toegankenlijke verwijzing naar het object type (in schema.json) van de gepubliceerde data. Deze word zowel gebruikt om de aangeleverde data te valideren als eventueele afnemers te voorzien van context over de gevonden data",
+            "required": true
+        },
         "bijlagen": {
             "type": "array",
             "items": {
                 "$ref": "https://commongateway.nl/woo.bijlage.schema.json"
             },
-            "format": "json"
-        },
-        "metadata": {
-            "type": "object",
-            "$ref": "https://commongateway.nl/woo.metadata.schema.json",
             "format": "json"
         },
         "onderwerp": {
@@ -94,6 +95,7 @@
         "titel",
         "samenvatting",
         "beschrijving",
-        "categorie"
+        "categorie",
+        "metadata"
     ]
 }
