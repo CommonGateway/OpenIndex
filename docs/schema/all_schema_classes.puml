@@ -49,7 +49,7 @@ class Publicatie {
   + publicatiedatum: string
   + featured: boolean
   + organisatie: object
-  + metadata: string
+  + schema: string
   + bijlagen: array
   + onderwerp: object
   + data: object
