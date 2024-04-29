@@ -2,7 +2,7 @@
 
 Vergaderstukken en verslagen van diverse decentrale overheden en hun commissies.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/metadata.tooi_vergaderstukken_decentrale_overheden.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/metadata.tooi_vergaderstukken_decentrale_overheden.svg)
 
 ## Properties
 
