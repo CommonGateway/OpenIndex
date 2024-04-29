@@ -30,15 +30,54 @@
         }
       },
       {
-        "label": "Onderwerp",
+        "label": "Bijlage",
         "type": "internalMarkdown",
         "current": {
-          "pathname": "/Objecten/Onderwerp"
+          "pathname": "/Objecten/Bijlage"
         },
         "handleClick": {
           "internalMarkdown": {
             "directoryName": "Objecten",
-            "fileName": "onderwerp"
+            "fileName": "bijlage"
+          }
+        }
+      },
+      {
+        "label": "Organisatie",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Objecten/Organisatie"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Objecten",
+            "fileName": "organisatie"
+          }
+        }
+      },
+      {
+        "label": "Thema",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Objecten/Thema"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Objecten",
+            "fileName": "thema"
+          }
+        }
+      },
+      {
+        "label": "Index",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Objecten/Index"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Objecten",
+            "fileName": "thema"
           }
         }
       }
@@ -50,6 +89,32 @@
       "pathname": "/Documentatie"
     },
     "subItems": [
+      {
+        "label": "OpenWoo.app",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Woo"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "Woo"
+          }
+        }
+      },
+      {
+        "label": "Open Catalogi",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/OC"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "OpenCatalogi"
+          }
+        }
+      },
       {
         "label": "Federalisatie",
         "type": "internalMarkdown",

@@ -1,7 +1,7 @@
 {
     "title": "Publicatie",
     "$id": "https://openwoo.app/schemas/publicatie.schema.json",
-    "$schema": "https://docs.openwoo.app/schemas/publicatie.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
     "description": "Het publicatie object vormt de kern van Open Index, het fungeert als een metadata wrapper voor objecten en vormt daarmee het gemeen schappenlijk verband tussen de verschillende publcaties uit bijvoorbeeld de WOO en OC.",
@@ -65,7 +65,8 @@
         "organisatie": {
             "type": "object",
             "$ref": "https://commongateway.nl/woo.organisatie.schema.json",
-            "format": "json"
+            "format": "json",
+            "description": "De organisatie horende bij dit publicatie object, in theorie kunnen meerdere organisaties één Open Index installatie delen maar we ontraden dit."
         },
         "schema": {
             "type": "string",

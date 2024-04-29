@@ -1,15 +1,15 @@
 {
-    "title": "Onderwerp",
-    "$id": "https://openwoo.app/schemas/onderwerp.schema.json",
-    "$schema": "https://docs.openwoo.app/schemas/onderwerp.schema.json",
+    "title": "Organisatie",
+    "$id": "https://openwoo.app/schemas/organisatie.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
-    "description": "Het onderwerp object is bedoeld om publicaties te clusteren in logisch samenhangende eenheden. Dit is vergelijkbaar met bijvoorbeeld themas",
+    "description": "Een organisatie die een publicatie of index ter beschicking steld",
     "properties": {
         "id": {
             "type": "string",
             "format": "uuid",
-            "description":"De unieke identifier van dit onderwerp"
+            "description":"De unieke identifier deze organisatie"
         },
         "titel": {
             "type": "string",
@@ -39,9 +39,21 @@
             "format": ["url","base64"],
             "description":"Een afbeelding voor bij het onderwerp, mag worden opgegeven als verwijzing `url` of `base64` encoded image"
         },
-        "publicaties": {
-            "type": "integer",
-            "description":"Het aantal publicaties dat bij dit onderwerp hoort"
+        "uuid": {
+            "type": "string"
+        },
+        "oin": {
+            "type": "string"
+        },
+        "tooi": {
+            "type": "string"
+        },
+        "rsin": {
+            "type": "string"
+        },
+        "naam": {
+            "type": "string",
+            "required": true
         }
     },
     "required": [
