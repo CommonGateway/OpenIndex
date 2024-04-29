@@ -10,5 +10,6 @@ class MetadataTOOIvergaderstukkenStaten-Generaal {
   + tooiThemaNaam: string
   + tooiThemaId: string
   + tooiThemaUri: string
+  + values: array
 }
 @enduml

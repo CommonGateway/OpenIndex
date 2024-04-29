@@ -10,5 +10,6 @@ class MetadataTOOIWoo-verzoekenen-besluiten {
   + tooiThemaNaam: string
   + tooiThemaId: string
   + tooiThemaUri: string
+  + values: array
 }
 @enduml

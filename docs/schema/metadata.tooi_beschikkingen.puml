@@ -10,5 +10,6 @@ class MetadataTOOIbeschikkingen {
   + tooiThemaNaam: string
   + tooiThemaId: string
   + tooiThemaUri: string
+  + values: array
 }
 @enduml

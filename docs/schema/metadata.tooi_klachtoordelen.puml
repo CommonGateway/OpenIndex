@@ -10,5 +10,6 @@ class MetadataTOOIklachtoordelen {
   + tooiThemaNaam: string
   + tooiThemaId: string
   + tooiThemaUri: string
+  + values: array
 }
 @enduml
