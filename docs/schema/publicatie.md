@@ -14,11 +14,11 @@ Het publicatie object vormt de kern van Open Index, het fungeert als een metadat
 | beschrijving | string | Een uitgebreide beschrijving van de publicatie voor weergave op de publicatie pagina | Yes |
 | afbeelding | string | Een afbeelding voor bij de publicatie, mag worden opgegeven als verwijzing `url` of `base64` encoded image | No |
 | categorie | string | De categorie waarbinnen de publicatie valt, dit kunnen zelf gedefineerde categorien zijn of vooraf gedefineerd categorien (zo als woo_klacht of oc_publiccode) | Yes |
-| portalUrl | string | Een optionele verwijzing naar een afwijkende publicatie pagina, bijvoorbeeld in het RIS | No |
+| portal | string | Een optionele verwijzing naar een afwijkende publicatie pagina, bijvoorbeeld in het RIS | No |
 | publicatiedatum | string | Datum vanaf wanneer deze publicatie vindbaar moet zijn, dit mag een datum in de toekomst of verleden zijn. Publicaties waarbij deze datum in de toekomst ligt of leeg is worden NIET weergegeven | No |
 | featured | boolean | Datum vanaf wanneer deze publicatie vindbaar moet zijn, dit mag een datum in de toekomst of verleden zijn. Publicaties waarbij deze datum in de toekomst ligt of leeg is worden NIET weergegeven | No |
 | organisatie | object | N/A | No |
+| metadata | string | Een publiek toegankenlijke verwijzing naar het object type (in schema.json) van de gepubliceerde data. Deze word zowel gebruikt om de aangeleverde data te valideren als eventueele afnemers te voorzien van context over de gevonden data | Yes |
 | bijlagen | array | N/A | No |
-| metadata | object | N/A | No |
 | onderwerp | object | N/A | No |
 | data | object | Het daad werkenlijk te publiceren object (mag niet groter zijn dan 15 mb) | No |

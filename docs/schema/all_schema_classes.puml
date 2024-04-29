@@ -41,12 +41,12 @@ class Publicatie {
   + beschrijving: string
   + afbeelding: string
   + categorie: string
-  + portalUrl: string
+  + portal: string
   + publicatiedatum: string
   + featured: boolean
   + organisatie: object
+  + metadata: string
   + bijlagen: array
-  + metadata: object
   + onderwerp: object
   + data: object
 }
