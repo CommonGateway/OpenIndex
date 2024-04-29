@@ -67,7 +67,7 @@
             "$ref": "https://commongateway.nl/woo.organisatie.schema.json",
             "format": "json"
         },
-        "metadata": {
+        "schema": {
             "type": "string",
             "format": "url",
             "description":"Een publiek toegankenlijke verwijzing naar het object type (in schema.json) van de gepubliceerde data. Deze word zowel gebruikt om de aangeleverde data te valideren als eventueele afnemers te voorzien van context over de gevonden data",

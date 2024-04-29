@@ -208,6 +208,6 @@ Binnen PLOOI en daarme erfgenaam TOOI worden er verschillende document soorten o
 
 ## Aanvullende logica
 
-- **WOO 1** Als er is gekozen voor een TOOI metadata set onder `metadata` dan worden `categorie`,`data.tooiCategorieNaam` ,`data.tooiCategorieId`,`data.tooiCategorieUri` automatisch gevuld. Deze zijn niet meer overschrijfbaar.
+- **WOO 1** Als er is gekozen voor een TOOI metadata set onder `schema` dan worden `categorie`,`data.tooiCategorieNaam` ,`data.tooiCategorieId`,`data.tooiCategorieUri` automatisch gevuld. Deze zijn niet meer overschrijfbaar.
 
 
