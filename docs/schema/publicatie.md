@@ -2,7 +2,7 @@
 
 Het publicatie object vormt de kern van Open Index, het fungeert als een metadata wrapper voor objecten en vormt daarmee het gemeen schappenlijk verband tussen de verschillende publcaties uit bijvoorbeeld de WOO en OC
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/publicatie.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/publicatie.svg)
 
 ## Properties
 
@@ -16,6 +16,7 @@ Het publicatie object vormt de kern van Open Index, het fungeert als een metadat
 | categorie | string | De categorie waarbinnen de publicatie valt, dit kunnen zelf gedefineerde categorien zijn of vooraf gedefineerd categorien (zo als woo_klacht of oc_publiccode) | Yes |
 | portalUrl | string | Een optionele verwijzing naar een afwijkende publicatie pagina, bijvoorbeeld in het RIS | No |
 | publicatiedatum | string | Datum vanaf wanneer deze publicatie vindbaar moet zijn, dit mag een datum in de toekomst of verleden zijn. Publicaties waarbij deze datum in de toekomst ligt of leeg is worden NIET weergegeven | No |
+| featured | boolean | Datum vanaf wanneer deze publicatie vindbaar moet zijn, dit mag een datum in de toekomst of verleden zijn. Publicaties waarbij deze datum in de toekomst ligt of leeg is worden NIET weergegeven | No |
 | organisatie | object | N/A | No |
 | bijlagen | array | N/A | No |
 | metadata | object | N/A | No |

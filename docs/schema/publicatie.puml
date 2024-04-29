@@ -12,6 +12,7 @@ class Publicatie {
   + categorie: string
   + portalUrl: string
   + publicatiedatum: string
+  + featured: boolean
   + organisatie: object
   + bijlagen: array
   + metadata: object
