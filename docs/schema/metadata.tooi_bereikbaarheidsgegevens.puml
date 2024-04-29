@@ -1,0 +1,14 @@
+@startuml
+title: MetadataTOOIbereikbaarheidsgegevens
+footer: Common Gateway Plugin | Commongateway | Openindex 
+header: Schema
+
+class MetadataTOOIbereikbaarheidsgegevens {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+@enduml

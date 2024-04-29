@@ -1,0 +1,165 @@
+@startuml
+title: All schemas
+footer: Common Gateway Plugin | Commongateway | Openindex 
+header: Schema
+class MetadataTOOIjaarplannenenjaarverslagen {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIagenda’senbesluitenlijstenbestuurscolleges {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIadviezen {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIontwerpenvanwet-enregelgevingmetadviesaanvraag {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class Publicatie {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + afbeelding: string
+  + categorie: string
+  + portal: string
+  + publicatiedatum: string
+  + featured: boolean
+  + organisatie: object
+  + metadata: string
+  + bijlagen: array
+  + onderwerp: object
+  + data: object
+}
+class MetadataTOOIconvenanten {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIvergaderstukkenStaten-Generaal {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIvergaderstukkendecentraleoverheden {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIorganisatieenwerkwijze {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIsubsidieverplichtingenandersdanmetbeschikking {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIWoo-verzoekenen-besluiten {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIbereikbaarheidsgegevens {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIoverigebesluitenvanalgemenestrekking {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class Onderwerp {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + afbeelding: string
+  + publicaties: integer
+}
+class MetadataTOOIbijvertegenwoordigendeorganeningekomenstukken {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIwettenenalgemeenverbindendevoorschriften {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIonderzoeksrapporten {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIklachtoordelen {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+class MetadataTOOIbeschikkingen {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+}
+@enduml
