@@ -1,0 +1,16 @@
+@startuml
+title: Index
+footer: Common Gateway Plugin | Commongateway | Openindex 
+header: Schema
+
+class Index {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + afbeelding: string
+  + url: string
+  + status: integer
+  + organisatie: object
+}
+@enduml

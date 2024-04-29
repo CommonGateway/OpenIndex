@@ -29,6 +29,28 @@ class MetadataTOOIadviezen {
   + tooiThemaUri: string
   + values: array
 }
+class Index {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + afbeelding: string
+  + url: string
+  + status: integer
+  + organisatie: object
+}
+class Bijlage {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + labels: array
+  + url: string
+  + documentText: string
+  + type: string
+  + extension: string
+  + size: integer
+}
 class MetadataTOOIontwerpenvanwet-enregelgevingmetadviesaanvraag {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
@@ -81,6 +103,14 @@ class MetadataTOOIvergaderstukkendecentraleoverheden {
   + tooiThemaUri: string
   + values: array
 }
+class Thema {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + afbeelding: string
+  + publicaties: integer
+}
 class MetadataTOOIorganisatieenwerkwijze {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
@@ -117,6 +147,18 @@ class MetadataTOOIbereikbaarheidsgegevens {
   + tooiThemaUri: string
   + values: array
 }
+class Organisatie {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + afbeelding: string
+  + uuid: string
+  + oin: string
+  + tooi: string
+  + rsin: string
+  + naam: string
+}
 class MetadataTOOIoverigebesluitenvanalgemenestrekking {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
@@ -125,14 +167,6 @@ class MetadataTOOIoverigebesluitenvanalgemenestrekking {
   + tooiThemaId: string
   + tooiThemaUri: string
   + values: array
-}
-class Onderwerp {
-  + id: string
-  + titel: string
-  + samenvatting: string
-  + beschrijving: string
-  + afbeelding: string
-  + publicaties: integer
 }
 class MetadataTOOIbijvertegenwoordigendeorganeningekomenstukken {
   + tooiCategorieNaam: string

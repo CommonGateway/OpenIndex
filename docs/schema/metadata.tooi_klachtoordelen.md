@@ -2,7 +2,7 @@
 
 Schriftelijke oordelen in klachtprocedures.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/metadata.tooi_klachtoordelen.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/metadata.tooi_klachtoordelen.svg)
 
 ## Properties
 

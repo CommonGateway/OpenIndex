@@ -2,7 +2,7 @@
 
 Het publicatie object vormt de kern van Open Index, het fungeert als een metadata wrapper voor objecten en vormt daarmee het gemeen schappenlijk verband tussen de verschillende publcaties uit bijvoorbeeld de WOO en OC.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/publicatie.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/publicatie.svg)
 
 ## Properties
 
@@ -17,7 +17,7 @@ Het publicatie object vormt de kern van Open Index, het fungeert als een metadat
 | portal | string | Een optionele verwijzing naar een afwijkende publicatie pagina, bijvoorbeeld in het RIS | No |
 | publicatiedatum | string | Datum vanaf wanneer deze publicatie vindbaar moet zijn, dit mag een datum in de toekomst of verleden zijn. Publicaties waarbij deze datum in de toekomst ligt of leeg is worden NIET weergegeven | No |
 | featured | boolean | Datum vanaf wanneer deze publicatie vindbaar moet zijn, dit mag een datum in de toekomst of verleden zijn. Publicaties waarbij deze datum in de toekomst ligt of leeg is worden NIET weergegeven | No |
-| organisatie | object | N/A | No |
+| organisatie | object | De organisatie horende bij dit publicatie object, in theorie kunnen meerdere organisaties één Open Index installatie delen maar we ontraden dit. | No |
 | schema | string | Een publiek toegankenlijke verwijzing naar het object type (in schema.json) van de gepubliceerde data. Deze word zowel gebruikt om de aangeleverde data te valideren als eventueele afnemers te voorzien van context over de gevonden data | No |
 | bijlagen | array | N/A | No |
 | onderwerp | object | N/A | No |

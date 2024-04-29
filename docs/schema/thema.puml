@@ -1,0 +1,14 @@
+@startuml
+title: Thema
+footer: Common Gateway Plugin | Commongateway | Openindex 
+header: Schema
+
+class Thema {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + afbeelding: string
+  + publicaties: integer
+}
+@enduml
