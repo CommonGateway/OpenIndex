@@ -1,0 +1,41 @@
+{
+    "title": "Metadata TOOI overige besluiten van algemene strekking",
+    "$id": "https://openwoo.app/schemas/metadata.tooi_overige_besluiten_van_algemene_strekking.schema.json",
+    "$schema": "https://docs.openwoo.app/schemas/metadata.tooi_overige_besluiten_van_algemene_strekking.schema.json",
+    "version": "0.0.1",
+    "type": "object",
+    "description": "Overige besluiten van algemene strekking. ",
+    "properties": {
+        "tooiCategorieNaam": {
+            "type": "string",
+            "const":"overige besluiten van algemene strekking",
+            "description":"De naam van de TOOI categorie conform [diwoo metadata lijsten](https://standaarden.overheid.nl/diwoo/metadata/doc/0.9.1/diwoo-metadata-lijsten_xsd_Simple_Type_diwoo_scw_woo_informatiecategorieen)"
+        },
+        "tooiCategorieId": {
+            "type": "string",
+            "const":"c_aab6bfc7",
+            "description":"De tooiCategorieId van de TOOI categorie conform [diwoo metadata lijsten](https://standaarden.overheid.nl/diwoo/metadata/doc/0.9.1/diwoo-metadata-lijsten_xsd_Simple_Type_diwoo_scw_woo_informatiecategorieen)"
+        },
+        "tooiCategorieUri": {
+            "type": "string",
+            "const":"https://identifier.overheid.nl/tooi/def/thes/kern/c_aab6bfc7",
+            "description":"De id van de categorie voorafgegaan door `https://identifier.overheid.nl/tooi/def/thes/kern/[tooiCategorieId]`"
+        },
+        "tooiThemaNaam": {
+            "type": "string",
+            "description":"De naam van de TOOI categorie conform [diwoo metadata lijsten](https://standaarden.overheid.nl/diwoo/metadata/doc/0.9.1/diwoo-metadata-lijsten_xsd_Simple_Type_diwoo_scw_woo_informatiecategorieen)"
+        },
+        "tooiThemaId": {
+            "type": "string",
+            "description":"De id van de TOOI categorie conform [diwoo metadata lijsten](https://standaarden.overheid.nl/diwoo/metadata/doc/0.9.1/diwoo-metadata-lijsten_xsd_Simple_Type_diwoo_scw_woo_informatiecategorieen)"
+        },
+        "tooiThemaUri": {
+            "type": "string",
+            "description":"De tooiThemaId van het thema voorafgegaan door `https://identifier.overheid.nl/tooi/def/thes/kern/[tooiThemaId]`"
+        }
+    },
+    "required": [
+        "categorie",
+        "publicatiedatum"
+    ]
+}

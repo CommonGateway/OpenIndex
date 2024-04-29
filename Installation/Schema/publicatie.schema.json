@@ -4,7 +4,7 @@
     "$schema": "https://docs.openwoo.app/schemas/publicatie.schema.json",
     "version": "0.0.1",
     "type": "object",
-    "description": "Het publicatie object vormt de kern van Open Index, het fungeert als een metadata wrapper voor objecten en vormt daarmee het gemeen schappenlijk verband tussen de verschillende publcaties uit bijvoorbeeld de WOO en OC",
+    "description": "Het publicatie object vormt de kern van Open Index, het fungeert als een metadata wrapper voor objecten en vormt daarmee het gemeen schappenlijk verband tussen de verschillende publcaties uit bijvoorbeeld de WOO en OC. Let er hierbij op dat ",
     "properties": {
         "id": {
             "type": "string",
@@ -41,7 +41,7 @@
         },
         "categorie": {
             "type": "string",
-            "description":"De categorie waarbinnen de publicatie valt, dit kunnen zelf gedefineerde categorien zijn of vooraf gedefineerd categorien (zo als woo_klacht of oc_publiccode)",
+            "description":"De categorie waarbinnen de publicatie valt, dit kunnen zelf gedefineerde categorien zijn of vooraf gedefineerd categorien",
             "minLength": 25,
             "maxLength": 255,
             "required": true
