@@ -18,7 +18,7 @@ Het publicatie object vormt de kern van Open Index, het fungeert als een metadat
 | publicatiedatum | string | Datum vanaf wanneer deze publicatie vindbaar moet zijn, dit mag een datum in de toekomst of verleden zijn. Publicaties waarbij deze datum in de toekomst ligt of leeg is worden NIET weergegeven | No |
 | featured | boolean | Datum vanaf wanneer deze publicatie vindbaar moet zijn, dit mag een datum in de toekomst of verleden zijn. Publicaties waarbij deze datum in de toekomst ligt of leeg is worden NIET weergegeven | No |
 | organisatie | object | N/A | No |
-| metadata | string | Een publiek toegankenlijke verwijzing naar het object type (in schema.json) van de gepubliceerde data. Deze word zowel gebruikt om de aangeleverde data te valideren als eventueele afnemers te voorzien van context over de gevonden data | Yes |
+| schema | string | Een publiek toegankenlijke verwijzing naar het object type (in schema.json) van de gepubliceerde data. Deze word zowel gebruikt om de aangeleverde data te valideren als eventueele afnemers te voorzien van context over de gevonden data | No |
 | bijlagen | array | N/A | No |
 | onderwerp | object | N/A | No |
 | data | object | Het daad werkenlijk te publiceren object (mag niet groter zijn dan 15 mb) | No |
