@@ -1,8 +1,8 @@
 # Federalisatie
 
-In de kern is federalisatie een relatief simpel proces, een binnen komende vraag word asynchroon doorgezet naar verschillende bronnen. Vervolgens worden de resultaten van deze bronnen ge-aggregeert tot een resultaat en terug gegeven aan de bevragen.
+In de kern is federalisatie een relatief simpel proces, een binnen komende vraag word asynchroon doorgezet naar verschillende bronnen. Vervolgens worden de resultaten van deze bronnen ge-aggregeert tot een resultaat en terug gegeven aan de vrager.
 
-Op deze manier ontstaat een federatief stelsel, ofwel een virtueel registers dat onder water bestaat uit meerdere registers. Dit vormt de kern onder de oplossingen OpenWoo.app en Open Catalogi. Maar is ook bijzonder bruikbaar voor berichten, zaken en andere registers.
+Op deze manier ontstaat een federatief stelsel, ofwel een virtueele index die onder water bestaat uit meerdere indexen. Dit vormt de kern onder de oplossingen [OpenCatalogi](https://opencatalogi.nl/) en [OpenWoo.app](https://openwoo.app/). Maar is ook bijzonder bruikbaar voor berichten, zaken en andere registers.
 
 Het belangrijkste probleem dat federalisatie oplost is het bevragen van meerdere bronnen zonder dat er een datalake hoeft te worden opgebowud.
 
@@ -147,5 +147,15 @@ Het totaal source bericht zou dan zijn (zonder rating en pagination)
 ```
 
 
+## Federatief zoeken buiten Open Index
+Federatief zoeken is een patroon dat door Open Index wordt gefaciltieerd boven op bestaande zoek oplossingen zo als elastic search en MongoDB. Doordat de resultaten van deze oplossingen worden gemapped naar het patroon federatief zoeken kunnen de onderliggende indexen worden gegregeerd. Het is echter ook mogenlijk om het patroon rechtstreek uit te leveren vanuit de registers zeld (het [framework Open Registers](https://openregisters.app/) ondersteund dit ook) dit heeft zowel voordelen als nadelen
 
+**Voordelen**
+- Er is geen (of een kleinere) organisatie brede index nodig
+- Het lijnt beter uit bij het architectuur princiepe data bij de bron
+
+**Nadelen**
+- Een register is geoptimaliseerd voor data betrouwbaarheid boven snelheid, en zal doorgaans iets langsamer zijn dan een gepsecialiseerde zoekoplossing
+- Er zullen veel bevragingen (en daarmee belasting) neerkomen bij de bron
+- Het aantal asynchrone bevragingen vanuit de federatieve zoekopdracht neemt toe, die wordt daardoor langsamer en zwaarder om uit te voeren. 
 
