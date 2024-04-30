@@ -1,0 +1,15 @@
+@startuml
+title: MetadataTOOIsubsidieverplichtingenandersdanmetbeschikking
+footer: Common Gateway Plugin | Commongateway | Openindex 
+header: Schema
+
+class MetadataTOOIsubsidieverplichtingenandersdanmetbeschikking {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+@enduml

@@ -2,60 +2,7 @@
 title: All schemas
 footer: Common Gateway Plugin | Commongateway | Openindex 
 header: Schema
-class MetadataTOOIjaarplannenenjaarverslagen {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataTOOIagenda’senbesluitenlijstenbestuurscolleges {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataTOOIadviezen {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + oprdachtgever: string
-  + onderdeelTaak: string
-  + onderwerp: string
-  + feitelijkMateriaal: boolean
-  + values: array
-}
-class Index {
-  + id: string
-  + titel: string
-  + samenvatting: string
-  + beschrijving: string
-  + afbeelding: string
-  + url: string
-  + status: integer
-  + organisatie: object
-}
-class Bijlage {
-  + id: string
-  + titel: string
-  + samenvatting: string
-  + beschrijving: string
-  + labels: array
-  + url: string
-  + documentText: string
-  + type: string
-  + extension: string
-  + size: integer
-}
-class MetadataTOOIontwerpenvanwet-enregelgevingmetadviesaanvraag {
+class MetadataTOOIwettenenalgemeenverbindendevoorschriften {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
   + tooiCategorieUri: string
@@ -80,16 +27,7 @@ class Publicatie {
   + onderwerp: object
   + data: object
 }
-class MetadataTOOIconvenanten {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataTOOIvergaderstukkenStaten-Generaal {
+class MetadataTOOIontwerpenvanwet-enregelgevingmetadviesaanvraag {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
   + tooiCategorieUri: string
@@ -107,6 +45,15 @@ class MetadataTOOIvergaderstukkendecentraleoverheden {
   + tooiThemaUri: string
   + values: array
 }
+class MetadataTOOIbijvertegenwoordigendeorganeningekomenstukken {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
 class Thema {
   + id: string
   + titel: string
@@ -115,7 +62,7 @@ class Thema {
   + afbeelding: string
   + publicaties: integer
 }
-class MetadataTOOIorganisatieenwerkwijze {
+class MetadataTOOIoverigebesluitenvanalgemenestrekking {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
   + tooiCategorieUri: string
@@ -124,7 +71,7 @@ class MetadataTOOIorganisatieenwerkwijze {
   + tooiThemaUri: string
   + values: array
 }
-class MetadataTOOIsubsidieverplichtingenandersdanmetbeschikking {
+class MetadataTOOIonderzoeksrapporten {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
   + tooiCategorieUri: string
@@ -133,7 +80,26 @@ class MetadataTOOIsubsidieverplichtingenandersdanmetbeschikking {
   + tooiThemaUri: string
   + values: array
 }
-class MetadataTOOIWoo-verzoekenen-besluiten {
+class MetadataTOOIconvenanten {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class Index {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + afbeelding: string
+  + url: string
+  + status: integer
+  + organisatie: object
+}
+class MetadataTOOIklachtoordelen {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
   + tooiCategorieUri: string
@@ -143,9 +109,15 @@ class MetadataTOOIWoo-verzoekenen-besluiten {
   + datumBesluit: string
   + datumOntvangst: string
   + termijnoverschrijding: string
+  + organisatieonderdeel: string
+  + functiebenaming: string
+  + gedraging: string
+  + bevindingen: string
+  + oordeel: string
+  + conclusies: string
   + values: array
 }
-class MetadataTOOIbereikbaarheidsgegevens {
+class MetadataTOOIvergaderstukkenStaten-Generaal {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
   + tooiCategorieUri: string
@@ -166,7 +138,19 @@ class Organisatie {
   + rsin: string
   + naam: string
 }
-class MetadataTOOIoverigebesluitenvanalgemenestrekking {
+class Bijlage {
+  + id: string
+  + titel: string
+  + samenvatting: string
+  + beschrijving: string
+  + labels: array
+  + url: string
+  + documentText: string
+  + type: string
+  + extension: string
+  + size: integer
+}
+class MetadataTOOIagenda’senbesluitenlijstenbestuurscolleges {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
   + tooiCategorieUri: string
@@ -175,7 +159,7 @@ class MetadataTOOIoverigebesluitenvanalgemenestrekking {
   + tooiThemaUri: string
   + values: array
 }
-class MetadataTOOIbijvertegenwoordigendeorganeningekomenstukken {
+class MetadataTOOIbereikbaarheidsgegevens {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
   + tooiCategorieUri: string
@@ -184,7 +168,7 @@ class MetadataTOOIbijvertegenwoordigendeorganeningekomenstukken {
   + tooiThemaUri: string
   + values: array
 }
-class MetadataTOOIwettenenalgemeenverbindendevoorschriften {
+class MetadataTOOIbeschikkingen {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
   + tooiCategorieUri: string
@@ -193,7 +177,7 @@ class MetadataTOOIwettenenalgemeenverbindendevoorschriften {
   + tooiThemaUri: string
   + values: array
 }
-class MetadataTOOIonderzoeksrapporten {
+class MetadataTOOIjaarplannenenjaarverslagen {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
   + tooiCategorieUri: string
@@ -202,7 +186,7 @@ class MetadataTOOIonderzoeksrapporten {
   + tooiThemaUri: string
   + values: array
 }
-class MetadataTOOIklachtoordelen {
+class MetadataTOOIWoo-verzoekenen-besluiten {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
   + tooiCategorieUri: string
@@ -212,15 +196,31 @@ class MetadataTOOIklachtoordelen {
   + datumBesluit: string
   + datumOntvangst: string
   + termijnoverschrijding: string
-  + organisatieonderdeel: string
-  + functiebenaming: string
-  + gedraging: string
-  + bevindingen: string
-  + oordeel: string
-  + conclusies: string
   + values: array
 }
-class MetadataTOOIbeschikkingen {
+class MetadataTOOIorganisatieenwerkwijze {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class MetadataTOOIadviezen {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + oprdachtgever: string
+  + onderdeelTaak: string
+  + onderwerp: string
+  + feitelijkMateriaal: boolean
+  + values: array
+}
+class MetadataTOOIsubsidieverplichtingenandersdanmetbeschikking {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
   + tooiCategorieUri: string
