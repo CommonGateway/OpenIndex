@@ -2,7 +2,7 @@
 
 Een thematische clustering van publicaties in voor de zoeken logische manier, kan bijvoorbeeld ook worden gebruikt voor onderwerpen
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/Thema.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Thema.svg)
 
 ## Properties
 
