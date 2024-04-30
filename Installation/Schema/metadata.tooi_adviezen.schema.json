@@ -33,6 +33,29 @@
             "type": "string",
             "description":"De tooiThemaId van het thema voorafgegaan door `https://identifier.overheid.nl/tooi/def/thes/kern/[tooiThemaId]`"
         },
+        "oprdachtgever": {
+            "type": "string",
+            "description":"Gaat het om onderzoek naar het functioneren van de eigen organisatie of om onderzoek ter voorbereiding of evaluatie van beleid of uitvoering ?",
+            "required": true,
+            "maxLength": 2555
+        },
+        "onderdeelTaak": {
+            "type": "string",
+            "description":"Maakt het opstellen van dit onderzoeksrapport onderdeel uit van de uitvoering van de taak van deze organisatie?",
+            "required": true,
+            "maxLength": 2555
+        },
+        "onderwerp": {
+            "type": "string",
+            "description":"Gaat het om onderzoek naar het functioneren van de eigen organisatie 0 of om onderzoek ter voorbereiding of evaluatie van beleid of uitvoering ?",
+            "required": true,
+            "maxLength": 2555
+        },
+        "feitelijkMateriaal": {
+            "type": "boolean",
+            "description":"Bestaat de inhoud van het onderzoeksrapport voor het grootste deel O uit feitelijk materiaal?",
+            "required": true
+        },
         "values": {
             "type": "array",
             "description":"Binnen KOOP Woo Index kunnen waardes niet uitlijnen op TOOI wel worden meegegeven in key value pair's. Deze zijn vervolgens wel doorzoekbaar maar geen onderdeel van de open.overheid.nl user interface",
@@ -51,5 +74,9 @@
         }
     },
     "required": [
+        "onderdeelTaak",
+        "oprdachtgever",
+        "onderwerp",
+        "feitelijkMateriaal"
     ]
 }
