@@ -2,7 +2,7 @@
 
 Informatie over de organisatie en werkwijze van bestuursorganen.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/metadata.tooi_organisatie_en_werkwijze.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/metadata.tooi_organisatie_en_werkwijze.svg)
 
 ## Properties
 
