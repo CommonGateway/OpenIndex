@@ -2,7 +2,7 @@
 
 Overige besluiten van algemene strekking. 
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/metadata.tooi_overige_besluiten_van_algemene_strekking.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/metadata.tooi_overige_besluiten_van_algemene_strekking.svg)
 
 ## Properties
 
