@@ -1,3 +1,3 @@
-# Wet Open Overheid
+# Open Catalogi
 
 

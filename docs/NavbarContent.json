@@ -11,110 +11,11 @@
     }
   },
   {
-    "label": "Objecten",
-    "current": {
-      "pathname": "/Objecten"
-    },
-    "subItems": [
-      {
-        "label": "Publicatie",
-        "type": "internalMarkdown",
-        "current": {
-          "pathname": "/Objecten/Publicatie"
-        },
-        "handleClick": {
-          "internalMarkdown": {
-            "directoryName": "Objecten",
-            "fileName": "publicatie"
-          }
-        }
-      },
-      {
-        "label": "Bijlage",
-        "type": "internalMarkdown",
-        "current": {
-          "pathname": "/Objecten/Bijlage"
-        },
-        "handleClick": {
-          "internalMarkdown": {
-            "directoryName": "Objecten",
-            "fileName": "bijlage"
-          }
-        }
-      },
-      {
-        "label": "Organisatie",
-        "type": "internalMarkdown",
-        "current": {
-          "pathname": "/Objecten/Organisatie"
-        },
-        "handleClick": {
-          "internalMarkdown": {
-            "directoryName": "Objecten",
-            "fileName": "organisatie"
-          }
-        }
-      },
-      {
-        "label": "Thema",
-        "type": "internalMarkdown",
-        "current": {
-          "pathname": "/Objecten/Thema"
-        },
-        "handleClick": {
-          "internalMarkdown": {
-            "directoryName": "Objecten",
-            "fileName": "thema"
-          }
-        }
-      },
-      {
-        "label": "Index",
-        "type": "internalMarkdown",
-        "current": {
-          "pathname": "/Objecten/Index"
-        },
-        "handleClick": {
-          "internalMarkdown": {
-            "directoryName": "Objecten",
-            "fileName": "index"
-          }
-        }
-      }
-    ]
-  },
-  {
     "label": "Documentatie",
     "current": {
       "pathname": "/Documentatie"
     },
     "subItems": [
-      {
-        "label": "OpenWoo.app",
-        "type": "internalMarkdown",
-        "current": {
-          "pathname": "/Documentatie/Woo"
-        },
-        "handleClick": {
-          "internalMarkdown": {
-            "directoryName": "Documentatie",
-            "fileName": "Woo"
-          }
-        }
-      },
-      {
-        "label": "Open Catalogi",
-        "type": "internalMarkdown",
-        "current": {
-          "pathname": "/Documentatie/OC"
-        },
-        "handleClick": {
-          "internalMarkdown": {
-            "directoryName": "Documentatie",
-            "fileName": "OpenCatalogi"
-          }
-        }
-      },
       {
         "label": "Federalisatie",
         "type": "internalMarkdown",
@@ -190,6 +91,152 @@
           "internalMarkdown": {
             "directoryName": "Documentatie",
             "fileName": "GOVERNANCE"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "label": "Varianten",
+    "current": {
+      "pathname": "/Objecten"
+    },
+    "subItems": [
+      {
+        "label": "OpenWoo.app",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Woo"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "Woo"
+          }
+        }
+      },
+      {
+        "label": "Open Catalogi",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/OC"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "OpenCatalogi"
+          }
+        }
+      },
+      {
+        "label": "Open Raads Informatie",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Open-Raads-Informatie"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "ORI"
+          }
+        }
+      },
+      {
+        "label": "Single Digital Gateway",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Single-Digital-Gateway"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "SDG"
+          }
+        }
+      },
+      {
+        "label": "Algoritme Register",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Algoritme-Register"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "AR"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "label": "Objecten",
+    "current": {
+      "pathname": "/Objecten"
+    },
+    "subItems": [
+      {
+        "label": "Publicatie",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Objecten/Publicatie"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Objecten",
+            "fileName": "publicatie"
+          }
+        }
+      },
+      {
+        "label": "Bijlage",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Objecten/Bijlage"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Objecten",
+            "fileName": "bijlage"
+          }
+        }
+      },
+      {
+        "label": "Organisatie",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Objecten/Organisatie"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Objecten",
+            "fileName": "organisatie"
+          }
+        }
+      },
+      {
+        "label": "Thema",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Objecten/Thema"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Objecten",
+            "fileName": "thema"
+          }
+        }
+      },
+      {
+        "label": "Index",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Objecten/Index"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Objecten",
+            "fileName": "index"
           }
         }
       }

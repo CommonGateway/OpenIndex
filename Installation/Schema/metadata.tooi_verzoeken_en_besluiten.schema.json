@@ -33,6 +33,23 @@
             "type": "string",
             "description":"De tooiThemaId van het thema voorafgegaan door `https://identifier.overheid.nl/tooi/def/thes/kern/[tooiThemaId]`"
         },
+        "datumBesluit": {
+            "type": "string",
+            "format": "date-time",
+            "description":"Wanneer is er over het verzoek besloten",
+            "required": true
+        },
+        "datumOntvangst": {
+            "type": "string",
+            "format": "date-time",
+            "description":"Wanneer is het verzoek binnen gekomen",
+            "required": true
+        },
+        "termijnoverschrijding": {
+            "type": "string",
+            "format": "ISO-8601",
+            "description":"Een (evenuteel) overschrijding van het beantwoordings termijn termijn"
+        },
         "values": {
             "type": "array",
             "description":"Binnen KOOP Woo Index kunnen waardes niet uitlijnen op TOOI wel worden meegegeven in key value pair's. Deze zijn vervolgens wel doorzoekbaar maar geen onderdeel van de open.overheid.nl user interface",
@@ -51,5 +68,7 @@
         }
     },
     "required": [
+        "datumBesluit",
+        "datumOntvangst"
     ]
 }
