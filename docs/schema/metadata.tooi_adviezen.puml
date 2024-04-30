@@ -10,6 +10,10 @@ class MetadataTOOIadviezen {
   + tooiThemaNaam: string
   + tooiThemaId: string
   + tooiThemaUri: string
+  + oprdachtgever: string
+  + onderdeelTaak: string
+  + onderwerp: string
+  + feitelijkMateriaal: boolean
   + values: array
 }
 @enduml
