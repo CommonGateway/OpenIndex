@@ -172,18 +172,18 @@
   {
     "label": "Objecten",
     "current": {
-      "pathname": "/Objecten"
+      "pathname": "/Schema"
     },
     "subItems": [
       {
         "label": "Publicatie",
         "type": "internalMarkdown",
         "current": {
-          "pathname": "/Objecten/Publicatie"
+          "pathname": "/Schema/Publicatie"
         },
         "handleClick": {
           "internalMarkdown": {
-            "directoryName": "Objecten",
+            "directoryName": "Schema",
             "fileName": "publicatie"
           }
         }
@@ -192,11 +192,11 @@
         "label": "Bijlage",
         "type": "internalMarkdown",
         "current": {
-          "pathname": "/Objecten/Bijlage"
+          "pathname": "/Schema/Bijlage"
         },
         "handleClick": {
           "internalMarkdown": {
-            "directoryName": "Objecten",
+            "directoryName": "Schema",
             "fileName": "bijlage"
           }
         }
@@ -205,11 +205,11 @@
         "label": "Organisatie",
         "type": "internalMarkdown",
         "current": {
-          "pathname": "/Objecten/Organisatie"
+          "pathname": "/Schema/Organisatie"
         },
         "handleClick": {
           "internalMarkdown": {
-            "directoryName": "Objecten",
+            "directoryName": "Schema",
             "fileName": "organisatie"
           }
         }
@@ -218,11 +218,11 @@
         "label": "Thema",
         "type": "internalMarkdown",
         "current": {
-          "pathname": "/Objecten/Thema"
+          "pathname": "/Schema/Thema"
         },
         "handleClick": {
           "internalMarkdown": {
-            "directoryName": "Objecten",
+            "directoryName": "Schema",
             "fileName": "thema"
           }
         }
@@ -231,11 +231,11 @@
         "label": "Index",
         "type": "internalMarkdown",
         "current": {
-          "pathname": "/Objecten/Index"
+          "pathname": "/Schema/Index"
         },
         "handleClick": {
           "internalMarkdown": {
-            "directoryName": "Objecten",
+            "directoryName": "Schema",
             "fileName": "index"
           }
         }
