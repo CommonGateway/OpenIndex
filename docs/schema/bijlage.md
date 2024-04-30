@@ -2,7 +2,7 @@
 
 H
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/bijlage.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/bijlage.svg)
 
 ## Properties
 
