@@ -2,7 +2,7 @@
 
 Subsidieverplichtingen die niet via een beschikking lopen, specifiek bij Ministerie van Binnenlandse Zaken. 
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/metadata.tooi_subsidieverplichtingen_anders_dan_met_beschikking.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/metadata.tooi_subsidieverplichtingen_anders_dan_met_beschikking.svg)
 
 ## Properties
 

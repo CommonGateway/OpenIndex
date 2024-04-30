@@ -184,7 +184,7 @@
         "handleClick": {
           "internalMarkdown": {
             "directoryName": "Schema",
-            "fileName": "publicatie"
+            "fileName": "Publicatie"
           }
         }
       },
@@ -197,7 +197,7 @@
         "handleClick": {
           "internalMarkdown": {
             "directoryName": "Schema",
-            "fileName": "bijlage"
+            "fileName": "Bijlage"
           }
         }
       },
@@ -210,7 +210,7 @@
         "handleClick": {
           "internalMarkdown": {
             "directoryName": "Schema",
-            "fileName": "organisatie"
+            "fileName": "Organisatie"
           }
         }
       },
@@ -223,7 +223,7 @@
         "handleClick": {
           "internalMarkdown": {
             "directoryName": "Schema",
-            "fileName": "thema"
+            "fileName": "Thema"
           }
         }
       },
@@ -236,7 +236,7 @@
         "handleClick": {
           "internalMarkdown": {
             "directoryName": "Schema",
-            "fileName": "index"
+            "fileName": "Index"
           }
         }
       }
