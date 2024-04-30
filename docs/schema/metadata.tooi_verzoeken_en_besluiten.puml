@@ -10,6 +10,9 @@ class MetadataTOOIWoo-verzoekenen-besluiten {
   + tooiThemaNaam: string
   + tooiThemaId: string
   + tooiThemaUri: string
+  + datumBesluit: string
+  + datumOntvangst: string
+  + termijnoverschrijding: string
   + values: array
 }
 @enduml

@@ -27,6 +27,10 @@ class MetadataTOOIadviezen {
   + tooiThemaNaam: string
   + tooiThemaId: string
   + tooiThemaUri: string
+  + oprdachtgever: string
+  + onderdeelTaak: string
+  + onderwerp: string
+  + feitelijkMateriaal: boolean
   + values: array
 }
 class Index {
@@ -136,6 +140,9 @@ class MetadataTOOIWoo-verzoekenen-besluiten {
   + tooiThemaNaam: string
   + tooiThemaId: string
   + tooiThemaUri: string
+  + datumBesluit: string
+  + datumOntvangst: string
+  + termijnoverschrijding: string
   + values: array
 }
 class MetadataTOOIbereikbaarheidsgegevens {
@@ -202,6 +209,15 @@ class MetadataTOOIklachtoordelen {
   + tooiThemaNaam: string
   + tooiThemaId: string
   + tooiThemaUri: string
+  + datumBesluit: string
+  + datumOntvangst: string
+  + termijnoverschrijding: string
+  + organisatieonderdeel: string
+  + functiebenaming: string
+  + gedraging: string
+  + bevindingen: string
+  + oordeel: string
+  + conclusies: string
   + values: array
 }
 class MetadataTOOIbeschikkingen {
