@@ -5,11 +5,13 @@
 | Class | Documentation |
 |-------|--------------|
 | Metadata TOOI wetten en algemeen verbindende voorschriften | [Metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.md](Metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.md) |
+| Metadata Open Catalogi Publiccode | [Metadata.ods_agenda_item.md](Metadata.ods_agenda_item.md) |
 | Publicatie | [Publicatie.md](Publicatie.md) |
 | Metadata TOOI ontwerpen van wet- en regelgeving met adviesaanvraag | [Metadata.tooi_ontwerpen_van_wet_en_regelgeving_met_adviesaanvraag.md](Metadata.tooi_ontwerpen_van_wet_en_regelgeving_met_adviesaanvraag.md) |
 | Metadata TOOI  vergaderstukken decentrale overheden   | [Metadata.tooi_vergaderstukken_decentrale_overheden.md](Metadata.tooi_vergaderstukken_decentrale_overheden.md) |
 | Metadata TOOI bij vertegenwoordigende organen ingekomen stukken | [Metadata.tooi_bij_vertegenwoordigende_organen_ingekomen_stukken.md](Metadata.tooi_bij_vertegenwoordigende_organen_ingekomen_stukken.md) |
 | Thema | [Thema.md](Thema.md) |
+| Metadata Open Catalogi Publiccode | [Metadata.oc_publiccode.md](Metadata.oc_publiccode.md) |
 | Metadata TOOI overige besluiten van algemene strekking | [Metadata.tooi_overige_besluiten_van_algemene_strekking.md](Metadata.tooi_overige_besluiten_van_algemene_strekking.md) |
 | Metadata TOOI onderzoeksrapporten | [Metadata.tooi_onderzoeksrapporten.md](Metadata.tooi_onderzoeksrapporten.md) |
 | Metadata TOOI convenanten | [Metadata.tooi_convenanten.md](Metadata.tooi_convenanten.md) |

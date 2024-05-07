@@ -11,6 +11,19 @@ class MetadataTOOIwettenenalgemeenverbindendevoorschriften {
   + tooiThemaUri: string
   + values: array
 }
+class MetadataOpenCatalogiPubliccode {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + oprdachtgever: string
+  + onderdeelTaak: string
+  + onderwerp: string
+  + feitelijkMateriaal: boolean
+  + values: array
+}
 class Publicatie {
   + id: string
   + titel: string
@@ -61,6 +74,19 @@ class Thema {
   + beschrijving: string
   + afbeelding: string
   + publicaties: integer
+}
+class MetadataOpenCatalogiPubliccode {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + oprdachtgever: string
+  + onderdeelTaak: string
+  + onderwerp: string
+  + feitelijkMateriaal: boolean
+  + values: array
 }
 class MetadataTOOIoverigebesluitenvanalgemenestrekking {
   + tooiCategorieNaam: string

@@ -1,0 +1,15 @@
+@startuml
+title: MetadataTOOIvergaderstukkenStaten-Generaal
+footer: Common Gateway Plugin | Commongateway | Openindex 
+header: Schema
+
+class MetadataTOOIvergaderstukkenStaten-Generaal {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+@enduml
