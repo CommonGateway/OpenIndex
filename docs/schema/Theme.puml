@@ -1,16 +1,14 @@
 @startuml
-title: Index
+title: Theme
 footer: Common Gateway Plugin | Commongateway | Openindex 
 header: Schema
 
-class Index {
+class Theme {
   + id: string
   + title: string
   + summary: string
   + description: string
   + image: string
-  + url: string
-  + status: integer
-  + organization: object
+  + publications: integer
 }
 @enduml

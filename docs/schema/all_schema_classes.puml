@@ -11,6 +11,22 @@ class MetadataTOOIwettenenalgemeenverbindendevoorschriften {
   + tooiThemaUri: string
   + values: array
 }
+class Publication {
+  + id: string
+  + title: string
+  + summary: string
+  + description: string
+  + image: string
+  + category: string
+  + portal: string
+  + publicationDate: string
+  + featured: boolean
+  + organization: object
+  + schema: string
+  + attachments: array
+  + themes: array
+  + data: object
+}
 class MetadataOpenCatalogiPubliccode {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
@@ -23,22 +39,6 @@ class MetadataOpenCatalogiPubliccode {
   + onderwerp: string
   + feitelijkMateriaal: boolean
   + values: array
-}
-class Publicatie {
-  + id: string
-  + titel: string
-  + samenvatting: string
-  + beschrijving: string
-  + afbeelding: string
-  + categorie: string
-  + portal: string
-  + publicatiedatum: string
-  + featured: boolean
-  + organisatie: object
-  + schema: string
-  + bijlagen: array
-  + onderwerp: object
-  + data: object
 }
 class MetadataTOOIontwerpenvanwet-enregelgevingmetadviesaanvraag {
   + tooiCategorieNaam: string
@@ -67,13 +67,17 @@ class MetadataTOOIbijvertegenwoordigendeorganeningekomenstukken {
   + tooiThemaUri: string
   + values: array
 }
-class Thema {
+class Attachment {
   + id: string
-  + titel: string
-  + samenvatting: string
-  + beschrijving: string
-  + afbeelding: string
-  + publicaties: integer
+  + title: string
+  + summary: string
+  + description: string
+  + labels: array
+  + url: string
+  + documentText: string
+  + type: string
+  + extension: string
+  + size: integer
 }
 class MetadataOpenCatalogiPubliccode {
   + tooiCategorieNaam: string
@@ -117,13 +121,13 @@ class MetadataTOOIconvenanten {
 }
 class Index {
   + id: string
-  + titel: string
-  + samenvatting: string
-  + beschrijving: string
-  + afbeelding: string
+  + title: string
+  + summary: string
+  + description: string
+  + image: string
   + url: string
   + status: integer
-  + organisatie: object
+  + organization: object
 }
 class MetadataTOOIklachtoordelen {
   + tooiCategorieNaam: string
@@ -151,30 +155,6 @@ class MetadataTOOIvergaderstukkenStaten-Generaal {
   + tooiThemaId: string
   + tooiThemaUri: string
   + values: array
-}
-class Organisatie {
-  + id: string
-  + titel: string
-  + samenvatting: string
-  + beschrijving: string
-  + afbeelding: string
-  + uuid: string
-  + oin: string
-  + tooi: string
-  + rsin: string
-  + naam: string
-}
-class Bijlage {
-  + id: string
-  + titel: string
-  + samenvatting: string
-  + beschrijving: string
-  + labels: array
-  + url: string
-  + documentText: string
-  + type: string
-  + extension: string
-  + size: integer
 }
 class MetadataTOOIagenda’senbesluitenlijstenbestuurscolleges {
   + tooiCategorieNaam: string
@@ -232,6 +212,26 @@ class MetadataTOOIorganisatieenwerkwijze {
   + tooiThemaId: string
   + tooiThemaUri: string
   + values: array
+}
+class Theme {
+  + id: string
+  + title: string
+  + summary: string
+  + description: string
+  + image: string
+  + publications: integer
+}
+class Organization {
+  + id: string
+  + title: string
+  + summary: string
+  + description: string
+  + image: string
+  + uuid: string
+  + oin: string
+  + tooi: string
+  + rsin: string
+  + name: string
 }
 class MetadataTOOIadviezen {
   + tooiCategorieNaam: string

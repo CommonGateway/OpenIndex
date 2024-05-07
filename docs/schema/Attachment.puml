@@ -1,16 +1,18 @@
 @startuml
-title: Index
+title: Attachment
 footer: Common Gateway Plugin | Commongateway | Openindex 
 header: Schema
 
-class Index {
+class Attachment {
   + id: string
   + title: string
   + summary: string
   + description: string
-  + image: string
+  + labels: array
   + url: string
-  + status: integer
-  + organization: object
+  + documentText: string
+  + type: string
+  + extension: string
+  + size: integer
 }
 @enduml
