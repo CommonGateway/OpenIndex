@@ -1,16 +1,22 @@
 @startuml
-title: Index
+title: Publication
 footer: Common Gateway Plugin | Commongateway | Openindex 
 header: Schema
 
-class Index {
+class Publication {
   + id: string
   + title: string
   + summary: string
   + description: string
   + image: string
-  + url: string
-  + status: integer
+  + category: string
+  + portal: string
+  + publicationDate: string
+  + featured: boolean
   + organization: object
+  + schema: string
+  + attachments: array
+  + themes: array
+  + data: object
 }
 @enduml

@@ -1,16 +1,18 @@
 @startuml
-title: Index
+title: Organization
 footer: Common Gateway Plugin | Commongateway | Openindex 
 header: Schema
 
-class Index {
+class Organization {
   + id: string
   + title: string
   + summary: string
   + description: string
   + image: string
-  + url: string
-  + status: integer
-  + organization: object
+  + uuid: string
+  + oin: string
+  + tooi: string
+  + rsin: string
+  + name: string
 }
 @enduml
