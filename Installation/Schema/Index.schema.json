@@ -4,62 +4,62 @@
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
-    "description": "Een extern gevonden index die als bron kan worden gebruikt bij het stellen van federatieve zoekvragen",
+    "description": "An externally found index that can be used as a source in federative search queries",
     "properties": {
         "id": {
             "type": "string",
             "format": "uuid",
-            "description":"De unieke identifier van de index"
+            "description": "The unique identifier of the index"
         },
-        "titel": {
+        "title": {
             "type": "string",
             "format": "text",
-            "description":"De titel (naam) van de index",
+            "description": "The title (name) of the index",
             "minLength": 25,
             "maxLength": 255,
             "required": true
         },
-        "samenvatting": {
+        "summary": {
             "type": "string",
             "format": "text",
-            "description":"Een korte samenvatting van de index",
+            "description": "A short summary of the index",
             "minLength": 50,
             "maxLength": 2500,
             "required": true
         },
-        "beschrijving": {
+        "description": {
             "type": "string",
             "format": "text",
-            "description":"Een uitgebreide beschrijving van de index voor weergave op de index pagina",
+            "description": "An extensive description of the index for display on the index page",
             "maxLength": 25000,
             "required": true
         },
-        "afbeelding": {
+        "image": {
             "type": "string",
-            "format": ["url","base64"],
-            "description":"Een afbeelding voor bij de index, bijvoorbeeld een logo. Mag worden opgegeven als verwijzing `url` of `base64` encoded image"
+            "format": ["url", "base64"],
+            "description": "An image for the index, such as a logo. Can be provided as a reference `url` or `base64` encoded image"
         },
         "url": {
             "type": "string",
             "format": "url",
-            "description": "De url naar de API van de index",
+            "description": "The URL to the index's API",
             "required": true
         },
         "status": {
             "type": "integer",
             "maxLength": 3,
-            "description":"De meest recente status van deze index"
+            "description": "The most recent status of this index"
         },
-        "organisatie": {
+        "organization": {
             "type": "object",
-            "$ref": "https://commongateway.nl/woo.organisatie.schema.json",
+            "$ref": "https://commongateway.nl/woo.organization.schema.json",
             "format": "json",
-            "description":"De organisatie die deze index beschickbaar stelt (fungeerd als default voor publicaties in de index)"
+            "description": "The organization that provides this index (acts as the default for publications in the index)"
         }
     },
     "required": [
-        "titel",
-        "samenvatting",
-        "beschrijving"
+        "title",
+        "summary",
+        "description"
     ]
 }

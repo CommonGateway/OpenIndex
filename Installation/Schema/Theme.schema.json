@@ -1,0 +1,51 @@
+{
+    "title": "Theme",
+    "$id": "https://openwoo.app/schemas/theme.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.0.1",
+    "type": "object",
+    "description": "A thematic clustering of publications in a manner logical for searching, can also be used for topics. Themes exist within a single index and are thus organization specific unless the index is shared by multiple organizations",
+    "properties": {
+        "id": {
+            "type": "string",
+            "format": "uuid",
+            "description":"The unique identifier of this theme"
+        },
+        "title": {
+            "type": "string",
+            "format": "text",
+            "description":"The title (name) of a theme.",
+            "minLength": 25,
+            "maxLength": 255,
+            "required": true,
+            "unique":true
+        },
+        "summary": {
+            "type": "string",
+            "format": "text",
+            "description":"A short summary of the theme for the overview page",
+            "minLength": 50,
+            "maxLength": 2500,
+            "required": true
+        },
+        "description": {
+            "type": "string",
+            "format": "text",
+            "description":"An extensive description of the theme for display on the theme page",
+            "maxLength": 25000
+        },
+        "image": {
+            "type": "string",
+            "format": ["url","base64"],
+            "description":"An image for the theme, can be provided as a reference `url` or `base64` encoded image"
+        },
+        "publications": {
+            "type": "integer",
+            "description":"The number of publications associated with this theme, this value is automatically updated and thus cannot be set via the API"
+        }
+    },
+    "required": [
+        "title",
+        "summary"
+    ]
+}

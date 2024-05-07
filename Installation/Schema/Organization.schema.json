@@ -1,43 +1,42 @@
 {
-    "title": "Organisatie",
-    "$id": "https://openwoo.app/schemas/organisatie.schema.json",
+    "title": "Organization",
+    "$id": "https://openwoo.app/schemas/organization.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
-    "description": "Een organisatie die een publicatie of index ter beschicking steld",
+    "description": "An organization that provides a publication or index",
     "properties": {
         "id": {
             "type": "string",
             "format": "uuid",
-            "description":"De unieke identifier deze organisatie"
+            "description": "The unique identifier for this organization"
         },
-        "titel": {
+        "title": {
             "type": "string",
             "format": "text",
-            "description":"De titel (naam) van een onderwerp",
+            "description": "The title (name) of a subject",
             "minLength": 25,
             "maxLength": 255,
             "required": true
         },
-        "samenvatting": {
+        "summary": {
             "type": "string",
             "format": "text",
-            "description":"Een korte samenvatting van het onderwerp voor op de overzichts pagina",
+            "description": "A short summary of the subject for the overview page",
             "minLength": 50,
             "maxLength": 2500,
             "required": true
         },
-        "beschrijving": {
+        "description": {
             "type": "string",
             "format": "text",
-            "description":"Een uitgebreide beschrijving van het onderwerp voor weergave op de onderwerp pagina",
-            "maxLength": 25000,
-            "required": true
+            "description": "An extensive description of the subject for display on the subject page",
+            "maxLength": 25000
         },
-        "afbeelding": {
+        "image": {
             "type": "string",
-            "format": ["url","base64"],
-            "description":"Een afbeelding voor bij het onderwerp, mag worden opgegeven als verwijzing `url` of `base64` encoded image"
+            "format": ["url", "base64"],
+            "description": "An image for the subject, can be provided as a reference `url` or `base64` encoded image"
         },
         "uuid": {
             "type": "string"
@@ -51,14 +50,13 @@
         "rsin": {
             "type": "string"
         },
-        "naam": {
+        "name": {
             "type": "string",
             "required": true
         }
     },
     "required": [
-        "titel",
-        "samenvatting",
-        "beschrijving"
+        "title",
+        "summary"
     ]
 }
