@@ -2,7 +2,7 @@
 
 Een organisatie die een publicatie of index ter beschicking steld
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/organisatie.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/Organisatie.svg)
 
 ## Properties
 
