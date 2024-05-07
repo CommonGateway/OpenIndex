@@ -1,0 +1,19 @@
+@startuml
+title: MetadataOpenCatalogiPubliccode
+footer: Common Gateway Plugin | Commongateway | Openindex 
+header: Schema
+
+class MetadataOpenCatalogiPubliccode {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + oprdachtgever: string
+  + onderdeelTaak: string
+  + onderwerp: string
+  + feitelijkMateriaal: boolean
+  + values: array
+}
+@enduml
