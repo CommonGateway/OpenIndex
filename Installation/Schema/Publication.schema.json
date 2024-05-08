@@ -5,7 +5,7 @@
     "version": "0.0.1",
     "type": "object",
     "description": "The publication object is the core of Open Index, acting as a metadata wrapper for objects and thereby forming the common link between different publications from, for example, WOO and OC.",
-    "tags": ["Metadata","TOOI"],
+    "tags": ["Open Index"],
     "properties": {
         "id": {
             "type": "string",

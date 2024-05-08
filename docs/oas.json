@@ -136,6 +136,14 @@
         {
             "name": "TOOI",
             "description": "Operations and schemas related to the tooi (transparency of information)."
+        },
+        {
+            "name": "Open Catalogi",
+            "description": "Operations and schemas related to the tooi (transparency of information)."
+        },
+        {
+            "name": "ODS",
+            "description": "Operations and schemas related to the tooi (transparency of information)."
         }
     ]
 }
