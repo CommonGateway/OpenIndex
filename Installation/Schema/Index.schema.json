@@ -52,7 +52,7 @@
         },
         "organization": {
             "type": "object",
-            "$ref": "https://commongateway.nl/woo.organization.schema.json",
+            "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Organization.schema.json",
             "format": "json",
             "description": "The organization that provides this index (acts as the default for publications in the index)"
         }
