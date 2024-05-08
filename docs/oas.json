@@ -3,7 +3,7 @@
     "info": {
         "title": "OpenIndex API",
         "description": "API for interacting with the OpenIndex platform, a software focused on collaboration and IT development.",
-        "version": "0.1",
+        "version": "1.2",
         "contact": {
             "name": "OpenIndex",
             "url": "https://github.com/CommonGateway/OpenIndex"
