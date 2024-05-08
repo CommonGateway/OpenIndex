@@ -106,7 +106,7 @@
                 {"$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_subsidieverplichtingen_anders_dan_met_beschikking.schema.json"}
             ]
         }
-    },,
+    },
     "required": [
         "title",
         "summary",
