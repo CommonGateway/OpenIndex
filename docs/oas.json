@@ -123,5 +123,27 @@
                 "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_subsidieverplichtingen_anders_dan_met_beschikking.schema.json"
             }
         }
-    }
+    },
+    "tags": [
+        {
+            "name": "Open Index",
+            "description": "Operations and schemas related to Open Index platform."
+        },
+        {
+            "name": "Metadata",
+            "description": "Metadata-related operations and structures."
+        },
+        {
+            "name": "TOOI",
+            "description": "Operations and schemas related to the tooi (transparency of information)."
+        },
+        {
+            "name": "Open Catalogi",
+            "description": "Operations and schemas related to the tooi (transparency of information)."
+        },
+        {
+            "name": "ODS",
+            "description": "Operations and schemas related to the tooi (transparency of information)."
+        }
+    ]
 }

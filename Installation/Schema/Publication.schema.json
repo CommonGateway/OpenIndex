@@ -96,9 +96,20 @@
             "description":"The urls of the theme's associated with this publication"
         },
         "data": {
-            "type": "object",
-            "format": "json",
-            "description": "The actual object to be published (must not be larger than 15 MB)"
+            "oneOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_verzoeken_en_besluiten.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_organisatie_en_werkwijze.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_adviezen.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_subsidieverplichtingen_anders_dan_met_beschikking.schema.json"
+                }
+            ]
         }
     },
     "required": [
