@@ -104,9 +104,6 @@
             "Metadata.tooi_bereikbaarheidsgegevens": {
                 "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_bereikbaarheidsgegevens.schema.json"
             },
-            "Metadata.tooi_agendas_en_besluitenlijsten_bestuurscolleges": {
-                "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_agendas_en_besluitenlijsten_bestuurscolleges.schema.json"
-            },
             "Metadata.tooi_beschikkingen": {
                 "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_beschikkingen.schema.json"
             },
