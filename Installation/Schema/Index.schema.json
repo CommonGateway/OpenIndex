@@ -5,6 +5,7 @@
     "version": "0.0.1",
     "type": "object",
     "description": "An externally found index that can be used as a source in federative search queries",
+    "tags": ["Open Index"],
     "properties": {
         "id": {
             "type": "string",

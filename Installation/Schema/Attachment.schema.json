@@ -5,6 +5,7 @@
     "version": "0.0.1",
     "type": "object",
     "description": "An attachment object",
+    "tags": ["Open Index"],
     "properties": {
         "id": {
             "type": "string",

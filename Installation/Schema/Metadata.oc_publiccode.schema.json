@@ -5,6 +5,7 @@
     "version": "0.0.1",
     "type": "object",
     "description": "Adviezen over ontwerpen en andere onderwerpen van adviescolleges of -commissies, exclusief adviezen die betrekking hebben op individuele gevallen.",
+    "tags": ["Open Index"],
     "properties": {
         "tooiCategorieNaam": {
             "type": "string",

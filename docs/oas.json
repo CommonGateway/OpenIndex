@@ -134,7 +134,7 @@
             "description": "Metadata-related operations and structures."
         },
         {
-            "name": "Tooi",
+            "name": "TOOI",
             "description": "Operations and schemas related to the tooi (transparency of information)."
         }
     ]
