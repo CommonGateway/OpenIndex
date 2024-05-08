@@ -25,7 +25,7 @@ class Publication {
   + schema: string
   + attachments: array
   + themes: array
-  + data: object
+  + data: Any
 }
 class MetadataOpenCatalogiPubliccode {
   + tooiCategorieNaam: string
