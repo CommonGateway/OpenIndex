@@ -63,7 +63,7 @@
         },
         "organization": {
             "type": "object",
-            "$ref": "https://openwoo.app/schemas/organization.schema.json",
+            "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Organization.schema.json",
             "format": "json",
             "description": "The organization belonging to this publication object, in theory multiple organizations can share one Open Index installation but this is discouraged."
         },
@@ -76,7 +76,7 @@
         "attachments": {
             "type": "array",
             "items": {
-                "$ref": "https://openwoo.app/schemas/attachment.schema.json"
+                "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Attachment.schema.json"
             },
             "format": "json"
         },
