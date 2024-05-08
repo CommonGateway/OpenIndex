@@ -5,6 +5,7 @@
     "version": "0.0.1",
     "type": "object",
     "description": "An organization that provides a publication or index",
+    "tags": ["Open Index"],
     "properties": {
         "id": {
             "type": "string",

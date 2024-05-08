@@ -5,6 +5,7 @@
     "version": "0.0.1",
     "type": "object",
     "description": "A thematic clustering of publications in a manner logical for searching, can also be used for topics. Themes exist within a single index and are thus organization specific unless the index is shared by multiple organizations",
+    "tags": ["Open Index"],
     "properties": {
         "id": {
             "type": "string",
