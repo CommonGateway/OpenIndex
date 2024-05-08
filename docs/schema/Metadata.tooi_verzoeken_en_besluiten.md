@@ -2,7 +2,7 @@
 
 Inhoud van schriftelijke Woo-verzoeken en besluiten daarop, inclusief verstrekte informatie.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/Metadata.tooi_verzoeken_en_besluiten.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Metadata.tooi_verzoeken_en_besluiten.svg)
 
 ## Properties
 
