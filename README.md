@@ -20,6 +20,9 @@ Daarnaast helpt OpenIndex bij het waarborgen van de datakwaliteit en -consistent
 
 ## Kern onderdelen
 
+### Een krachtige landelijke api
+
+
 ### (Her)gebruik van vertrouwde oplossingen
 OpenIndex leunt op de kracht van bewezen open-source projecten zoals MongoDB en Elasticsearch om een robuuste en betrouwbare zoekoplossing te bieden. Deze technologieën staan bekend om hun hoge prestaties en schaalbaarheid, waardoor OpenIndex in staat is om grote hoeveelheden data efficiënt te verwerken en te doorzoeken. Door gebruik te maken van deze vertrouwde platforms, zorgt OpenIndex voor een stabiele basis die niet alleen snel en krachtig is, maar ook aanpasbaar aan de specifieke behoeften van elke organisatie.
 
