@@ -2,7 +2,7 @@
 
 Agenda’s en besluitenlijsten van vergaderingen van diverse bestuurlijke organen.  
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Metadata.tooi_agendas_en_besluitenlijsten_bestuurscolleges.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/publication-subscriber/docs/schema/Metadata.tooi_agendas_en_besluitenlijsten_bestuurscolleges.svg)
 
 ## Properties
 

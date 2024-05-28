@@ -16,6 +16,8 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class OpenIndex extends Bundle
 {
+
+
     /**
      * Returns the path the bundle is in.
      *
@@ -26,4 +28,6 @@ class OpenIndex extends Bundle
         return \dirname(__DIR__);
 
     }//end getPath()
+
+
 }//end class

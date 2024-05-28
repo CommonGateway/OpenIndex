@@ -39,6 +39,8 @@ class PublicationSubscriber implements EventSubscriberInterface
      * @var EntityManagerInterface
      */
     private EntityManagerInterface $entityManager;
+
+
     /**
      * The constructor sets al needed variables.
      *
@@ -55,7 +57,9 @@ class PublicationSubscriber implements EventSubscriberInterface
         $this->session           = $session;
         $this->validationService = $validationService;
         $this->entityManager     = $entityManager;
+
     }//end __construct()
+
 
     /**
      * @return array This method can only return the event names;
@@ -69,11 +73,13 @@ class PublicationSubscriber implements EventSubscriberInterface
 
     }//end getSubscribedEvents()
 
+
     public function postUpdate(LifecycleEventArgs $args): void
     {
         $this->prePersist($args);
 
     }//end postUpdate()
+
 
     /**
      * Validates the schema and data of a publication object.
@@ -87,24 +93,32 @@ class PublicationSubscriber implements EventSubscriberInterface
         $object = $args->getObject();
         // if this subscriber only applies to certain entity types,
         if ($object instanceof ObjectEntity && $object->getEntity() !== null && $object->getEntity()->getReference() === $this::PUBLICATION_REFERENCE
-         && $object->getValue('schema') !== null && $object->getValue('data') !== null) {
+            && $object->getValue('schema') !== null && $object->getValue('data') !== null
+        ) {
             $objectArray = $object->toArray();
 
             $schemaEntity = $this->entityManager->getRepository(App::Entity)->findOneBy(['reference' => $objectArray['schema']]);
             if ($schemaEntity instanceof Entity === false) {
-                return new Response(json_encode(['message' => 'Could not find schema ' . $objectArray['schema']]), 403);
+                return new Response(json_encode(['message' => 'Could not find schema '.$objectArray['schema']]), 403);
             }
 
             $validationErrors = $this->validationService->validateData($objectArray['data'], $schemaEntity, 'POST');
             if ($validationErrors !== null) {
-                    return new Response(json_encode([
-                        "message" => 'Validation errors',
-                        'data'    => $validationErrors
-                    ]), 403);
+                    return new Response(
+                        json_encode(
+                            [
+                                "message" => 'Validation errors',
+                                'data'    => $validationErrors,
+                            ]
+                        ),
+                        403
+                    );
             }
-            
+
             return;
-        }
+        }//end if
 
     }//end prePersist()
+
+
 }//end class

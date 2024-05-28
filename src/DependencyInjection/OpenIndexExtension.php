@@ -9,6 +9,8 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 class OpenIndexExtension extends Extension
 {
+
+
     /**
      * @param array            $configs   The config
      * @param ContainerBuilder $container The container builder
@@ -21,4 +23,6 @@ class OpenIndexExtension extends Extension
         $loader->load('services.yaml');
 
     }//end load()
+
+
 }//end class
