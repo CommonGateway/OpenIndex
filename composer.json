@@ -1,0 +1,40 @@
+{
+    "name": "common-gateway/open-index",
+    "description": "A bundle for validating publications.",
+    "type": "symfony-bundle",
+    "keywords": [
+        "commongateway",
+        "common",
+        "gateway",
+        "conduction",
+        "symfony",
+        "common-gateway-plugin",
+        "publication"
+    ],
+    "homepage": "https://commongateway.nl",
+    "license": "EUPL-1.2",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4",
+        "commongateway/corebundle": "^1.1.52 | <2.0"
+    },
+    "require-dev": {
+        "symfony/dependency-injection": "~3.4|~4.1|~5.0"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true,
+        "allow-plugins": {
+            "symfony/flex": true,
+            "symfony/runtime": true,
+            "endroid/installer": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "CommonGateway\\OpenIndex\\": "src/"
+        }
+    }
+}
