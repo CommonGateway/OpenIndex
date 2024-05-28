@@ -10,6 +10,7 @@ use Doctrine\Persistence\Event\LifecycleEventArgs;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use CommonGateway\OpenIndex\Service\ValidationService;
 use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Subscriber to validate Publication.
@@ -91,16 +92,17 @@ class PublicationSubscriber implements EventSubscriberInterface
 
             $schemaEntity = $this->entityManager->getRepository(App::Entity)->findOneBy(['reference' => $objectArray['schema']]);
             if ($schemaEntity instanceof Entity === false) {
-                // Log error
+                return new Response(json_encode(['message' => 'Could not find schema ' . $objectArray['schema']]), 403);
             }
 
             $validationErrors = $this->validationService->validateData($objectArray['data'], $schemaEntity, 'POST');
             if ($validationErrors !== null) {
-                // Return error response
+                    return new Response(json_encode([
+                        "message" => 'Validation errors',
+                        'data'    => $validationErrors
+                    ]), 403);
             }
             
-
-            // What to do else?
             return;
         }
 

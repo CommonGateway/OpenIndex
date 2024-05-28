@@ -1,0 +1,13 @@
+{
+  "endpoints": {
+    "schemas": [
+      {
+        "$id": "https://openwoo.app/publication.endpoint.json",
+        "reference": "https://openwoo.app/schemas/publication.schema.json",
+        "path": "publications",
+        "methods": [],
+        "version": "0.0.1"
+      }
+    ]
+  }
+}
