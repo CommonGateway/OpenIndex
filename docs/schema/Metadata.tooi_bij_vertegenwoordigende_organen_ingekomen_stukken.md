@@ -2,7 +2,7 @@
 
 Ingekomen stukken bij diverse overheidsorganen, uitgezonderd bepaalde vertrouwelijke informatie of individuele gevallen.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/publication-subscriber/docs/schema/Metadata.tooi_bij_vertegenwoordigende_organen_ingekomen_stukken.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Metadata.tooi_bij_vertegenwoordigende_organen_ingekomen_stukken.svg)
 
 ## Properties
 
