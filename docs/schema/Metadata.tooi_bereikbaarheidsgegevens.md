@@ -2,7 +2,7 @@
 
 Bereikbaarheidsinformatie van bestuursorganen en hun organisatieonderdelen.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/required-categorie-naam/docs/schema/Metadata.tooi_bereikbaarheidsgegevens.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Metadata.tooi_bereikbaarheidsgegevens.svg)
 
 ## Properties
 
