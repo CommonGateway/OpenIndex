@@ -104,7 +104,7 @@ class PublicationSubscriber implements EventSubscriberInterface
             }
 
             $validationErrors = $this->validationService->validateData($objectArray['data'], $schemaEntity, 'POST');
-            
+
             var_dump($objectArray['data'], $schemaEntity->getName(), $validationErrors);
             if ($validationErrors !== null) {
                 var_dump('There are errors');
