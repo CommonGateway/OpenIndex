@@ -2,7 +2,7 @@
 
 The publication object is the core of Open Index, acting as a metadata wrapper for objects and thereby forming the common link between different publications from, for example, WOO and OC.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Publication.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/publication-subscriber/docs/schema/Publication.svg)
 
 ## Properties
 
@@ -21,4 +21,4 @@ The publication object is the core of Open Index, acting as a metadata wrapper f
 | schema | string | Schemas add predictability and interpretability to the objects published under `data`. They describe the object contained in `data` and the conditions it must meet. For this, we use the [json-schema](https://json-schema.org/) which is itself part of [OAS 3](https://swagger.io/specification/). In the `schema` property, we expect a URL reference to a publicly accessible schema.json object. This could be on a website or GitHub, for instance. During `POST` and `PUT` actions on the publication object, the object in `data` is tested against this schema. Additionally, a consuming party can use the URL to retrieve the schema so they can interpret the object in `data`. | Yes |
 | attachments | array | N/A | No |
 | themes | array | The urls of the theme's associated with this publication | No |
-| data | object | The actual object to be published (must not be larger than 15 MB) | No |
+| data | array | The actual object to be published (must not be larger than 15 MB) | No |

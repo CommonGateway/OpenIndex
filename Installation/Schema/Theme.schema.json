@@ -37,7 +37,6 @@
         },
         "image": {
             "type": "string",
-            "format": ["url","base64"],
             "description":"An image for the theme, can be provided as a reference `url` or `base64` encoded image"
         },
         "publications": {
