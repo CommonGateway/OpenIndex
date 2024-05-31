@@ -37,7 +37,6 @@
         },
         "image": {
             "type": "string",
-            "format": ["url", "base64"],
             "description": "An image for the index, such as a logo. Can be provided as a reference `url` or `base64` encoded image"
         },
         "url": {
@@ -53,7 +52,7 @@
         },
         "organization": {
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Organization.schema.json",
+            "$ref": "https://openwoo.app/schemas/organization.schema.json",
             "format": "json",
             "description": "The organization that provides this index (acts as the default for publications in the index)"
         }

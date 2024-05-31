@@ -2,7 +2,7 @@
     "title": "Attachment",
     "$id": "https://openwoo.app/schemas/attachment.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "object",
     "description": "An attachment object",
     "tags": ["Open Index"],
@@ -49,7 +49,6 @@
         },
         "type": {
             "type": "string",
-            "format": "mime-type",
             "description": "The MIME type of the attachment, determined at the time of reading and recorded for display in the UI. This value is automatically updated and thus cannot be set via the API"
         },
         "extension": {
