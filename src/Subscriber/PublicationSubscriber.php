@@ -8,7 +8,7 @@ use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Events;
 use Doctrine\Persistence\Event\LifecycleEventArgs;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
-use CommonGateway\OpenIndex\Service\ValidationService;
+use CommonGateway\CoreBundle\Service\ValidationService;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -54,7 +54,6 @@ class PublicationSubscriber implements EventSubscriberInterface
         EntityManagerInterface $entityManager
     ) {
         $this->parameterBag      = $parameterBag;
-        $this->session           = $session;
         $this->validationService = $validationService;
         $this->entityManager     = $entityManager;
 
@@ -88,22 +87,27 @@ class PublicationSubscriber implements EventSubscriberInterface
      *
      * @return void
      */
-    public function prePersist(LifecycleEventArgs $args): void
+    public function prePersist(LifecycleEventArgs $args): ?Response
     {
         $object = $args->getObject();
         // if this subscriber only applies to certain entity types,
+            var_dump('test1');
         if ($object instanceof ObjectEntity && $object->getEntity() !== null && $object->getEntity()->getReference() === $this::PUBLICATION_REFERENCE
             && $object->getValue('schema') !== null && $object->getValue('data') !== null
         ) {
+            var_dump('test2');
             $objectArray = $object->toArray();
 
-            $schemaEntity = $this->entityManager->getRepository(App::Entity)->findOneBy(['reference' => $objectArray['schema']]);
+            $schemaEntity = $this->entityManager->getRepository(Entity::class)->findOneBy(['reference' => $objectArray['schema']]);
             if ($schemaEntity instanceof Entity === false) {
                 return new Response(json_encode(['message' => 'Could not find schema '.$objectArray['schema']]), 403);
             }
 
             $validationErrors = $this->validationService->validateData($objectArray['data'], $schemaEntity, 'POST');
+            
+            var_dump($objectArray['data'], $schemaEntity->getName(), $validationErrors);
             if ($validationErrors !== null) {
+                var_dump('There are errors');
                     return new Response(
                         json_encode(
                             [
@@ -115,8 +119,10 @@ class PublicationSubscriber implements EventSubscriberInterface
                     );
             }
 
-            return;
+            return null;
         }//end if
+
+        return null;
 
     }//end prePersist()
 
