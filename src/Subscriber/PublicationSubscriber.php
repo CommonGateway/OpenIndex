@@ -114,13 +114,9 @@ class PublicationSubscriber implements EventSubscriberInterface
                     403
                 );
             }
-
-            return null;
         }//end if
 
         return null;
-
     }//end prePersist()
-
 
 }//end class
