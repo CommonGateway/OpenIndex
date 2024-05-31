@@ -117,6 +117,8 @@ class PublicationSubscriber implements EventSubscriberInterface
         }//end if
 
         return null;
+
     }//end prePersist()
+
 
 }//end class
