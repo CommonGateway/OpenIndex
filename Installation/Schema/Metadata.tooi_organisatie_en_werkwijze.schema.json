@@ -2,13 +2,14 @@
     "title": "Metadata TOOI organisatie en werkwijze",
     "$id": "https://openwoo.app/schemas/metadata.tooi_organisatie_en_werkwijze.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "object",
     "description": "Informatie over de organisatie en werkwijze van bestuursorganen.",
     "properties": {
         "tooiCategorieNaam": {
             "type": "string",
             "const":"organisatie en werkwijze",
+            "required": true,
             "description":"De naam van de TOOI categorie conform [diwoo metadata lijsten](https://standaarden.overheid.nl/diwoo/metadata/doc/0.9.1/diwoo-metadata-lijsten_xsd_Simple_Type_diwoo_scw_woo_informatiecategorieen)"
         },
         "tooiCategorieId": {
@@ -51,7 +52,6 @@
         }
     },
     "required": [
-        "categorie",
-        "publicatiedatum"
+        "tooiCategorieNaam"
     ]
 }
