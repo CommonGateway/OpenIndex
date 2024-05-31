@@ -2,7 +2,7 @@
 
 Ontwerpen van wetgeving waarover extern advies is gevraagd, inclusief de adviesaanvraag.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Metadata.tooi_ontwerpen_van_wet_en_regelgeving_met_adviesaanvraag.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/required-categorie-naam/docs/schema/Metadata.tooi_ontwerpen_van_wet_en_regelgeving_met_adviesaanvraag.svg)
 
 ## Properties
 
