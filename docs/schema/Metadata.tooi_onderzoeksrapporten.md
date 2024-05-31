@@ -2,7 +2,7 @@
 
 Onderzoeksrapporten opgesteld op verzoek van bestuursorganen die geen taakuitvoering zijn, gericht op organisatie of beleidsevaluatie.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Metadata.tooi_onderzoeksrapporten.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/services-yaml/docs/schema/Metadata.tooi_onderzoeksrapporten.svg)
 
 ## Properties
 
