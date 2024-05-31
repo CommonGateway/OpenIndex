@@ -111,7 +111,7 @@ class PublicationSubscriber implements EventSubscriberInterface
                             'data'    => $validationErrors,
                         ]
                     ),
-                    403
+                    400
                 );
             }
         }//end if
