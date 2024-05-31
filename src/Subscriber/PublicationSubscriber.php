@@ -91,11 +91,9 @@ class PublicationSubscriber implements EventSubscriberInterface
     {
         $object = $args->getObject();
         // if this subscriber only applies to certain entity types,
-            var_dump('test1');
         if ($object instanceof ObjectEntity && $object->getEntity() !== null && $object->getEntity()->getReference() === $this::PUBLICATION_REFERENCE
             && $object->getValue('schema') !== null && $object->getValue('data') !== null
         ) {
-            var_dump('test2');
             $objectArray = $object->toArray();
 
             $schemaEntity = $this->entityManager->getRepository(Entity::class)->findOneBy(['reference' => $objectArray['schema']]);
@@ -105,18 +103,16 @@ class PublicationSubscriber implements EventSubscriberInterface
 
             $validationErrors = $this->validationService->validateData($objectArray['data'], $schemaEntity, 'POST');
 
-            var_dump($objectArray['data'], $schemaEntity->getName(), $validationErrors);
             if ($validationErrors !== null) {
-                var_dump('There are errors');
-                    return new Response(
-                        json_encode(
-                            [
-                                "message" => 'Validation errors',
-                                'data'    => $validationErrors,
-                            ]
-                        ),
-                        403
-                    );
+                return new Response(
+                    json_encode(
+                        [
+                            "message" => 'Validation errors',
+                            'data'    => $validationErrors,
+                        ]
+                    ),
+                    403
+                );
             }
 
             return null;
