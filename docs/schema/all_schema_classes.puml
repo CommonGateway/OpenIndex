@@ -157,7 +157,7 @@ class Publication {
   + schema: string
   + attachments: array
   + themes: array
-  + data: object
+  + data: array
 }
 class Attachment {
   + id: string

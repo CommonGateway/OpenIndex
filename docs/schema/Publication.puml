@@ -17,6 +17,6 @@ class Publication {
   + schema: string
   + attachments: array
   + themes: array
-  + data: object
+  + data: array
 }
 @enduml
