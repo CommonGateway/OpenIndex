@@ -17,7 +17,7 @@ jobs:
         uses: OpenCatalogi/productpage-action@latest
         with:
           # Links
-          SLACK_URL: "https://samenorganiseren.slack.com/archives/C03JLP1EUH4"
+          SLACK_URL: "https://github.com/openwebconcept/"
           READ_THE_DOCS_URL: "false"
           github_repository_name_as_prefix: false
           github_repository_url: https://github.com/CommonGateway/OpenIndex

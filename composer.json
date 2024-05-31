@@ -1,6 +1,6 @@
 {
     "name": "common-gateway/open-index",
-    "description": "A bundle for storing publications",
+    "description": "A bundle for validating publications.",
     "type": "symfony-bundle",
     "keywords": [
         "commongateway",
