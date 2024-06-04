@@ -7,11 +7,11 @@ use App\Entity\Entity;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Events;
 use Doctrine\Persistence\Event\LifecycleEventArgs;
-use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use CommonGateway\CoreBundle\Service\ValidationService;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
 /**
  * Subscriber to validate Publication.
@@ -36,8 +36,7 @@ class PublicationSubscriber implements EventSubscriberInterface
      */
     public function __construct(
         private readonly ValidationService $validationService,
-        private readonly EntityManagerInterface $entityManager,
-        private readonly LoggerInterface $pluginLogger
+        private readonly EntityManagerInterface $entityManager
     ) {
 
     }//end __construct()
@@ -88,7 +87,6 @@ class PublicationSubscriber implements EventSubscriberInterface
             $validationErrors = $this->validationService->validateData($objectArray['data'], $schemaEntity, 'POST');
 
             if ($validationErrors !== null) {
-                $this->pluginLogger->error(message: 'This object could not be safed due to validation errors.', context: ['plugin' => 'common-gateway/woo-bundle', 'errors' => $validationErrors]);
                 $response = new Response(
                     content: json_encode(
                         [
@@ -100,7 +98,7 @@ class PublicationSubscriber implements EventSubscriberInterface
                     headers: ['content-type' => 'application/json']
                 );
                 $response->send();
-                return $response;
+                throw new BadRequestHttpException(message: 'Validation Errors');
             }
         }//end if
 
