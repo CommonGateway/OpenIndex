@@ -13,6 +13,7 @@ use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use CommonGateway\CoreBundle\Service\ValidationService;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\RequestStack;
 
 /**
  * Subscriber to validate Publication.
