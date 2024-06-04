@@ -2,7 +2,7 @@
 
 Adviezen over ontwerpen en andere onderwerpen van adviescolleges of -commissies, exclusief adviezen die betrekking hebben op individuele gevallen.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/Metadata.ods_agenda_item.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Metadata.ods_agenda_item.svg)
 
 ## Properties
 

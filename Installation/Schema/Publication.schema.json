@@ -40,7 +40,6 @@
         },
         "image": {
             "type": "string",
-            "format": ["url", "base64"],
             "description": "An image for the publication, can be provided as a reference `url` or `base64` encoded image"
         },
         "category": {
@@ -72,7 +71,7 @@
         },
         "organization": {
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Organization.schema.json",
+            "$ref": "https://openwoo.app/schemas/organization.schema.json",
             "format": "json",
             "description": "The organization belonging to this publication object, in theory multiple organizations can share one Open Index installation but this is discouraged."
         },
@@ -81,12 +80,12 @@
             "format": "url",
             "description": "Schemas add predictability and interpretability to the objects published under `data`. They describe the object contained in `data` and the conditions it must meet. For this, we use the [json-schema](https://json-schema.org/) which is itself part of [OAS 3](https://swagger.io/specification/). In the `schema` property, we expect a URL reference to a publicly accessible schema.json object. This could be on a website or GitHub, for instance. During `POST` and `PUT` actions on the publication object, the object in `data` is tested against this schema. Additionally, a consuming party can use the URL to retrieve the schema so they can interpret the object in `data`.",
             "required": true,
-            "examples": ["https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_adviezen.schema.json"]
+            "examples": ["https://openwoo.app/schemas/metadata.tooi_adviezen.schema.json"]
         },
         "attachments": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Attachment.schema.json"
+                "$ref": "https://openwoo.app/schemas/attachment.schema.json"
             },
             "format": "json"
         },

@@ -17,32 +17,6 @@
     },
     "subItems": [
       {
-        "label": "Federalisatie",
-        "type": "internalMarkdown",
-        "current": {
-          "pathname": "/Documentatie/Federalisatie"
-        },
-        "handleClick": {
-          "internalMarkdown": {
-            "directoryName": "Documentatie",
-            "fileName": "Federalisatie"
-          }
-        }
-      },
-      {
-        "label": "Zoeken",
-        "type": "internalMarkdown",
-        "current": {
-          "pathname": "/Documentatie/Zoeken"
-        },
-        "handleClick": {
-          "internalMarkdown": {
-            "directoryName": "Documentatie",
-            "fileName": "Zoeken"
-          }
-        }
-      },
-      {
         "label": "Architectuur",
         "type": "internalMarkdown",
         "current": {
@@ -52,19 +26,6 @@
           "internalMarkdown": {
             "directoryName": "Documentatie",
             "fileName": "Architectuur"
-          }
-        }
-      },
-      {
-        "label": "Installatie",
-        "type": "internalMarkdown",
-        "current": {
-          "pathname": "/Documentatie/Installatie"
-        },
-        "handleClick": {
-          "internalMarkdown": {
-            "directoryName": "Documentatie",
-            "fileName": "INSTALLATION"
           }
         }
       },
@@ -82,6 +43,32 @@
         }
       },
       {
+        "label": "Federalisatie",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Federalisatie"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "Federalisatie"
+          }
+        }
+      },
+      {
+        "label": "Installatie",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Installatie"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "Installatie"
+          }
+        }
+      },      
+      {
         "label": "Organisatie",
         "type": "internalMarkdown",
         "current": {
@@ -91,6 +78,19 @@
           "internalMarkdown": {
             "directoryName": "Documentatie",
             "fileName": "GOVERNANCE"
+          }
+        }
+      },
+      {
+        "label": "Zoeken",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Documentatie/Zoeken"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Documentatie",
+            "fileName": "Zoeken"
           }
         }
       }
