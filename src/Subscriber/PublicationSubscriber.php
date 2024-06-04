@@ -3,14 +3,10 @@
 namespace CommonGateway\OpenIndex\Subscriber;
 
 use App\Entity\ObjectEntity;
-use App\Entity\Entity;
 use CommonGateway\OpenIndex\Service\OpenIndexService;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Events;
 use Doctrine\Persistence\Event\LifecycleEventArgs;
-use Psr\Log\LoggerInterface;
-use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
-use CommonGateway\CoreBundle\Service\ValidationService;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\RequestStack;

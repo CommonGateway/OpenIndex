@@ -4,15 +4,9 @@ namespace CommonGateway\OpenIndex\Service;
 
 use App\Entity\Entity;
 use App\Entity\ObjectEntity;
-use App\Service\EavService;
-use App\Exception\GatewayException;
-use App\Service\SynchronizationService;
-use CommonGateway\CoreBundle\Service\CallService;
-use CommonGateway\CoreBundle\Service\GatewayResourceService;
-use CommonGateway\CoreBundle\Service\MappingService;
+use CommonGateway\CoreBundle\Service\ValidationService;
 use Doctrine\ORM\EntityManagerInterface;
-use Psr\Cache\CacheException;
-use Psr\Cache\InvalidArgumentException;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
