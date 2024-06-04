@@ -2,7 +2,7 @@
 
 An externally found index that can be used as a source in federative search queries
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/OpenIndexService/docs/schema/Index.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Index.svg)
 
 ## Properties
 
