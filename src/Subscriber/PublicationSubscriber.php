@@ -78,7 +78,7 @@ class PublicationSubscriber implements EventSubscriberInterface
     {
         $this->prePersist($args);
 
-    }//end postUpdate()
+    }//end preUpdate()
 
 
     /**
