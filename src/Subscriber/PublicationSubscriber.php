@@ -25,17 +25,20 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class PublicationSubscriber implements EventSubscriberInterface
 {
-    
+
+
     /**
      * The constructor sets al needed variables.
      *
      * @param OpenIndexService $openIndexService
-     * @param RequestStack $requestStack
+     * @param RequestStack     $requestStack
      */
     public function __construct(
         private readonly OpenIndexService $openIndexService,
         private readonly RequestStack $requestStack
-    ) {}//end __construct()
+    ) {
+
+    }//end __construct()
 
 
     /**
@@ -59,7 +62,7 @@ class PublicationSubscriber implements EventSubscriberInterface
             $method = $this->requestStack->getMainRequest()->getMethod();
             $this->openIndexService->validatePublication($object, $method);
         }
-        
+
         return null;
 
     }//end preUpdate()
