@@ -2,7 +2,7 @@
 
 Wetten en andere algemeen verbindende voorschriften. 
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/make-bundle-installable/docs/schema/Metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.svg)
 
 ## Properties
 
