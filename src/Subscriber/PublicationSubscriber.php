@@ -67,13 +67,14 @@ class PublicationSubscriber implements EventSubscriberInterface
     public function getSubscribedEvents(): array
     {
         return [
+            Events::preUpdate,
             Events::prePersist,
         ];
 
     }//end getSubscribedEvents()
 
 
-    public function postUpdate(LifecycleEventArgs $args): void
+    public function preUpdate(LifecycleEventArgs $args): void
     {
         $this->prePersist($args);
 
