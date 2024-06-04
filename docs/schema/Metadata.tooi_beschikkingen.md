@@ -2,7 +2,7 @@
 
 Beschikkingen, uitgezonderd specifieke categorieën.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Metadata.tooi_beschikkingen.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/make-bundle-installable/docs/schema/Metadata.tooi_beschikkingen.svg)
 
 ## Properties
 

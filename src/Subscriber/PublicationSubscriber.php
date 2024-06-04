@@ -7,10 +7,12 @@ use App\Entity\Entity;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Events;
 use Doctrine\Persistence\Event\LifecycleEventArgs;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use CommonGateway\CoreBundle\Service\ValidationService;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
 /**
  * Subscriber to validate Publication.
@@ -25,37 +27,19 @@ class PublicationSubscriber implements EventSubscriberInterface
 {
     const PUBLICATION_REFERENCE = 'https://openwoo.app/schemas/publication.schema.json';
 
-    /**
-     * @var ParameterBagInterface
-     */
-    private ParameterBagInterface $parameterBag;
-
-    /**
-     * @var ValidationService
-     */
-    private ValidationService $validationService;
-
-    /**
-     * @var EntityManagerInterface
-     */
-    private EntityManagerInterface $entityManager;
-
 
     /**
      * The constructor sets al needed variables.
      *
-     * @param ParameterBagInterface  $parameterBag
      * @param ValidationService      $validationService
      * @param EntityManagerInterface $entityManager
+     * @param LoggerInterface        $pluginLogger
      */
     public function __construct(
-        ParameterBagInterface $parameterBag,
-        ValidationService $validationService,
-        EntityManagerInterface $entityManager
+        private readonly ValidationService $validationService,
+        private readonly EntityManagerInterface $entityManager,
+        private readonly LoggerInterface $pluginLogger
     ) {
-        $this->parameterBag      = $parameterBag;
-        $this->validationService = $validationService;
-        $this->entityManager     = $entityManager;
 
     }//end __construct()
 
@@ -67,17 +51,18 @@ class PublicationSubscriber implements EventSubscriberInterface
     public function getSubscribedEvents(): array
     {
         return [
+            Events::preUpdate,
             Events::prePersist,
         ];
 
     }//end getSubscribedEvents()
 
 
-    public function postUpdate(LifecycleEventArgs $args): void
+    public function preUpdate(LifecycleEventArgs $args): void
     {
         $this->prePersist($args);
 
-    }//end postUpdate()
+    }//end preUpdate()
 
 
     /**
@@ -104,15 +89,19 @@ class PublicationSubscriber implements EventSubscriberInterface
             $validationErrors = $this->validationService->validateData($objectArray['data'], $schemaEntity, 'POST');
 
             if ($validationErrors !== null) {
-                return new Response(
-                    json_encode(
+                $this->pluginLogger->error(message: 'This object could not be safed due to validation errors.', context: ['plugin' => 'common-gateway/woo-bundle', 'errors' => $validationErrors]);
+                $response = new Response(
+                    content: json_encode(
                         [
                             "message" => 'Validation errors',
                             'data'    => $validationErrors,
                         ]
                     ),
-                    400
+                    status: 400,
+                    headers: ['content-type' => 'application/json']
                 );
+                $response->send();
+                throw new BadRequestHttpException(message: 'Validation Errors');
             }
         }//end if
 
