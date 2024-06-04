@@ -14,7 +14,7 @@ namespace CommonGateway\OpenIndex;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class OpenIndex extends Bundle
+class OpenIndexBundle extends Bundle
 {
 
 
