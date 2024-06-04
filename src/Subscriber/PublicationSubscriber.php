@@ -7,6 +7,7 @@ use App\Entity\Entity;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Events;
 use Doctrine\Persistence\Event\LifecycleEventArgs;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use CommonGateway\CoreBundle\Service\ValidationService;
 use Doctrine\ORM\EntityManagerInterface;
@@ -30,13 +31,14 @@ class PublicationSubscriber implements EventSubscriberInterface
     /**
      * The constructor sets al needed variables.
      *
-     * @param ParameterBagInterface  $parameterBag
-     * @param ValidationService      $validationService
+     * @param ValidationService $validationService
      * @param EntityManagerInterface $entityManager
+     * @param LoggerInterface $pluginLogger
      */
     public function __construct(
         private readonly ValidationService $validationService,
-        private readonly EntityManagerInterface $entityManager
+        private readonly EntityManagerInterface $entityManager,
+        private readonly LoggerInterface $pluginLogger
     ) {
 
     }//end __construct()
@@ -87,6 +89,7 @@ class PublicationSubscriber implements EventSubscriberInterface
             $validationErrors = $this->validationService->validateData($objectArray['data'], $schemaEntity, 'POST');
 
             if ($validationErrors !== null) {
+                $this->pluginLogger->error(message: 'This object could not be safed due to validation errors.', context: ['plugin' => 'common-gateway/woo-bundle', 'errors' => $validationErrors]);
                 $response = new Response(
                     content: json_encode(
                         [
