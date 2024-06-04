@@ -25,6 +25,7 @@ class PublicationSubscriber implements EventSubscriberInterface
 {
     const PUBLICATION_REFERENCE = 'https://openwoo.app/schemas/publication.schema.json';
 
+
     /**
      * The constructor sets al needed variables.
      *
@@ -94,7 +95,6 @@ class PublicationSubscriber implements EventSubscriberInterface
                     ),
                     status: 400,
                     headers: ['content-type' => 'application/json']
-
                 );
                 $response->send();
                 return $response;
