@@ -18,10 +18,15 @@ Daarnaast helpt OpenIndex bij het waarborgen van de datakwaliteit en -consistent
 - **Verhoogde Interoperabiliteit**: Stelt verschillende overheidsafdelingen en -agentschappen in staat om data effectiever te delen en te benutten.
 - **Community-Gedreven Innovatie**: Maakt gebruik van de collectieve expertise en bijdragen van de open-sourcegemeenschap voor voortdurende ontwikkeling en verbeteringen.
 
+
+## Gebaseerd op Open Registers
+Één krachtig [frame work](https://openregisters.app/docs/Registers/) voor het neerzeten van commonground registraties zo als [zaken](https://zaken.openregisters.app/), [klanten](https://klanten.openregisters.app/), [waardepapieren](https://waardepapieren.openregisters.app/) en [zoeken](https://index.openregisters.app/)
+
+Met uitgebreide [functionaliteit]() voor het [filteren]() van gegevens
+
 ## Kern onderdelen
 
 ### Een krachtige landelijke api
-
 [API DOCS](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/CommonGateway/OpenIndex/feature/documentation-2024/docs/oas.json)
 
 ### (Her)gebruik van vertrouwde oplossingen
