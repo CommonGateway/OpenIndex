@@ -2,7 +2,7 @@
 
 Vergaderstukken en verslagen van de Staten-Generaal, uitgezonderd vertrouwelijke informatie verstrekt aan de Staten-Generaal.  
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Metadata.tooi_vergaderstukken_staten_generaal.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/make-bundle-installable/docs/schema/Metadata.tooi_vergaderstukken_staten_generaal.svg)
 
 ## Properties
 
