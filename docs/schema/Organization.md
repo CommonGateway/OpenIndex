@@ -2,7 +2,7 @@
 
 An organization that provides a publication or index
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/make-bundle-installable/docs/schema/Organization.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/OpenIndexService/docs/schema/Organization.svg)
 
 ## Properties
 

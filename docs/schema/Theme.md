@@ -2,7 +2,7 @@
 
 A thematic clustering of publications in a manner logical for searching, can also be used for topics. Themes exist within a single index and are thus organization specific unless the index is shared by multiple organizations
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/make-bundle-installable/docs/schema/Theme.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/OpenIndexService/docs/schema/Theme.svg)
 
 ## Properties
 

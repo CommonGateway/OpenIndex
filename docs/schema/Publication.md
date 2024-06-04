@@ -2,7 +2,7 @@
 
 The publication object is the core of Open Index, acting as a metadata wrapper for objects and thereby forming the common link between different publications from, for example, WOO and OC.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/make-bundle-installable/docs/schema/Publication.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/OpenIndexService/docs/schema/Publication.svg)
 
 ## Properties
 
