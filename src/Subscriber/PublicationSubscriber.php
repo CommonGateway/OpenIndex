@@ -26,22 +26,6 @@ class PublicationSubscriber implements EventSubscriberInterface
     const PUBLICATION_REFERENCE = 'https://openwoo.app/schemas/publication.schema.json';
 
     /**
-     * @var ParameterBagInterface
-     */
-    private ParameterBagInterface $parameterBag;
-
-    /**
-     * @var ValidationService
-     */
-    private ValidationService $validationService;
-
-    /**
-     * @var EntityManagerInterface
-     */
-    private EntityManagerInterface $entityManager;
-
-
-    /**
      * The constructor sets al needed variables.
      *
      * @param ParameterBagInterface  $parameterBag
@@ -49,13 +33,9 @@ class PublicationSubscriber implements EventSubscriberInterface
      * @param EntityManagerInterface $entityManager
      */
     public function __construct(
-        ParameterBagInterface $parameterBag,
-        ValidationService $validationService,
-        EntityManagerInterface $entityManager
+        private readonly ValidationService $validationService,
+        private readonly EntityManagerInterface $entityManager
     ) {
-        $this->parameterBag      = $parameterBag;
-        $this->validationService = $validationService;
-        $this->entityManager     = $entityManager;
 
     }//end __construct()
 
@@ -104,15 +84,19 @@ class PublicationSubscriber implements EventSubscriberInterface
             $validationErrors = $this->validationService->validateData($objectArray['data'], $schemaEntity, 'POST');
 
             if ($validationErrors !== null) {
-                return new Response(
-                    json_encode(
+                $response = new Response(
+                    content: json_encode(
                         [
                             "message" => 'Validation errors',
                             'data'    => $validationErrors,
                         ]
                     ),
-                    400
+                    status: 400,
+                    headers: ['content-type' => 'application/json']
+
                 );
+                $response->send();
+                return $response;
             }
         }//end if
 
