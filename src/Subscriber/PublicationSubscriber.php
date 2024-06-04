@@ -31,9 +31,9 @@ class PublicationSubscriber implements EventSubscriberInterface
     /**
      * The constructor sets al needed variables.
      *
-     * @param ValidationService $validationService
+     * @param ValidationService      $validationService
      * @param EntityManagerInterface $entityManager
-     * @param LoggerInterface $pluginLogger
+     * @param LoggerInterface        $pluginLogger
      */
     public function __construct(
         private readonly ValidationService $validationService,
