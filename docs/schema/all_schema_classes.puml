@@ -14,23 +14,7 @@ class MetadataTOOIWoo-verzoekenen-besluiten {
   + termijnoverschrijding: string
   + values: array
 }
-class Publication {
-  + id: string
-  + title: string
-  + summary: string
-  + description: string
-  + image: string
-  + category: string
-  + portal: string
-  + publicationDate: string
-  + featured: boolean
-  + organization: object
-  + schema: string
-  + attachments: array
-  + themes: array
-  + data: Any
-}
-class MetadataOpenCatalogiPubliccode {
+class MetadataTOOIbeschikkingen {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
   + tooiCategorieUri: string
