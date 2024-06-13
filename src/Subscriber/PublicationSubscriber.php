@@ -3,19 +3,18 @@
 namespace CommonGateway\OpenIndex\Subscriber;
 
 use App\Entity\ObjectEntity;
-use App\Entity\Entity;
+use CommonGateway\OpenIndex\Service\OpenIndexService;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Events;
 use Doctrine\Persistence\Event\LifecycleEventArgs;
-use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
-use CommonGateway\CoreBundle\Service\ValidationService;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\RequestStack;
 
 /**
  * Subscriber to validate Publication.
  *
- * @author Conduction <info@conduction.nl> Barry Brands <barry@conduction.nl>
+ * @author Conduction <info@conduction.nl> Barry Brands <barry@conduction.nl>, Wilco Louwerse <wilco@conduction.nl>
  *
  * @license EUPL <https://github.com/ConductionNL/contactcatalogus/blob/master/LICENSE.md>
  *
@@ -23,39 +22,18 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class PublicationSubscriber implements EventSubscriberInterface
 {
-    const PUBLICATION_REFERENCE = 'https://openwoo.app/schemas/publication.schema.json';
-
-    /**
-     * @var ParameterBagInterface
-     */
-    private ParameterBagInterface $parameterBag;
-
-    /**
-     * @var ValidationService
-     */
-    private ValidationService $validationService;
-
-    /**
-     * @var EntityManagerInterface
-     */
-    private EntityManagerInterface $entityManager;
 
 
     /**
      * The constructor sets al needed variables.
      *
-     * @param ParameterBagInterface  $parameterBag
-     * @param ValidationService      $validationService
-     * @param EntityManagerInterface $entityManager
+     * @param OpenIndexService $openIndexService
+     * @param RequestStack     $requestStack
      */
     public function __construct(
-        ParameterBagInterface $parameterBag,
-        ValidationService $validationService,
-        EntityManagerInterface $entityManager
+        private readonly OpenIndexService $openIndexService,
+        private readonly RequestStack $requestStack
     ) {
-        $this->parameterBag      = $parameterBag;
-        $this->validationService = $validationService;
-        $this->entityManager     = $entityManager;
 
     }//end __construct()
 
@@ -67,17 +45,24 @@ class PublicationSubscriber implements EventSubscriberInterface
     public function getSubscribedEvents(): array
     {
         return [
+            Events::preUpdate,
             Events::prePersist,
         ];
 
     }//end getSubscribedEvents()
 
 
-    public function postUpdate(LifecycleEventArgs $args): void
+    public function preUpdate(LifecycleEventArgs $args): ?Response
     {
-        $this->prePersist($args);
+        $object = $args->getObject();
+        if ($object instanceof ObjectEntity && $this->requestStack->getMainRequest() !== null) {
+            $method = $this->requestStack->getMainRequest()->getMethod();
+            $this->openIndexService->validatePublication($object, $method);
+        }
 
-    }//end postUpdate()
+        return null;
+
+    }//end preUpdate()
 
 
     /**
@@ -90,31 +75,9 @@ class PublicationSubscriber implements EventSubscriberInterface
     public function prePersist(LifecycleEventArgs $args): ?Response
     {
         $object = $args->getObject();
-        // if this subscriber only applies to certain entity types,
-        if ($object instanceof ObjectEntity && $object->getEntity() !== null && $object->getEntity()->getReference() === $this::PUBLICATION_REFERENCE
-            && $object->getValue('schema') !== null && $object->getValue('data') !== null
-        ) {
-            $objectArray = $object->toArray();
-
-            $schemaEntity = $this->entityManager->getRepository(Entity::class)->findOneBy(['reference' => $objectArray['schema']]);
-            if ($schemaEntity instanceof Entity === false) {
-                return new Response(json_encode(['message' => 'Could not find schema '.$objectArray['schema']]), 403);
-            }
-
-            $validationErrors = $this->validationService->validateData($objectArray['data'], $schemaEntity, 'POST');
-
-            if ($validationErrors !== null) {
-                return new Response(
-                    json_encode(
-                        [
-                            "message" => 'Validation errors',
-                            'data'    => $validationErrors,
-                        ]
-                    ),
-                    400
-                );
-            }
-        }//end if
+        if ($object instanceof ObjectEntity) {
+            $this->openIndexService->validatePublication($object, 'POST');
+        }
 
         return null;
 
