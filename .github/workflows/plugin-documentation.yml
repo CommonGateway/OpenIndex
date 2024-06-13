@@ -360,10 +360,10 @@ jobs:
       - uses: actions/checkout@v3
       - uses: php-actions/composer@v6
         with:
-          # php_version: "7.4"
-          php_version: "8.2"
+          php_version: "7.4"
+          #php_version: "8.2"
           php_extensions: redis exif mongodb intl pdo_pgsql zip mysqli pdo_mysql pcntl gd gmp
-          version: 2.x
+          version: 2.2.x
           command: require clean/phpdoc-md
       - name: Build the docs
         run: vendor/bin/phpdoc-md
