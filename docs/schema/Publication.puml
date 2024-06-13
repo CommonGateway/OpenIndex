@@ -5,6 +5,7 @@ header: Schema
 
 class Publication {
   + id: string
+  + reference: string
   + title: string
   + summary: string
   + description: string
@@ -15,8 +16,12 @@ class Publication {
   + featured: boolean
   + organization: object
   + schema: string
+  + status: string
   + attachments: array
+  + attachment_count: integer
   + themes: array
   + data: Any
+  + anonymization: object
+  + language: object
 }
 @enduml

@@ -65,7 +65,6 @@ class Organization {
   + summary: string
   + description: string
   + image: string
-  + uuid: string
   + oin: string
   + tooi: string
   + rsin: string
@@ -145,6 +144,7 @@ class MetadataTOOIagenda’senbesluitenlijstenbestuurscolleges {
 }
 class Publication {
   + id: string
+  + reference: string
   + title: string
   + summary: string
   + description: string
@@ -155,21 +155,30 @@ class Publication {
   + featured: boolean
   + organization: object
   + schema: string
+  + status: string
   + attachments: array
+  + attachment_count: integer
   + themes: array
   + data: Any
+  + anonymization: object
+  + language: object
 }
 class Attachment {
   + id: string
+  + reference: string
   + title: string
   + summary: string
   + description: string
   + labels: array
   + url: string
-  + documentText: string
+  + content: string
   + type: string
   + extension: string
   + size: integer
+  + anonymization: object
+  + language: object
+  + version_of: string
+  + hash: string
 }
 class MetadataTOOIorganisatieenwerkwijze {
   + tooiCategorieNaam: string
