@@ -1,0 +1,15 @@
+@startuml
+title: MetadataTOOIagenda’senbesluitenlijstenbestuurscolleges
+footer: Common Gateway Plugin | Commongateway | Openindex 
+header: Schema
+
+class MetadataTOOIagenda’senbesluitenlijstenbestuurscolleges {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+@enduml
