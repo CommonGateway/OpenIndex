@@ -179,12 +179,12 @@
         "label": "Publicatie",
         "type": "internalMarkdown",
         "current": {
-          "pathname": "/Schema/Publicatie"
+          "pathname": "/Schema/Publication"
         },
         "handleClick": {
           "internalMarkdown": {
             "directoryName": "Schema",
-            "fileName": "Publicatie"
+            "fileName": "Publication"
           }
         }
       },
@@ -192,12 +192,12 @@
         "label": "Bijlage",
         "type": "internalMarkdown",
         "current": {
-          "pathname": "/Schema/Bijlage"
+          "pathname": "/Schema/Attachment"
         },
         "handleClick": {
           "internalMarkdown": {
             "directoryName": "Schema",
-            "fileName": "Bijlage"
+            "fileName": "Attachment"
           }
         }
       },
@@ -205,12 +205,12 @@
         "label": "Organisatie",
         "type": "internalMarkdown",
         "current": {
-          "pathname": "/Schema/Organisatie"
+          "pathname": "/Schema/Organization"
         },
         "handleClick": {
           "internalMarkdown": {
             "directoryName": "Schema",
-            "fileName": "Organisatie"
+            "fileName": "Organization"
           }
         }
       },
@@ -218,12 +218,12 @@
         "label": "Thema",
         "type": "internalMarkdown",
         "current": {
-          "pathname": "/Schema/Thema"
+          "pathname": "/Schema/Theme"
         },
         "handleClick": {
           "internalMarkdown": {
             "directoryName": "Schema",
-            "fileName": "Thema"
+            "fileName": "Theme"
           }
         }
       },
@@ -241,5 +241,15 @@
         }
       }
     ]
+  },
+  {
+    "label": "Open Registers",
+    "type": "external",
+    "current": {
+      "pathname": "/registers"
+    },
+    "handleClick": {
+      "link":  "https://openregisters.app/"
+    }
   }
 ]

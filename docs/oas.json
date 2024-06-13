@@ -3,7 +3,7 @@
     "info": {
         "title": "OpenIndex API",
         "description": "API for interacting with the OpenIndex platform, a software focused on collaboration and IT development.",
-        "version": "0.1",
+        "version": "1.2",
         "contact": {
             "name": "OpenIndex",
             "url": "https://github.com/CommonGateway/OpenIndex"
@@ -60,16 +60,16 @@
     "components": {
         "schemas": {
             "Organization": {
-                "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Organization.schema.json"
+                "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/feature/documentation-2024/Installation/Schema/Organization.schema.json"
             },
             "Attachment": {
-                "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Attachment.schema.json"
+                "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/feature/documentation-2024/Installation/Schema/Attachment.schema.json"
             },
             "Publication": {
-                "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Publication.schema.json"
+                "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/feature/documentation-2024/Installation/Schema/Publication.schema.json"
             },
             "Index": {
-                "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Index.schema.json"
+                "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/feature/documentation-2024/Installation/Schema/Index.schema.json"
             },
             "Metadata.tooi_wetten_en_algemeen_verbindende_voorschriften": {
                 "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.schema.json"

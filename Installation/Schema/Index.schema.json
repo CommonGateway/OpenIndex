@@ -10,6 +10,8 @@
         "id": {
             "type": "string",
             "format": "uuid",
+            "immutable": true,
+            "readOnly": true,
             "description": "The unique identifier of the index"
         },
         "title": {

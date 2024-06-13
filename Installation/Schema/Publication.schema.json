@@ -10,8 +10,16 @@
         "id": {
             "type": "string",
             "format": "uuid",
+            "immutable": true,
+            "readOnly": true,
             "description": "The unique identifier of this publication",
             "example":"33f88aa9-6ac0-4f6c-967e-ecf787fd6a3d"
+        },
+        "reference": {
+            "type": "string",
+            "immutable": true,
+            "maxLength": 255,
+            "description": "The unique human readable identifier of the underlaying source object of the publication, e.g. a case number or letter reference",
         },
         "title": {
             "type": "string",
@@ -82,6 +90,12 @@
             "required": true,
             "examples": ["https://openwoo.app/schemas/metadata.tooi_adviezen.schema.json"]
         },
+        "status": {
+            "type": "string",
+            "description": "Attention! The publication object can only be included in an Open Index if the status is Published! The other statuses are intended for internal processing within the Woo Register.",
+            "required": true,
+            "oneOf": ["New, Revised, Rejected, Published, Withdrawn, Archived"]
+        },
         "attachments": {
             "type": "array",
             "items": {
@@ -89,14 +103,105 @@
             },
             "format": "json"
         },
+        "attachment_count": {
+            "type": "integer",
+            "readOnly": true,
+            "description": "**Generated** The amount of attachments belonging to this publication"
+        },
         "themes": {
             "type": "array",
             "format": "url",
             "description":"The urls of the theme's associated with this publication"
         },
         "data": {
-            "type": "array",
-            "description": "The actual object to be published (must not be larger than 15 MB)"
+            "oneOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_ontwerpen_van_wet_en_regelgeving_met_adviesaanvraag.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_vergaderstukken_decentrale_overheden.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_bij_vertegenwoordigende_organen_ingekomen_stukken.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_overige_besluiten_van_algemene_strekking.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_onderzoeksrapporten.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_convenanten.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_klachtoordelen.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_vergaderstukken_staten_generaal.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_agendas_en_besluitenlijsten_bestuurscolleges.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_bereikbaarheidsgegevens.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_beschikkingen.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_jaarplannen_en_jaarverslagen.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_verzoeken_en_besluiten.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_organisatie_en_werkwijze.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_adviezen.schema.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_subsidieverplichtingen_anders_dan_met_beschikking.schema.json"
+                }
+            ]
+        },
+        "anonymization": {
+            "type": "object",
+            "description": "Whether the attachment is properly annonymized and the results there of",
+            "properties": {
+                "anonymized": {
+                    "type": "boolean",
+                    "description": "If there was a succesfull anonymization"
+                },
+                "results": {
+                    "type": "string",
+                    "description": "Any results of the anonymization procces",
+                    "maxLength": 2500
+                }
+
+            }
+        },
+        "language": {
+            "type": "object",
+            "description": "The language and language level of the object",
+            "properties": {
+                "code": {
+                    "type": "string",
+                    "description": "ISO 639-1 standard language code",
+                    "example": "en-us",
+                    "maxLength": 7
+                },
+                "level": {
+                    "type": "string",
+                    "description": "Common European Framework of Reference (CEFR) for language level, see https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages for a explanation and translation to ACTFL",
+                    "example": "A1",
+                    "oneof": ["0","A1","A2","B1","B2","C1","C2"],
+                    "maxLength": 2
+                }
+            }
         }
     },
     "required": [
