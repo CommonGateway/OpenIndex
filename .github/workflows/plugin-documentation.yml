@@ -217,7 +217,7 @@ jobs:
 
           for root, dirs, files in os.walk("."):
            for file in files:
-               if file.endswith("schema.json"):
+               if file.endswith(".schema.json"):
                    schema_file_path = os.path.join(root, file)
                    with open(schema_file_path, 'r') as f:
                        schema = json.load(f)
