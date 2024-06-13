@@ -68,7 +68,6 @@ class Organization {
   + oin: string
   + tooi: string
   + rsin: string
-  + name: string
 }
 class MetadataTOOIklachtoordelen {
   + tooiCategorieNaam: string
