@@ -8,7 +8,7 @@ An attachment object
 
 | Property | Type | Description | Required |
 |----------|------|-------------|----------|
-| id | string | The unique identifier of this subject | No |
+| id | string | The unique identifier of this subject | Yes |
 | reference | string | The unique human readable identifier of the underlaying source object of the publication, e.g. a case number or letter reference | No |
 | title | string | The title (name) of a Attachment, if the title is left empty the file name wil be used instead | No |
 | summary | string | A short summary of the subject for the overview page | No |
