@@ -41,10 +41,12 @@
             "description": "An image for the subject, can be provided as a reference `url` or `base64` encoded image"
         },
         "oin": {
-            "type": "string"
+            "type": "string",
+            "description": "Het OIN van deze organisatie"
         },
         "tooi": {
-            "type": "string"
+            "type": "string",
+            "description": "Het tooi nummer van deze organisatie"
         },
         "rsin": {
             "type": "string",
@@ -54,10 +56,6 @@
             "required": true,
             "immutable": true,
             "description": "The RSIN of the Non-natural person being the organization that created the case. This must be a valid RSIN consisting of 9 digits and comply with the 11-test as described in https://en.wikipedia.org/wiki/Burgerservicenummer#11-proef."
-        },
-        "name": {
-            "type": "string",
-            "required": true
         }
     },
     "required": [
