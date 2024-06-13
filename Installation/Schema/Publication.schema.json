@@ -19,7 +19,7 @@
             "type": "string",
             "immutable": true,
             "maxLength": 255,
-            "description": "The unique human readable identifier of the underlaying source object of the publication, e.g. a case number or letter reference",
+            "description": "The unique human readable identifier of the underlaying source object of the publication, e.g. a case number or letter reference"
         },
         "title": {
             "type": "string",

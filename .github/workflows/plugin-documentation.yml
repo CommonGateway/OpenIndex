@@ -166,7 +166,6 @@ jobs:
               f.write("\n".join(all_source_classes))
               f.write("\n@enduml\n")
           EOF
-
       # Let create the mardown documents
       - name: Find JSON files and Generate Markdown
         env:
@@ -362,9 +361,11 @@ jobs:
       - uses: php-actions/composer@v6
         with:
           php_version: "7.4"
+          #php_version: "8.2"
           php_extensions: redis exif mongodb intl pdo_pgsql zip mysqli pdo_mysql pcntl gd gmp
-          version: 2.x
+          version: 2.2
           command: require clean/phpdoc-md
+          continue-on-error: true
       - name: Build the docs
         run: vendor/bin/phpdoc-md
       - name: Git commit

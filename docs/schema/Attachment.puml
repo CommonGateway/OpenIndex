@@ -5,14 +5,19 @@ header: Schema
 
 class Attachment {
   + id: string
+  + reference: string
   + title: string
   + summary: string
   + description: string
   + labels: array
   + url: string
-  + documentText: string
+  + content: string
   + type: string
   + extension: string
   + size: integer
+  + anonymization: object
+  + language: object
+  + version_of: string
+  + hash: string
 }
 @enduml

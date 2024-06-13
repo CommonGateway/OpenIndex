@@ -9,7 +9,6 @@ class Organization {
   + summary: string
   + description: string
   + image: string
-  + uuid: string
   + oin: string
   + tooi: string
   + rsin: string
