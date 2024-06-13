@@ -166,7 +166,14 @@ jobs:
               f.write("\n".join(all_source_classes))
               f.write("\n@enduml\n")
           EOF
-
+      # Generete the svg files for puml
+      - name: plantuml
+        id: plantuml
+        uses: grassedge/generate-plantuml-action@v1.5
+        with:
+          message: "Render PlantUML files"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Let create the mardown documents
       - name: Find JSON files and Generate Markdown
         env:
