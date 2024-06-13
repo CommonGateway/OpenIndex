@@ -10,16 +10,19 @@
         "id": {
             "type": "string",
             "format": "uuid",
+            "immutable": true,
+            "readOnly": true,
             "description":"The unique identifier of this theme"
         },
         "title": {
             "type": "string",
             "format": "text",
-            "description":"The title (name) of a theme.",
             "minLength": 25,
             "maxLength": 255,
             "required": true,
-            "unique":true
+            "unique":true,
+            "immutable": true,
+            "description":"The title (name) of a theme."
         },
         "summary": {
             "type": "string",

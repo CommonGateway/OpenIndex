@@ -10,7 +10,18 @@
         "id": {
             "type": "string",
             "format": "uuid",
+            "immutable": true,
+            "readOnly": true,
             "description": "The unique identifier for this organization"
+        },
+        "rsin": {
+            "type": "string",
+            "format": "text",
+            "minLength": 9,
+            "maxLength": 9,
+            "required": true,
+            "immutable": true,
+            "description": "The RSIN of the Non-natural person being the organization that created the case. This must be a valid RSIN consisting of 9 digits and comply with the 11-test as described in https://en.wikipedia.org/wiki/Burgerservicenummer#11-proef."
         },
         "title": {
             "type": "string",
