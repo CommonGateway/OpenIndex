@@ -1,0 +1,12 @@
+{
+    "title": "OpenIndex Rx Open",
+    "$id": "https://openindex.nl/source/oi.rxopen.federated.source.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "version": "0.0.1",
+    "description": "OpenIndex Rx Open",
+    "location": "https://oi-rxopen.accept.common-gateway.commonground.nu/api",
+    "apiKey": "!ChangeMe!",
+    "headers": {
+        "accept" : "application/json"
+    }
+}

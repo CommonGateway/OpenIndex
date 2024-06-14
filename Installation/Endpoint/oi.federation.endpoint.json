@@ -1,0 +1,30 @@
+{
+  "title": "OpenIndex Federated endpoint",
+  "description": "Endpoint that does a federated search over multiple OpenIndex sources",
+  "$id": "https://openindex.nl/endpoints/oi.federation.endpoint.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Endpoint.schema.json",
+  "version": "0.0.1",
+  "pathRegex": "^oi/federation/?[^.*]*?$",
+  "methods": ["GET"],
+  "path": [
+    "oi",
+    "federation",
+    "{route}"
+  ],
+  "loggingConfig": {
+    "headers": [
+      "authorization"
+    ]
+  },
+  "operationType": "GET",
+  "defaultContentType": "application/json",
+  "reference": "https://openindex.nl/sources/oi.djumla.federated.source.json",
+  "federationProxies": [
+    "https://openindex.nl/sources/oi.djumla.federated.source.json",
+    "https://openindex.nl/sources/oi.icatt.federated.source.json",
+    "https://openindex.nl/sources/oi.rxopen.federated.source.json",
+    "https://openindex.nl/sources/oi.simgroep.federated.source.json",
+    "https://openindex.nl/sources/oi.acato.federated.source.json",
+    "https://openindex.nl/sources/oi.iodigital.federated.source.json"
+  ]
+}

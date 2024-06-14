@@ -1,0 +1,12 @@
+{
+    "title": "OpenIndex Djumla",
+    "$id": "https://openindex.nl/source/oi.djumla.federated.source.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "version": "0.0.1",
+    "description": "OpenIndex Djumla",
+    "location": "https://oi-djumla.accept.common-gateway.commonground.nu/api",
+    "apiKey": "!ChangeMe!",
+    "headers": {
+        "accept" : "application/json"
+    }
+}

@@ -1,4 +1,14 @@
 {
+  "applications": [
+    {
+      "$id": "https://openindex.nl/applications/djumla.application.json",
+      "title": "Djumla",
+      "version": "0.0.1",
+      "domains": [
+        "oi-djumla.accept.common-gateway.commonground.nu"
+      ]
+    }
+  ],
   "endpoints": {
     "schemas": [
       {

@@ -1,0 +1,12 @@
+{
+    "title": "OpenIndex ICATT",
+    "$id": "https://openindex.nl/source/oi.icatt.federated.source.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "version": "0.0.1",
+    "description": "OpenIndex ICATT",
+    "location": "https://oi-icatt.accept.common-gateway.commonground.nu/api",
+    "apiKey": "!ChangeMe!",
+    "headers": {
+        "accept" : "application/json"
+    }
+}
