@@ -1,4 +1,5 @@
 {
+  "installationService": "CommonGateway\\OpenIndex\\Service\\InstallationService",
   "applications": [
     {
       "$id": "https://openindex.nl/applications/djumla.application.json",
