@@ -18,13 +18,13 @@
   },
   "operationType": "GET",
   "defaultContentType": "application/json",
-  "reference": "https://openindex.nl/sources/oi.djumla.federated.source.json",
+  "reference": "https://openindex.nl/source/oi.djumla.federated.source.json",
   "federationProxies": [
-    "https://openindex.nl/sources/oi.djumla.federated.source.json",
-    "https://openindex.nl/sources/oi.icatt.federated.source.json",
-    "https://openindex.nl/sources/oi.rxopen.federated.source.json",
-    "https://openindex.nl/sources/oi.simgroep.federated.source.json",
-    "https://openindex.nl/sources/oi.acato.federated.source.json",
-    "https://openindex.nl/sources/oi.iodigital.federated.source.json"
+    "https://openindex.nl/source/oi.djumla.federated.source.json",
+    "https://openindex.nl/source/oi.icatt.federated.source.json",
+    "https://openindex.nl/source/oi.rxopen.federated.source.json",
+    "https://openindex.nl/source/oi.simgroep.federated.source.json",
+    "https://openindex.nl/source/oi.acato.federated.source.json",
+    "https://openindex.nl/source/oi.iodigital.federated.source.json"
   ]
 }
