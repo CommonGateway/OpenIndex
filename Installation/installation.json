@@ -50,6 +50,39 @@
     }
   ],
   "endpoints": {
+    "sources": [
+      {
+        "$id": "https://openindex.nl/endpoints/oi.federation.endpoint.json",
+        "name": "OpenIndex Federated endpoint",
+        "description": "Endpoint that does a federated search over multiple OpenIndex sources",
+        "path": [
+          "oi",
+          "federation",
+          "{route}"
+        ],
+        "pathRegex": "^oi/federation/?[^.*]*?$",
+        "methods": [
+          "GET"
+        ],
+        "version": "0.0.1",
+        "loggingConfig": {
+          "headers": [
+            "authorization"
+          ]
+        },
+        "operationType": "GET",
+        "defaultContentType": "application/json",
+        "reference": "https://openindex.nl/source/oi.djumla.federated.source.json",
+        "federationProxies": [
+          "https://openindex.nl/source/oi.djumla.federated.source.json",
+          "https://openindex.nl/source/oi.icatt.federated.source.json",
+          "https://openindex.nl/source/oi.rxopen.federated.source.json",
+          "https://openindex.nl/source/oi.simgroep.federated.source.json",
+          "https://openindex.nl/source/oi.acato.federated.source.json",
+          "https://openindex.nl/source/oi.iodigital.federated.source.json"
+        ]
+      }
+    ],
     "schemas": [
       {
         "$id": "https://openwoo.app/publication.endpoint.json",
