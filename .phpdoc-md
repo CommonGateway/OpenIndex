@@ -4,5 +4,6 @@ return (object)[
     'destDirectory' => 'docs/classes',
     'format' => 'github',
     'classes' => [
+        '\CommonGateway\OpenIndex\Service\OpenIndexService',
     ],
 ];

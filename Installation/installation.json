@@ -1,5 +1,4 @@
 {
-  "installationService": "CommonGateway\\OpenIndex\\Service\\InstallationService",
   "applications": [
     {
       "$id": "https://openindex.nl/applications/djumla.application.json",
@@ -7,6 +6,46 @@
       "version": "0.0.1",
       "domains": [
         "oi-djumla.accept.common-gateway.commonground.nu"
+      ]
+    },
+    {
+      "$id": "https://openindex.nl/applications/icatt.application.json",
+      "title": "ICATT",
+      "version": "0.0.1",
+      "domains": [
+        "oi-icatt.accept.common-gateway.commonground.nu"
+      ]
+    },
+    {
+      "$id": "https://openindex.nl/applications/rxopen.application.json",
+      "title": "Rx.Open",
+      "version": "0.0.1",
+      "domains": [
+        "oi-rxopen.accept.common-gateway.commonground.nu"
+      ]
+    },
+    {
+      "$id": "https://openindex.nl/applications/simgroep.application.json",
+      "title": "SimGroep",
+      "version": "0.0.1",
+      "domains": [
+        "oi-simgroep.accept.common-gateway.commonground.nu"
+      ]
+    },
+    {
+      "$id": "https://openindex.nl/applications/acato.application.json",
+      "title": "Acato",
+      "version": "0.0.1",
+      "domains": [
+        "oi-acato.accept.common-gateway.commonground.nu"
+      ]
+    },
+    {
+      "$id": "https://openindex.nl/applications/iodigital.application.json",
+      "title": "IO",
+      "version": "0.0.1",
+      "domains": [
+        "oi-iodigital.accept.common-gateway.commonground.nu"
       ]
     }
   ],
