@@ -159,7 +159,7 @@ class Publication {
   + attachments: array
   + attachment_count: integer
   + themes: array
-  + data: Any
+  + data: object
   + anonymization: object
   + language: object
 }
