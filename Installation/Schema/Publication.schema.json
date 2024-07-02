@@ -115,7 +115,8 @@
         "data": {
             "type": "object",
             "format": "json",
-            "description": "The actual object to be published (must not be larger than 15 MB)"
+            "description": "The actual object to be published (must not be larger than 15 MB)",
+            "required": true
         },
         "anonymization": {
             "type": "object",
@@ -156,6 +157,7 @@
         "title",
         "summary",
         "category",
-        "schema"
+        "schema",
+        "data"
     ]
 }
