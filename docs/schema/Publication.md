@@ -24,6 +24,6 @@ The publication object is the core of Open Index, acting as a metadata wrapper f
 | attachments | array | N/A | No |
 | attachment_count | integer | **Generated** The amount of attachments belonging to this publication | No |
 | themes | array | The urls of the theme's associated with this publication | No |
-| data | object | The actual object to be published (must not be larger than 15 MB) | No |
+| data | object | The actual object to be published (must not be larger than 15 MB) | Yes |
 | anonymization | object | Whether the attachment is properly annonymized and the results there of | No |
 | language | object | The language and language level of the object | No |
