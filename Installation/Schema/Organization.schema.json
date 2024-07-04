@@ -18,7 +18,7 @@
             "type": "string",
             "format": "text",
             "description": "The title (name) of a subject",
-            "minLength": 25,
+            "minLength": 5,
             "maxLength": 255,
             "required": true
         },
@@ -26,7 +26,7 @@
             "type": "string",
             "format": "text",
             "description": "A short summary of the subject for the overview page",
-            "minLength": 50,
+            "minLength": 10,
             "maxLength": 2500,
             "required": true
         },

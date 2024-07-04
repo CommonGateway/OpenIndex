@@ -25,7 +25,7 @@
             "type": "string",
             "format": "text",
             "description": "The title (name) of a publication",
-            "minLength": 25,
+            "minLength": 5,
             "maxLength": 255,
             "required": true,
             "examples": ["Advice on soil remediation due to PFAS"]
@@ -34,7 +34,7 @@
             "type": "string",
             "format": "text",
             "description": "A short summary of the publication for the overview page",
-            "minLength": 50,
+            "minLength": 10,
             "maxLength": 255,
             "required": true,
             "examples": ["This report provides expert advice on soil remediation strategies to address contamination from PFAS (Per- and Polyfluoroalkyl Substances), highlighting effective techniques and safety measures for environmental restoration."]
@@ -53,7 +53,7 @@
         "category": {
             "type": "string",
             "description": "The category within which the publication falls, these can be self-defined categories or predefined categories",
-            "minLength": 25,
+            "minLength": 5,
             "maxLength": 255,
             "required": true,
             "examples": ["adviezen"]
