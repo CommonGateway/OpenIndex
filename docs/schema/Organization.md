@@ -1,6 +1,6 @@
 # Organization
 
-An organization that provides a publication or index
+An organization that provides a calagi, each oc api can only contain oné organisation. Multy tenancy is achieved trough api-keys
 
 ![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/documentation-2024/docs/schema/Organization.svg)
 
@@ -16,3 +16,4 @@ An organization that provides a publication or index
 | oin | string | Het OIN van deze organisatie | No |
 | tooi | string | Het tooi nummer van deze organisatie | No |
 | rsin | string | The RSIN of the Non-natural person being the organization that created the case. This must be a valid RSIN consisting of 9 digits and comply with the 11-test as described in https://en.wikipedia.org/wiki/Burgerservicenummer#11-proef. | No |
+| pki | string | Het PKI certificaat wat word gebruik om namens deze organisatie te publiceren | No |
