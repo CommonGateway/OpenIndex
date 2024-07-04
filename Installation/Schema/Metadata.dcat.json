@@ -1,24 +1,24 @@
 {
-    "title": "Metadata TOOI Woo-verzoeken en -besluiten",
-    "$id": "https://openwoo.app/schemas/metadata.tooi_woo_verzoeken_besluiten.schema.json",
+    "title": "Metadata TOOI wetten en algemeen verbindende voorschriften",
+    "$id": "https://openwoo.app/schemas/metadata.dcat.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
-    "description": "Inhoud van schriftelijke Woo-verzoeken en besluiten daarop, inclusief verstrekte informatie.",
+    "description": "Wetten en andere algemeen verbindende voorschriften. ",
     "properties": {
         "tooiCategorieNaam": {
             "type": "string",
-            "const":"Woo-verzoeken en -besluiten",
+            "const":"wetten en algemeen verbindende voorschriften",
             "description":"De naam van de TOOI categorie conform [diwoo metadata lijsten](https://standaarden.overheid.nl/diwoo/metadata/doc/0.9.1/diwoo-metadata-lijsten_xsd_Simple_Type_diwoo_scw_woo_informatiecategorieen)"
         },
         "tooiCategorieId": {
             "type": "string",
-            "const":"c_3baef532",
+            "const":"c_139c6280",
             "description":"De tooiCategorieId van de TOOI categorie conform [diwoo metadata lijsten](https://standaarden.overheid.nl/diwoo/metadata/doc/0.9.1/diwoo-metadata-lijsten_xsd_Simple_Type_diwoo_scw_woo_informatiecategorieen)"
         },
         "tooiCategorieUri": {
             "type": "string",
-            "const":"https://identifier.overheid.nl/tooi/def/thes/kern/c_3baef532",
+            "const":"https://identifier.overheid.nl/tooi/def/thes/kern/c_139c6280",
             "description":"De id van de categorie voorafgegaan door `https://identifier.overheid.nl/tooi/def/thes/kern/[tooiCategorieId]`"
         },
         "tooiThemaNaam": {
@@ -32,23 +32,6 @@
         "tooiThemaUri": {
             "type": "string",
             "description":"De tooiThemaId van het thema voorafgegaan door `https://identifier.overheid.nl/tooi/def/thes/kern/[tooiThemaId]`"
-        },
-        "datumBesluit": {
-            "type": "string",
-            "format": "date-time",
-            "description":"Wanneer is er over het verzoek besloten",
-            "required": true
-        },
-        "datumOntvangst": {
-            "type": "string",
-            "format": "date-time",
-            "description":"Wanneer is het verzoek binnen gekomen",
-            "required": true
-        },
-        "termijnoverschrijding": {
-            "type": "string",
-            "format": "ISO-8601",
-            "description":"Een (evenuteel) overschrijding van het beantwoordings termijn termijn"
         },
         "values": {
             "type": "array",
@@ -68,7 +51,5 @@
         }
     },
     "required": [
-        "datumBesluit",
-        "datumOntvangst"
     ]
 }

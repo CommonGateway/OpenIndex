@@ -4,7 +4,7 @@
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
-    "description": "An organization that provides a publication or index",
+    "description": "An organization that provides a calagi, each oc api can only contain oné organisation. Multy tenancy is achieved trough api-keys",
     "tags": ["Open Index"],
     "properties": {
         "id": {
@@ -56,6 +56,10 @@
             "required": true,
             "immutable": true,
             "description": "The RSIN of the Non-natural person being the organization that created the case. This must be a valid RSIN consisting of 9 digits and comply with the 11-test as described in https://en.wikipedia.org/wiki/Burgerservicenummer#11-proef."
+        },
+        "pki": {
+            "type": "string",
+            "description": "Het PKI certificaat wat word gebruik om namens deze organisatie te publiceren"
         }
     },
     "required": [

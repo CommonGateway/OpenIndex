@@ -1,6 +1,6 @@
 {
     "title": "Metadata Open Catalogi Publiccode",
-    "$id": "https://openwoo.app/schemas/Metadata.oc_publiccode.schema.schema.json",
+    "$id": "https://openwoo.app/schemas/Metadata.publiccode.schema.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
     "version": "0.0.1",
     "type": "object",
