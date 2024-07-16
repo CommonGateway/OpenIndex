@@ -114,7 +114,7 @@
             "description":"The urls of the theme's associated with this publication"
         },
         "data": {
-            "type": "object",
+            "type": "array",
             "required": true
         },
         "anonymization": {
