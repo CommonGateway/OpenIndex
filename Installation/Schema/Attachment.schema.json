@@ -73,12 +73,14 @@
         },
         "anonymization": {
             "type": "object",
+            "format": "json",
             "description": "Whether the attachment is properly annonymized and the results there of",
             "$ref": "https://openwoo.app/schemas/anonymization.schema.json"
         },
-        "language": {
+        "languageObject": {
             "type": "object",
-            "description": "The language and language level of the object",
+            "format": "json",
+            "description":"The language and language level of the object",
             "$ref": "https://openwoo.app/schemas/language.schema.json"
         },
         "version_of": {
