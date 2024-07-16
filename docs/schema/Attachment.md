@@ -2,7 +2,7 @@
 
 An attachment object
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Attachment.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/update-schemas/docs/schema/Attachment.svg)
 
 ## Properties
 

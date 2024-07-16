@@ -2,7 +2,7 @@
     "title": "Attachment",
     "$id": "https://openwoo.app/schemas/attachment.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "object",
     "description": "An attachment object",
     "tags": ["Open Index"],
@@ -44,17 +44,17 @@
             "type": "array",
             "description": "Possible labels on the attachment that are used to assess what kind of file it is"
         },
-        "url": {
+        "accessURL": {
             "type": "string",
             "format": "url",
-            "description": "The URL to the original document, this URL  should be accessible to Open Index. When there is an ‘POST` or `PUT` request to Open Index then Open Index wil try to get the original file from the URL and use it to fill the `documentText`,` type`, ` extension` and ` size` properties",
+            "description": "The URL to the original document, this URL should be accessible to Open Index. When there is an ‘POST` or `PUT` request to Open Index then Open Index wil try to get the original file from the URL and use it to fill thedocumentText, type, extensionand size` properties",
             "required": true
         },
-        "content": {
+        "downloadURL": {
             "type": "string",
-            "format": "text",
-            "readOnly": true,
-            "description": "The text from the original document, which is included in the search index to facilitate searching of documents. This value is automatically updated and thus cannot be set via the API"
+            "format": "url",
+            "description": "The URL to download the document.",
+            "required": true
         },
         "type": {
             "type": "string",
@@ -101,7 +101,7 @@
                     "type": "string",
                     "description": "Common European Framework of Reference (CEFR) for language level, see https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages for a explanation and translation to ACTFL",
                     "example": "A1",
-                    "oneof": ["0","A1","A2","B1","B2","C1","C2"],
+                    "enum": ["0","A1","A2","B1","B2","C1","C2"],
                     "maxLength": 2
                 }
             }
@@ -118,8 +118,16 @@
             "readOnly": true,
             "maxLength": 255,
             "description": "**Generated** \nA file hash is essential for ensuring the uniqueness and integrity of files. It serves several critical purposes:\n\nUniqueness: Each file, regardless of its type, generates a unique hash value. Even a small change in the file content will result in a completely different hash, allowing for easy differentiation between files.\n\nIntegrity Verification: By comparing the hash value of a file at different times, one can verify that the file has not been altered. This is crucial for maintaining data integrity, as any unauthorized or accidental changes can be detected immediately.\n\nSecurity: Hashes play a vital role in security protocols. They ensure that the content has not been tampered with during transmission or storage, providing confidence in the file's authenticity.\n\nData Deduplication: In systems that store large amounts of data, file hashes help in identifying and eliminating duplicate files, thus saving storage space and improving efficiency.\n\nDigital Signatures and Certificates: Hashes are integral to the functioning of digital signatures and certificates, which verify the identity of the sender and ensure that the file has not been altered.\n\nOverall, file hashes are a fundamental tool in data management and cybersecurity, ensuring that files remain unique, intact, and secure."
-        }
-    },
+        },
+        "published": {
+            "type": "string"
+        },
+        "modified": {
+            "type": "string"
+        },
+        "license": {
+            "type": "string"
+        },
     "required": [
         "url"
     ]
