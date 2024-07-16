@@ -101,7 +101,7 @@
                     "type": "string",
                     "description": "Common European Framework of Reference (CEFR) for language level, see https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages for a explanation and translation to ACTFL",
                     "example": "A1",
-                    "oneof": ["0","A1","A2","B1","B2","C1","C2"],
+                    "enum": ["0","A1","A2","B1","B2","C1","C2"],
                     "maxLength": 2
                 }
             }

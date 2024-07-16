@@ -94,7 +94,7 @@
             "type": "string",
             "description": "Attention! The publication object can only be included in an Open Index if the status is Published! The other statuses are intended for internal processing within the Woo Register.",
             "required": true,
-            "oneOf": ["New, Revised, Rejected, Published, Withdrawn, Archived"]
+            "enum": ["New, Revised, Rejected, Published, Withdrawn, Archived"]
         },
         "attachments": {
             "type": "array",
@@ -114,6 +114,8 @@
             "description":"The urls of the theme's associated with this publication"
         },
         "data": {
+            "type": "object",
+            "required": true,
             "oneOf": [
                 {
                     "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.schema.json"
@@ -198,7 +200,7 @@
                     "type": "string",
                     "description": "Common European Framework of Reference (CEFR) for language level, see https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages for a explanation and translation to ACTFL",
                     "example": "A1",
-                    "oneof": ["0","A1","A2","B1","B2","C1","C2"],
+                    "enum": ["0","A1","A2","B1","B2","C1","C2"],
                     "maxLength": 2
                 }
             }
@@ -208,6 +210,7 @@
         "title",
         "summary",
         "category",
-        "schema"
+        "schema",
+        "data"
     ]
 }
