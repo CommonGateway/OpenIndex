@@ -2,7 +2,7 @@
     "title": "Publication",
     "$id": "https://openwoo.app/schemas/publication.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "object",
     "description": "The publication object is the core of Open Index, acting as a metadata wrapper for objects and thereby forming the common link between different publications from, for example, WOO and OC.",
     "tags": ["Open Index"],
@@ -115,60 +115,7 @@
         },
         "data": {
             "type": "object",
-            "required": true,
-            "oneOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_wetten_en_algemeen_verbindende_voorschriften.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_ontwerpen_van_wet_en_regelgeving_met_adviesaanvraag.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_vergaderstukken_decentrale_overheden.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_bij_vertegenwoordigende_organen_ingekomen_stukken.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_overige_besluiten_van_algemene_strekking.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_onderzoeksrapporten.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_convenanten.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_klachtoordelen.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_vergaderstukken_staten_generaal.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_agendas_en_besluitenlijsten_bestuurscolleges.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_bereikbaarheidsgegevens.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_beschikkingen.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_jaarplannen_en_jaarverslagen.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_verzoeken_en_besluiten.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_organisatie_en_werkwijze.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_adviezen.schema.json"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/Installation/Schema/Metadata.tooi_subsidieverplichtingen_anders_dan_met_beschikking.schema.json"
-                }
-            ]
+            "required": true
         },
         "anonymization": {
             "type": "object",
@@ -204,6 +151,15 @@
                     "maxLength": 2
                 }
             }
+        },
+        "published": {
+            "type": "string"
+        },
+        "modified": {
+            "type": "string"
+        },
+        "license": {
+            "type": "string"
         }
     },
     "required": [
