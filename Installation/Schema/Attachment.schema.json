@@ -74,37 +74,12 @@
         "anonymization": {
             "type": "object",
             "description": "Whether the attachment is properly annonymized and the results there of",
-            "properties": {
-                "anonymized": {
-                    "type": "boolean",
-                    "description": "If there was a succesfull anonymization"
-                },
-                "results": {
-                    "type": "string",
-                    "description": "Any results of the anonymization procces",
-                    "maxLength": 2500
-                }
-
-            }
+            "$ref": "https://openwoo.app/schemas/anonymization.schema.json"
         },
         "language": {
             "type": "object",
             "description": "The language and language level of the object",
-            "properties": {
-                "code": {
-                    "type": "string",
-                    "description": "ISO 639-1 standard language code",
-                    "example": "en-us",
-                    "maxLength": 7
-                },
-                "level": {
-                    "type": "string",
-                    "description": "Common European Framework of Reference (CEFR) for language level, see https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages for a explanation and translation to ACTFL",
-                    "example": "A1",
-                    "enum": ["0","A1","A2","B1","B2","C1","C2"],
-                    "maxLength": 2
-                }
-            }
+            "$ref": "https://openwoo.app/schemas/language.schema.json"
         },
         "version_of": {
             "type": "string",

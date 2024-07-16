@@ -1,0 +1,20 @@
+{
+    "title": "Anonymization",
+    "$id": "https://openwoo.app/schemas/anonymization.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.0.1",
+    "type": "object",
+    "description": "Whether the attachment is properly annonymized and the results there of",
+    "tags": ["Open Index"],
+    "properties": {
+        "anonymized": {
+            "type": "boolean",
+            "description": "If there was a succesfull anonymization"
+        },
+        "results": {
+            "type": "string",
+            "description": "Any results of the anonymization procces",
+            "maxLength": 2500
+        }
+    }
+}
