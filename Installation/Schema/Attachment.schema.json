@@ -53,7 +53,7 @@
         "downloadURL": {
             "type": "string",
             "format": "url",
-            "description": "The text from the original document, which is included in the search index to facilitate searching of documents. This value is automatically updated and thus cannot be set via the API",
+            "description": "The URL to download the document.",
             "required": true
         },
         "type": {
