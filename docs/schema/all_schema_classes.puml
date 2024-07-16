@@ -2,67 +2,6 @@
 title: All schemas
 footer: Common Gateway Plugin | Commongateway | Openindex 
 header: Schema
-class MetadataTOOIconvenanten {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataTOOIontwerpenvanwet-enregelgevingmetadviesaanvraag {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataTOOIagenda’senbesluitenlijstenbestuurscolleges {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataTOOIvergaderstukkendecentraleoverheden {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataTOOIWoo-verzoekenen-besluiten {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + datumBesluit: string
-  + datumOntvangst: string
-  + termijnoverschrijding: string
-  + values: array
-}
-class MetadataTOOIadviezen {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + oprdachtgever: string
-  + onderdeelTaak: string
-  + onderwerp: string
-  + feitelijkMateriaal: boolean
-  + values: array
-}
 class MetadataOpenCatalogiPubliccode {
   + tooiCategorieNaam: string
   + tooiCategorieId: string
@@ -74,173 +13,6 @@ class MetadataOpenCatalogiPubliccode {
   + onderdeelTaak: string
   + onderwerp: string
   + feitelijkMateriaal: boolean
-  + values: array
-}
-class MetadataTOOIbijvertegenwoordigendeorganeningekomenstukken {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataTOOIorganisatieenwerkwijze {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataTOOIoverigebesluitenvanalgemenestrekking {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataTOOIjaarplannenenjaarverslagen {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataOpenCatalogiPubliccode {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + oprdachtgever: string
-  + onderdeelTaak: string
-  + onderwerp: string
-  + feitelijkMateriaal: boolean
-  + values: array
-}
-class Publication {
-  + id: string
-  + reference: string
-  + title: string
-  + summary: string
-  + description: string
-  + image: string
-  + category: string
-  + portal: string
-  + publicationDate: string
-  + featured: boolean
-  + organization: object
-  + schema: string
-  + status: string
-  + attachments: array
-  + attachment_count: integer
-  + themes: array
-  + data: Any
-  + anonymization: object
-  + language: object
-}
-class MetadataTOOIonderzoeksrapporten {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class Attachment {
-  + id: string
-  + reference: string
-  + title: string
-  + summary: string
-  + description: string
-  + labels: array
-  + url: string
-  + content: string
-  + type: string
-  + extension: string
-  + size: integer
-  + anonymization: object
-  + language: object
-  + version_of: string
-  + hash: string
-}
-class MetadataTOOIsubsidieverplichtingenandersdanmetbeschikking {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataTOOIbereikbaarheidsgegevens {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataTOOIbeschikkingen {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class Theme {
-  + id: string
-  + title: string
-  + summary: string
-  + description: string
-  + image: string
-  + publications: integer
-}
-class MetadataTOOIwettenenalgemeenverbindendevoorschriften {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + values: array
-}
-class MetadataTOOIklachtoordelen {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
-  + datumBesluit: string
-  + datumOntvangst: string
-  + termijnoverschrijding: string
-  + organisatieonderdeel: string
-  + functiebenaming: string
-  + gedraging: string
-  + bevindingen: string
-  + oordeel: string
-  + conclusies: string
-  + values: array
-}
-class MetadataTOOIvergaderstukkenStaten-Generaal {
-  + tooiCategorieNaam: string
-  + tooiCategorieId: string
-  + tooiCategorieUri: string
-  + tooiThemaNaam: string
-  + tooiThemaId: string
-  + tooiThemaUri: string
   + values: array
 }
 class Index {
@@ -263,5 +35,233 @@ class Organization {
   + tooi: string
   + rsin: string
   + name: string
+}
+class MetadataTOOIorganisatieenwerkwijze {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class MetadataTOOIonderzoeksrapporten {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class MetadataTOOIWoo-verzoekenen-besluiten {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + datumBesluit: string
+  + datumOntvangst: string
+  + termijnoverschrijding: string
+  + values: array
+}
+class MetadataTOOIvergaderstukkendecentraleoverheden {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class Publication {
+  + id: string
+  + reference: string
+  + title: string
+  + summary: string
+  + description: string
+  + image: string
+  + category: string
+  + portal: string
+  + publicationDate: string
+  + featured: boolean
+  + organization: object
+  + schema: string
+  + status: string
+  + attachments: array
+  + attachment_count: integer
+  + themes: array
+  + data: object
+  + anonymization: object
+  + language: object
+}
+class MetadataOpenCatalogiPubliccode {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + oprdachtgever: string
+  + onderdeelTaak: string
+  + onderwerp: string
+  + feitelijkMateriaal: boolean
+  + values: array
+}
+class MetadataTOOIsubsidieverplichtingenandersdanmetbeschikking {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class MetadataTOOIagenda’senbesluitenlijstenbestuurscolleges {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class MetadataTOOIwettenenalgemeenverbindendevoorschriften {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class MetadataTOOIjaarplannenenjaarverslagen {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class MetadataTOOIconvenanten {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class MetadataTOOIontwerpenvanwet-enregelgevingmetadviesaanvraag {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class MetadataTOOIvergaderstukkenStaten-Generaal {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class MetadataTOOIbeschikkingen {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class MetadataTOOIbereikbaarheidsgegevens {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class Theme {
+  + id: string
+  + title: string
+  + summary: string
+  + description: string
+  + image: string
+  + publications: integer
+}
+class MetadataTOOIklachtoordelen {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + datumBesluit: string
+  + datumOntvangst: string
+  + termijnoverschrijding: string
+  + organisatieonderdeel: string
+  + functiebenaming: string
+  + gedraging: string
+  + bevindingen: string
+  + oordeel: string
+  + conclusies: string
+  + values: array
+}
+class MetadataTOOIadviezen {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + oprdachtgever: string
+  + onderdeelTaak: string
+  + onderwerp: string
+  + feitelijkMateriaal: boolean
+  + values: array
+}
+class Attachment {
+  + id: string
+  + reference: string
+  + title: string
+  + summary: string
+  + description: string
+  + labels: array
+  + url: string
+  + content: string
+  + type: string
+  + extension: string
+  + size: integer
+  + anonymization: object
+  + language: object
+  + version_of: string
+  + hash: string
+}
+class MetadataTOOIoverigebesluitenvanalgemenestrekking {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
+}
+class MetadataTOOIbijvertegenwoordigendeorganeningekomenstukken {
+  + tooiCategorieNaam: string
+  + tooiCategorieId: string
+  + tooiCategorieUri: string
+  + tooiThemaNaam: string
+  + tooiThemaId: string
+  + tooiThemaUri: string
+  + values: array
 }
 @enduml

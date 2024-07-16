@@ -2,7 +2,7 @@
 
 The publication object is the core of Open Index, acting as a metadata wrapper for objects and thereby forming the common link between different publications from, for example, WOO and OC.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/main/docs/schema/Publication.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/update-schemas/docs/schema/Publication.svg)
 
 ## Properties
 
@@ -24,6 +24,6 @@ The publication object is the core of Open Index, acting as a metadata wrapper f
 | attachments | array | N/A | No |
 | attachment_count | integer | **Generated** The amount of attachments belonging to this publication | No |
 | themes | array | The urls of the theme's associated with this publication | No |
-| data | Any | N/A | No |
+| data | object | N/A | Yes |
 | anonymization | object | Whether the attachment is properly annonymized and the results there of | No |
 | language | object | The language and language level of the object | No |
