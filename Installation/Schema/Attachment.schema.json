@@ -105,6 +105,7 @@
         "license": {
             "type": "string"
         },
+    },
     "required": [
         "url"
     ]

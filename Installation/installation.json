@@ -7,6 +7,13 @@
         "path": "publications",
         "methods": [],
         "version": "0.0.1"
+      },
+      {
+        "$id": "https://openwoo.app/attachment.endpoint.json",
+        "reference": "https://openwoo.app/schemas/attachment.schema.json",
+        "path": "attachments",
+        "methods": [],
+        "version": "0.0.1"
       }
     ]
   }
