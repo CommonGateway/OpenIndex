@@ -6,24 +6,23 @@
     "passTrough" : false,
     "mapping" : {
         "_sourceId" : "identificatie",
-        "id" : "identificatie",
-        "organisatie.oin" : "{% if organisatie.oin|default %}{{ organisatie.oin }}{% else %}unknown{% endif %}",
-        "organisatie.naam" : "organisatie.naam",
-        "titel" : "omschrijving",
-        "samenvatting" : "zaaktypeomschrijving",
-        "beschrijving" : "zaaktypeomschrijving",
-        "afbeelding" : "",
-        "categorie" : "test",
+        "reference" : "identificatie",
+        "organization.oin" : "{% if organisatie.oin|default %}{{ organisatie.oin }}{% else %}unknown{% endif %}",
+        "organization.title" : "organisatie.naam",
+        "title" : "omschrijving",
+        "summary" : "zaaktypeomschrijving",
+        "description" : "zaaktypeomschrijving",
+        "image" : "",
+        "category" : "Woo-verzoeken en -besluiten",
         "portal" : "",
-        "publicatiedatum" : "startdatum",
+        "publicationDate" : "startdatum",
         "featured" : "false",
-        "organisatie" : "",
-        "schema" : "",
-        "bijlagen" : "",
-        "onderwerp" : "",
-        "data" : ""
+        "schema" : "https://openwoo.app/schemas/metadata.tooi_verzoeken_en_besluiten.schema.json",
+        "attachments" : "[]",
+        "data" : "[]"
     },
     "cast" : {
-        "titel" : "unsetIfValue=="
+        "attachments" : "jsonToArray",
+        "data" : "jsonToArray"
     }
 }
