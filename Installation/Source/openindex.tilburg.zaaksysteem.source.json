@@ -1,0 +1,14 @@
+{
+    "title" : "OpenIndex Tilburg Zaaksysteem",
+    "$id" : "https://openwoo.app/source/openindex.tilburg.zaaksysteem.source.json",
+    "$schema" : "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "version" : "0.0.1",
+    "description" : "OpenIndex Tilburg Zaaksysteem api",
+    "location" : "https://secure1.acc.enable-u.cloud/tlb/zaaksysteem/api",
+    "headers" : {
+        "Accept" : "*/*",
+        "Host" : "localhost",
+        "Content-Type" : "application/json"
+    },
+    "isEnabled" : true
+}

@@ -56,7 +56,7 @@ class OpenIndexService
             $validationErrors = $this->validationService->validateData($objectArray['data'], $schemaEntity, $method);
 
             if ($validationErrors !== null) {
-                $this->pluginLogger->error(message: 'This object could not be safed due to validation errors.', context: ['plugin' => 'common-gateway/woo-bundle', 'errors' => $validationErrors]);
+                $this->pluginLogger->error(message: 'This object could not be safed due to validation errors.', context: ['plugin' => 'common-gateway/open-index', 'errors' => $validationErrors]);
                 $response = new Response(
                     content: json_encode(
                         [

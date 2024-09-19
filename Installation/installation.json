@@ -14,6 +14,16 @@
         "path": "attachments",
         "methods": [],
         "version": "0.0.1"
+      },
+      {
+        "$id": "https://openwoo.app/openindex.woo.ViewFile.endpoint.json",
+        "version": "0.0.1",
+        "reference": "https://openwoo.app/schemas/attachment.schema.json",
+        "path": "openindex-view-file",
+        "methods": ["GET"],
+        "throws": [
+          "openindex.woo.file.view"
+        ]
       }
     ]
   }

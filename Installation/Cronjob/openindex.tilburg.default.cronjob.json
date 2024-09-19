@@ -1,0 +1,12 @@
+{
+    "title": "OpenIndex Tilburg default cronjob",
+    "$id": "https://openwoo.app/openindex.tilburg.default.cronjob.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Cronjob.schema.json",
+    "version": "0.0.1",
+    "description": "This cronjob fires the OpenIndex Tilburg actions every night at 03.00",
+    "crontab": "0 3 * * *",
+    "throws": [
+        "openindex.tilburg.default.listens"
+    ],
+    "isEnabled": false
+}
