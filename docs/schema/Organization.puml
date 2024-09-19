@@ -12,6 +12,6 @@ class Organization {
   + oin: string
   + tooi: string
   + rsin: string
-  + name: string
+  + pki: string
 }
 @enduml

@@ -2,7 +2,7 @@
 
 Adviezen over ontwerpen en andere onderwerpen van adviescolleges of -commissies, exclusief adviezen die betrekking hebben op individuele gevallen.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/update-schemas/docs/schema/Metadata.oc_publiccode.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/tilburg-cases-sync/docs/schema/Metadata.oc_publiccode.svg)
 
 ## Properties
 

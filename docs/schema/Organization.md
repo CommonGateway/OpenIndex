@@ -2,7 +2,7 @@
 
 An organization that provides a publication or index
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/update-schemas/docs/schema/Organization.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/tilburg-cases-sync/docs/schema/Organization.svg)
 
 ## Properties
 
@@ -16,4 +16,4 @@ An organization that provides a publication or index
 | oin | string | N/A | No |
 | tooi | string | N/A | No |
 | rsin | string | The RSIN of the Non-natural person being the organization that created the case. This must be a valid RSIN consisting of 9 digits and comply with the 11-test as described in https://en.wikipedia.org/wiki/Burgerservicenummer#11-proef. | No |
-| name | string | N/A | No |
+| pki | string | Het PKI certificaat wat word gebruik om namens deze organisatie te publiceren | No |

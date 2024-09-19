@@ -10,14 +10,17 @@ class Attachment {
   + summary: string
   + description: string
   + labels: array
-  + url: string
-  + content: string
+  + accessURL: string
+  + downloadURL: string
   + type: string
   + extension: string
   + size: integer
   + anonymization: object
-  + language: object
+  + languageObject: object
   + version_of: string
   + hash: string
+  + published: string
+  + modified: string
+  + license: string
 }
 @enduml

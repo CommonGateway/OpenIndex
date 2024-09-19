@@ -2,7 +2,7 @@
 
 Agenda’s en besluitenlijsten van vergaderingen van diverse bestuurlijke organen.  
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/update-schemas/docs/schema/Metadata.tooi_agendas_en_besluitenlijsten_bestuurscolleges.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/tilburg-cases-sync/docs/schema/Metadata.tooi_agendas_en_besluitenlijsten_bestuurscolleges.svg)
 
 ## Properties
 
