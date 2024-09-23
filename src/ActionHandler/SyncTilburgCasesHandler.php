@@ -78,21 +78,21 @@ class SyncTilburgCasesHandler implements ActionHandlerInterface
                 'source'       => [
                     'type'        => 'string',
                     'description' => 'The source where the publication belongs to.',
-                    'example'     => 'https://commongateway.woo.nl/source/tilburg.zaaksysteem.source.json',
+                    'example'     => 'https://openwoo.app/source/openindex.tilburg.zaaksysteem.source.json',
                     'required'    => true,
                 ],
                 'schema'       => [
                     'type'        => 'string',
                     'description' => 'The publication schema.',
-                    'example'     => 'https://commongateway.nl/woo.publicatie.schema.json',
-                    'reference'   => 'https://commongateway.nl/woo.publicatie.schema.json',
+                    'example'     => 'https://openwoo.app/schemas/publication.schema.json',
+                    'reference'   => 'https://openwoo.app/schemas/publication.schema.json',
                     'required'    => true,
                 ],
                 'mapping'      => [
                     'type'        => 'string',
                     'description' => 'The mapping for TIP case to publication.',
-                    'example'     => 'https://commongateway.nl/mapping/woo.tilburgCaseToWoo.mapping.json',
-                    'reference'   => 'https://commongateway.nl/mapping/woo.tilburgCaseToWoo.mapping.json',
+                    'example'     => 'https://openwoo.app/mapping/openindex.woo.tilburgCaseToWoo.mapping.json',
+                    'reference'   => 'https://openwoo.app/mapping/openindex.woo.tilburgCaseToWoo.mapping.json',
                     'required'    => true,
                 ],
                 'organisatie'  => [
@@ -116,7 +116,7 @@ class SyncTilburgCasesHandler implements ActionHandlerInterface
                 'fileEndpoint' => [
                     'type'        => 'string',
                     'description' => 'The endpoint reference for documents.',
-                    'example'     => 'tilburg',
+                    'example'     => 'https://openwoo.app/openindex.woo.ViewFile.endpoint.json',
                     'required'    => true,
                 ],
             ],
