@@ -219,7 +219,8 @@ class SyncTilburgCasesService
                 [
                     'organization' => [
                         'oin'  => $this->configuration['oin'],
-                        'naam' => $this->configuration['organisatie'],
+                        'title' => $this->configuration['organisatie'],
+                        'summary' => $this->configuration['organisatie']
                     ],
                 ]
             );
@@ -230,9 +231,9 @@ class SyncTilburgCasesService
             }
 
             // Fetch all documents for the publication and save them for later enrichment.
-            $attachments = $this->fetchDetails($source, $mappedResult['id']);
+            $attachments = $this->fetchDetails($source, $result['id']);
             if (! empty($attachments)) {
-                $mappedResult['bijlagen'] = $this->processTemporaryAttachments($attachments, $documentSourceIdMapping);
+                $mappedResult['attachments'] = $this->processTemporaryAttachments($attachments, $documentSourceIdMapping);
             }
 
             // First save the publication object before enriching documents.
@@ -253,7 +254,7 @@ class SyncTilburgCasesService
                 }
 
                 // Overwrite 'bijlagen' to update the enriched documents.
-                $mappedResult['bijlagen'] = $mappedDocuments;
+                $mappedResult['attachments'] = $mappedDocuments;
             }
 
             // Update the publication object with the enriched documents.
