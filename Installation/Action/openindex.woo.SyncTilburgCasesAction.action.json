@@ -4,7 +4,7 @@
     "$schema" : "https://docs.commongateway.nl/schemas/Action.schema.json",
     "version" : "0.0.1",
     "listens" : [
-        "openindex.tilburg.default.listens"
+        "tilburg.openindex.default.listens"
     ],
     "configuration" : {
         "oin" : "00000001001172773000",
@@ -16,7 +16,9 @@
         "caseIndex" : "/v1/zaken",
         "caseDetail" : "/v1/zaken/:identificatie/informatieobjecten",
         "caseDocument" : "/v1/informatieobjecten/:identificatie",
-        "fileEndpoint" : "https://openwoo.app/openindex.woo.ViewFile.endpoint.json"
+        "fileEndpoint" : "https://openwoo.app/openindex.woo.ViewFile.endpoint.json",
+        "rateLimitStart": "2024-06-06",
+        "rateLimitEnd": "2024-08-01"
     },
     "conditions" : {
         "==" : [

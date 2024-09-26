@@ -119,6 +119,18 @@ class SyncTilburgCasesHandler implements ActionHandlerInterface
                     'example'     => 'https://openwoo.app/openindex.woo.ViewFile.endpoint.json',
                     'required'    => true,
                 ],
+                'rateLimitStart' => [
+                    'type'        => 'string',
+                    'description' => 'Start date of the fixed date range that is used to fetch a maximum amount of objects to avoid rate limiting.',
+                    'example'     => '2024-06-06',
+                    'required'    => true,
+                ],
+                'rateLimitEnd' => [
+                    'type'        => 'string',
+                    'description' => 'End date of the fixed date range that is used to fetch a maximum amount of objects to avoid rate limiting.',
+                    'example'     => '2024-08-01',
+                    'required'    => true,
+                ],
             ],
         ];
 

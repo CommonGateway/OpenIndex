@@ -6,7 +6,7 @@
     "description": "This cronjob fires the OpenIndex Tilburg actions every night at 03.00",
     "crontab": "0 3 * * *",
     "throws": [
-        "openindex.tilburg.default.listens"
+        "tilburg.openindex.default.listens"
     ],
     "isEnabled": false
 }

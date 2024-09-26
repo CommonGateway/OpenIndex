@@ -193,8 +193,8 @@ class SyncTilburgCasesService
         $mapping = $this->resourceService->getMapping($this->configuration['mapping'], 'common-gateway/open-index');
 
         // For documents.
-        $documentSourceIdMapping = $this->resourceService->getMapping("https://commongateway.nl/mapping/woo.tilburgDocumentSetSourceId.schema.json", "common-gateway/open-index");
-        $documentMapping         = $this->resourceService->getMapping("https://commongateway.nl/mapping/woo.tilburgDocumentToBijlage.mapping.json", "common-gateway/open-index");
+        $documentSourceIdMapping = $this->resourceService->getMapping("https://openwoo.app/mapping/openindex.woo.tilburgDocumentSetSourceId.schema.json", "common-gateway/open-index");
+        $documentMapping         = $this->resourceService->getMapping("https://openwoo.app/mapping/openindex.woo.tilburgDocumentToAttachment.mapping.json", "common-gateway/open-index");
         $fileEndpoint            = $this->resourceService->getEndpoint($this->configuration['fileEndpoint'], 'common-gateway/open-index');
 
         if ($source instanceof Source === false || $schema instanceof Schema === false || $mapping instanceof Mapping === false) {
@@ -203,7 +203,7 @@ class SyncTilburgCasesService
 
         // @todo: Implement a way to fetch all objects from the TIP.
         // For now, this fixed date range is used to fetch 28 objects to avoid rate limiting.
-        $results = $this->fetchObjects($source, '2024-06-06', '2024-08-01');
+        $results = $this->fetchObjects($source, $this->configuration['rateLimitStart'], $this->configuration['rateLimitEnd']);
         $this->entityManager->flush();
 
         $responseItems          = [];
@@ -217,7 +217,7 @@ class SyncTilburgCasesService
             $mappedResult = array_merge(
                 $mappedResult,
                 [
-                    'organisatie' => [
+                    'organization' => [
                         'oin'  => $this->configuration['oin'],
                         'naam' => $this->configuration['organisatie'],
                     ],
