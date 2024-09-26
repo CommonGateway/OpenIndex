@@ -7,8 +7,6 @@
     "mapping" : {
         "_sourceId" : "identificatie",
         "reference" : "identificatie",
-        "organization.oin" : "{% if organisatie.oin|default %}{{ organisatie.oin }}{% else %}unknown{% endif %}",
-        "organization.title" : "organisatie.naam",
         "title" : "omschrijving",
         "summary" : "zaaktypeomschrijving",
         "description" : "zaaktypeomschrijving",

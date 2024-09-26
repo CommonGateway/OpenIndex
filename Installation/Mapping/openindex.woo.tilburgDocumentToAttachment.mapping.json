@@ -8,8 +8,7 @@
         "_sourceId" : "identificatie",
         "id" : "identificatie",
         "title" : "titel",
-        "url" : "url",
-        "documentText" : "beschrijving",
+        "accessURL" : "link",
         "type" : "formaat"
     }
 }
