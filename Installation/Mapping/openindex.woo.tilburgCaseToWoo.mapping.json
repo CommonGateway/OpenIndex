@@ -19,11 +19,11 @@
         "featured" : "false",
         "schema" : "https://openwoo.app/schemas/metadata.tooi_verzoeken_en_besluiten.schema.json",
         "attachments" : "[]",
-        "data" : "[]"
+        "data.datumBesluit" : "startdatum",
+        "data.datumOntvangst": "startdatum"
     },
     "cast" : {
         "featured": "bool",
-        "attachments" : "jsonToArray",
-        "data" : "jsonToArray"
+        "attachments" : "jsonToArray"
     }
 }

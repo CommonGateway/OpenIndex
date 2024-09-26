@@ -2,7 +2,7 @@
     "title": "Metadata TOOI Woo-verzoeken en -besluiten",
     "$id": "https://openwoo.app/schemas/metadata.tooi_verzoeken_en_besluiten.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "object",
     "description": "Inhoud van schriftelijke Woo-verzoeken en besluiten daarop, inclusief verstrekte informatie.",
     "properties": {
@@ -47,7 +47,7 @@
         },
         "termijnoverschrijding": {
             "type": "string",
-            "format": "ISO-8601",
+            "format": "date-time",
             "description":"Een (evenuteel) overschrijding van het beantwoordings termijn termijn"
         },
         "values": {
