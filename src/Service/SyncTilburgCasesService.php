@@ -291,12 +291,13 @@ class SyncTilburgCasesService
         if ($document === false) {
             return false;
         }
-
+        
         // Fetch the existing temporary document.
-        $documentObject = $this->entityManager->getRepository('App:ObjectEntity')->findByAnyId($document['identificatie']);
+        $documentObject = $this->entityManager->getRepository('App:ObjectEntity')
+            ->findByAnyId($document['identificatie'], $source->getId()->toString());
 
         // Define the value.
-        $value = $documentObject->getValueObject("url");
+        $value = $documentObject->getValueObject("downloadURL");
 
         // Persist?
         $this->entityManager->persist($value);
@@ -339,8 +340,8 @@ class SyncTilburgCasesService
             $mappedDocument,
             [
                 'extension'    => $extension,
-                'url'          => $url,
-                'documentText' => $text,
+                'downloadURL'  => $url,
+                'summary'      => $text,
             ]
         );
 
