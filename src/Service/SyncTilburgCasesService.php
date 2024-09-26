@@ -218,9 +218,9 @@ class SyncTilburgCasesService
                 $mappedResult,
                 [
                     'organization' => [
-                        'oin'  => $this->configuration['oin'],
-                        'title' => $this->configuration['organisatie'],
-                        'summary' => $this->configuration['organisatie']
+                        'oin'     => $this->configuration['oin'],
+                        'title'   => $this->configuration['organisatie'],
+                        'summary' => $this->configuration['organisatie'],
                     ],
                 ]
             );

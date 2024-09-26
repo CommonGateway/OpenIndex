@@ -63,57 +63,57 @@ class SyncTilburgCasesHandler implements ActionHandlerInterface
                 'fileEndpoint',
             ],
             'properties'  => [
-                'oin'          => [
+                'oin'            => [
                     'type'        => 'string',
                     'description' => 'The oin of the municipality.',
                     'example'     => '00000001001172773000',
                     'required'    => true,
                 ],
-                'portalUrl'    => [
+                'portalUrl'      => [
                     'type'        => 'string',
                     'description' => 'The portal url of the publication.',
                     'example'     => 'https://conductionnl.github.io/woo-website-buren',
                     'required'    => true,
                 ],
-                'source'       => [
+                'source'         => [
                     'type'        => 'string',
                     'description' => 'The source where the publication belongs to.',
                     'example'     => 'https://openwoo.app/source/openindex.tilburg.zaaksysteem.source.json',
                     'required'    => true,
                 ],
-                'schema'       => [
+                'schema'         => [
                     'type'        => 'string',
                     'description' => 'The publication schema.',
                     'example'     => 'https://openwoo.app/schemas/publication.schema.json',
                     'reference'   => 'https://openwoo.app/schemas/publication.schema.json',
                     'required'    => true,
                 ],
-                'mapping'      => [
+                'mapping'        => [
                     'type'        => 'string',
                     'description' => 'The mapping for TIP case to publication.',
                     'example'     => 'https://openwoo.app/mapping/openindex.woo.tilburgCaseToWoo.mapping.json',
                     'reference'   => 'https://openwoo.app/mapping/openindex.woo.tilburgCaseToWoo.mapping.json',
                     'required'    => true,
                 ],
-                'organisatie'  => [
+                'organisatie'    => [
                     'type'        => 'string',
                     'description' => 'The organisation.',
                     'example'     => 'Gemeente Tilburg',
                     'required'    => true,
                 ],
-                'caseIndex'    => [
+                'caseIndex'      => [
                     'type'        => 'string',
                     'description' => 'The endpoint for the case index.',
                     'example'     => '/v1/zaken',
                     'required'    => true,
                 ],
-                'caseDetail'   => [
+                'caseDetail'     => [
                     'type'        => 'string',
                     'description' => 'The endpoint for the case details.',
                     'example'     => '/v1/zaken/:identificatie/informatieobjecten',
                     'required'    => true,
                 ],
-                'fileEndpoint' => [
+                'fileEndpoint'   => [
                     'type'        => 'string',
                     'description' => 'The endpoint reference for documents.',
                     'example'     => 'https://openwoo.app/openindex.woo.ViewFile.endpoint.json',
@@ -125,7 +125,7 @@ class SyncTilburgCasesHandler implements ActionHandlerInterface
                     'example'     => '2024-06-06',
                     'required'    => true,
                 ],
-                'rateLimitEnd' => [
+                'rateLimitEnd'   => [
                     'type'        => 'string',
                     'description' => 'End date of the fixed date range that is used to fetch a maximum amount of objects to avoid rate limiting.',
                     'example'     => '2024-08-01',
