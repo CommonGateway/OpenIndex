@@ -1,0 +1,15 @@
+{
+    "title": "OpenIndex ViewFileAction",
+    "$id": "https://commongateway.nl/openindex.woo.ViewFileAction.action.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
+    "version": "0.0.1",
+    "listens": ["woo.openindex.file.view"],
+    "configuration": {
+        "schemaThisFileBelongsTo": ["https://openwoo.app/schemas/publication.schema.json", "https://openwoo.app/schemas/attachment.schema.json"]
+    },
+    "conditions":
+    {
+        "==": [1, 1]
+    },
+    "class": "CommonGateway\\OpenIndex\\ActionHandler\\ViewFileHandler"
+}

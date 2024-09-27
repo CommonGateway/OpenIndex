@@ -20,8 +20,11 @@ class Publication {
   + attachments: array
   + attachment_count: integer
   + themes: array
-  + data: object
+  + data: array
   + anonymization: object
-  + language: object
+  + languageObject: object
+  + published: string
+  + modified: string
+  + license: string
 }
 @enduml

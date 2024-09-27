@@ -47,7 +47,7 @@
         "accessURL": {
             "type": "string",
             "format": "url",
-            "description": "The URL to the original document, this URL should be accessible to Open Index. When there is an ‘POST` or `PUT` request to Open Index then Open Index wil try to get the original file from the URL and use it to fill thedocumentText, type, extensionand size` properties",
+            "description": "The URL to the original document, this URL should be accessible to Open Index. When there is an ‘POST` or `PUT` request to Open Index then Open Index wil try to get the original file from the URL and use it to fill the documentText, type, extension and size` properties",
             "required": true
         },
         "downloadURL": {
@@ -104,7 +104,7 @@
         },
         "license": {
             "type": "string"
-        },
+        }
     },
     "required": [
         "url"

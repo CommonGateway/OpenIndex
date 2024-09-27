@@ -2,7 +2,7 @@
 
 Jaarplannen en jaarverslagen van bestuursorganen over hun taakuitvoering.
 
-![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/update-schemas/docs/schema/Metadata.tooi_jaarplannen_en_jaarverslagen.svg)
+![Class Diagram](https://github.com/CommonGateway/OpenIndex/blob/tilburg-cases-sync/docs/schema/Metadata.tooi_jaarplannen_en_jaarverslagen.svg)
 
 ## Properties
 

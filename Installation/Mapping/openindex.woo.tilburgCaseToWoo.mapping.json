@@ -1,0 +1,27 @@
+{
+    "title" : "OpenIndex TilburgCaseToWoo",
+    "$id" : "https://openwoo.app/mapping/openindex.woo.tilburgCaseToWoo.mapping.json",
+    "$schema" : "https://docs.commongateway.nl/schemas/Mapping.schema.json",
+    "version" : "0.0.1",
+    "passTrough" : false,
+    "mapping" : {
+        "_sourceId" : "identificatie",
+        "reference" : "identificatie",
+        "title" : "omschrijving",
+        "summary" : "zaaktypeomschrijving",
+        "description" : "zaaktypeomschrijving",
+        "image" : "",
+        "category" : "Woo-verzoeken en -besluiten",
+        "portal" : "",
+        "publicationDate" : "startdatum",
+        "featured" : "false",
+        "schema" : "https://openwoo.app/schemas/metadata.tooi_verzoeken_en_besluiten.schema.json",
+        "attachments" : "[]",
+        "data.datumBesluit" : "startdatum",
+        "data.datumOntvangst": "startdatum"
+    },
+    "cast" : {
+        "featured": "bool",
+        "attachments" : "jsonToArray"
+    }
+}
