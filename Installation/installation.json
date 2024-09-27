@@ -22,7 +22,7 @@
         "path": "openindex-view-file",
         "methods": ["GET"],
         "throws": [
-          "openindex.woo.file.view"
+          "woo.openindex.file.view"
         ]
       }
     ]
